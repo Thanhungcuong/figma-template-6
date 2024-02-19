@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Frontend</title>
+</head>
+<body class="bg-origin-border bg-center" style="background-image:url(img/Group\ 9718.png) ;">
+    <div class="max-w-screen-2xl   mx-auto">
+    
+    <nav class=" p-5 xl:flex xl:items-center xl:justify-between mx-auto"> <!-- thanh navbar menu -->
+    <div class="max-2xl:w-fit max-2xl:mx-auto flex mx-auto items-center"> <!-- div menu -->
+    <div class=" flex justify-evenly items-center ">
+        
+
+
+        <span class="text-3xl cursor-pointer mr-10  xl:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+
+        <div class="shrink-0 mr-10 cursor-pointer"> <!-- w-44 h-10 ml-16 mr-10 -->
+            <img src="img/image 3.png" alt="icon" class=" ">
+        </div>
+
+
+    </div>
+    
+    <div class="">
+            <ul class="max-xl:bg-white max-xl:text-black max-xl:z-[10] max-xl:h-screen max-xl:pl-20 
+            xl:flex xl:items-center z-[-1] xl:z-auto xl:static absolute transition-all ease-in duration-500 h-18 gap-5 w-full left-0 xl:py-0 py-4 top-[-400px ] xl:w-auto xl:pl-0 xl:opacity-100 opacity-0">
+            <li class=" hover:underline text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:my-5 max-xl:text-base max-xl:"> <a href="#">Giới thiệu</a></li>
+            <li class=" hover:underline text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:my-5 max-xl:text-base max-xl:"> <a href="#">Đối tượng khách hàng</a></li>
+            <li class=" hover:underline text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:my-5 max-xl:text-base max-xl:"> <a href="#">Quy trình</a></li>
+            <li class=" hover:underline text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:my-5 max-xl:text-base max-xl:"> <a href="#">Bảng giá</a></li>
+            <li class=" hover:underline text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:my-5 max-xl:text-base max-xl:"> <a href="#">Cảm nhận của khách hàng</a></li>
+            <li class=" hover:underline text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:my-5 max-xl:text-base max-xl:"> <a href="#">Đội ngũ bác sĩ</a></li>
+            <li class=" hover:underline text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:my-5 max-xl:text-base max-xl:"> <a href="#">Hình ảnh & Video</a></li>
+      
+        
+        
+            <a href="#" class=" flex justify-center items-center bg-gradient-to-r from-green-400 to-green-800 text-white rounded-full font-Lato text-base font-bold leading-19 tracking-0  
+                                hover:text-green-950 shadow-lg shadow-green-500/40 w-40 h-10 text-nowrap shrink-0">
+            <span class="bg-white size-7 item-center rounded-full flex mr-2">
+                <img src="img/Phone, Call.png " alt="dien thoai" class=""> <!-- bg-white w-7 h-7 rounded-full  -->
+            </span>
+            
+            Gọi 1900 1806</a>      
+            <!--đây là header, gồm icon và menu -->      
+        </ul>
+    </div>
+  
+
+        </nav>
+           
+   
+
+
+    <div class="flex justify-center mt-14 w-full ">
+        <p class="font-Lato font-bold text-5xl max-lg:text-4xl max-md:text-base">
+            Khám sức khỏe hậu Covid-19 
+        </p> 
+    </div>
+
+    <div class="flex justify-center ">
+        <p class="font-Lato font-bold text-5xl max-lg:text-4xl max-md:text-base">
+            Để chúng ta đều khỏe mạnh mỗi ngày
+        </p>           
+    </div>
+
+    <div class="flex mx-auto justify-center text-center text-wrap w-full mt-4 px-32 max-md:px-5">
+        <p class="font-Lato font-normal text-base max-md:text-xs">Bệnh Viện Đa Khoa Phương Đông là địa chỉ uy tín về khám chữa bệnh, với đội ngũ chuyên gia - bác sĩ hàng đầu, trang thiết bị hiện đại, cùng các phác đồ điều trị hiệu quả, khoa học mang đến dịch vụ khám, điều trị, chăm sóc sức khỏe cao cấp, toàn diện với chi phí hợp lý.
+
+        </p>
+    </div>
+
+    
+    <div class="flex mx-auto justify-center items-center bg-gradient-to-r from-green-400 to-green-800 text-white rounded-full w-52 h-12  font-Lato text-16 font-bold leading-19 tracking-0 
+    hover:text-green-950 mt-8 shadow-lg shadow-green-500/40 max-md:w-1/3">
+    <a href="#" class="font-Lato text-base font-bold max-md:text-xs"> Đăng ký tư vấn</a>         
+    </div>
+
+    
+    <div class="relative">
+        <div class="swiper mySwiper flex justify-center items-center w-11/12 h-72 mt-16 pb-14 ">
+        <!-- slide Swiper -->
+            <div class="swiper-wrapper">
+            <div class="swiper-slide "><img  src="img/Rectangle 6493 (1).png" alt="bacsi1"  >      </div>
+            <div class="swiper-slide"><img  src="img/Rectangle 6494 (1).png" alt="bacsi2"  >      </div>
+            <div class="swiper-slide"><img  src="img/Rectangle 6495 (1).png" alt="bacsi3"  >      </div>
+            <div class="swiper-slide"><img  src="img/Rectangle 6497.png"     alt="bacsi4"  >      </div>
+            <div class="swiper-slide"><img  src="img/Rectangle 6496 (1).png" alt="bacsi5"  >      </div>
+            <div class="swiper-slide"><img  src="img/Rectangle 6495 (1).png" alt="bacsi3"  >      </div>
+            </div>
+        </div>
+        <!-- 2 nút next, prev -->
+        <div class="absolute">
+            <div class="swiper-button-next rounded-full size-16 border-4  text-gray-600 border-gray-600 
+              right-1/3 hover:bg-gradient-to-r from-teal-400 to-sky-500">
+            </div>
+            <div class="swiper-button-prev rounded-full size-16 border-4 text-gray-600 border-gray-600  
+              left-1/3 hover:bg-gradient-to-r from-teal-400 to-sky-500">
+            </div>   
+        </div>
+           
+    </div>
+
+    <div class="px-20 mx-auto"> <!-- ảnh bác sỹ absolute -->
+    <div class=" pt-64 flex ml-20 bg-gradient-to-r from-green-400 to-green-800 text-transparent bg-clip-text ">
+        <p class="font-Lato font-bold text-base leading-5">GIỚI THIỆU</p>
+        <img src="img/Rectangle 6443.png" alt="green line" class="min-h-0 my-auto w-12 ml-4">
+    </div>
+
+    <div class=" mt-2 ml-20 w-max ">
+        <p class="font-Lato font-bold text-3xl leading-11 text-nowrap max-xl:text-lg">Dịch vụ Khám sức khỏe hậu Covid-19 </p>
+        <p class="font-Lato font-bold text-3xl leading-11 text-nowrap max-xl:text-lg">Kiểm tra sức khỏe, tầm soát và điều trị di chứng</p>
+    </div>
+
+    <div class=" ml-20 mt-6 w-2/5">
+        <p class="font-Lato font-normal text-base text-wrap">
+            Khám sức khỏe hậu COVID-19 là việc làm cần thiết, giúp chẩn đoán, đánh giá, điều trị và đưa ra biện pháp ngăn chặn từ sớm để giảm thiểu nguy cơ của hội chứng hậu COVID-19 gây hại đến sức khỏe. Với việc kiểm tra sức khỏe hậu COVID-19, người bệnh sẽ được đánh giá chức năng và chẩn đoán bệnh lý liên quan đến tim mạch, phổi, gan, thận; kiểm tra tình trạng viêm và đông máu… từ đó bác sĩ sẽ đưa ra phác đồ điều trị các di chứng COVID-19 hiện tại và phòng ngừa các nguy cơ sức khỏe có thể xảy ra trong tương lai</p>
+    </div>
+                   
+    
+        <div class="flex ml-20 mt-6">
+            <a href="#" class="flex justify-center items-center mr-16 bg-gradient-to-r from-green-400 to-green-800 text-white rounded-full w-48 h-10 font-Lato text-16 font-bold leading-19 tracking-0 text-justify 
+                                hover:text-green-950 shadow-lg shadow-green-500/40">
+
+            <img src="img/Phone, Call_w.png " alt="dien thoai" class=" rounded-full hover:bg-purle-400 mr-4 ">
+            Gọi cho chúng tôi</a>                
+        </div>
+
+
+
+        <div class="flex mx-auto bg-gradient-to-r from-green-400 to-green-800 text-white mt-10  rounded-3xl relative ">
+            <div class="flex flex-col pt-12 pb-12 w-1/2 ">
+                    <p class="mb-3 text-3xl mx-auto font-Lato font-bold">ĐĂNG KÝ TƯ VẤN MIỄN PHÍ</p> 
+                    <p class=" text-base mx-auto font-Lato font-normal">Quý khách vui lòng để lại thông tin, chúng tôi sẽ liên hệ lại ngay!</p> 
+                <span class=" texssss grid gap-4 grid-cols-2 w-4/5 mt-3 mx-auto ">
+                    <input type="text" class="bg-white/35 placeholder-white rounded-lg focus:shadow-none focus:border-none focus:outline-none   " placeholder="   Họ và tên(*)"> 
+                    <input type="text" class="bg-white/35 placeholder-white rounded-lg " placeholder="   Số điện thoại(*)"> 
+                    <input type="text" class="bg-white/35 placeholder-white rounded-lg " placeholder="   E-mail của bạn..."> 
+                    <input type="text" class="bg-white/35 placeholder-white rounded-lg " placeholder="   Nội dung...">                 
+                </span>
+                
+                <div class="flex mx-auto mt-6 bg-white w-56 rounded-full">
+                    <a href="#" class="flex mx-auto items-center mr-16 bg-gradient-to-r from-green-400 to-green-800 text-transparent bg-clip-text rounded-full w-48 h-10 font-Lato text-16 font-bold leading-19 tracking-0 text-justify 
+                                        hover:text-green-950">
+            
+                    <img src="img/Frame.png" alt="gui thong tin" class=" flex mx-auto justify-center items-center hover:bg-purle-400 mr-4">
+                    GỬI THÔNG TIN</a>                
+                </div>
+            </div>
+                <span class="">
+                    <img src="img/d 2.png" alt="2 bac sy" class="absolute bottom-0 -right-3 ">
+                </span>
+                          
+        </div>        
+    
+    </div>
+
+    <!-- 3 div phía trên">  -->
+    <div class="flex  ">
+
+        <div class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-20 pb-10 px-8 rounded-3xl ">
+            <!-- inset-x-28 -->
+            <div class="flex bg-gradient-to-r from-green-400 to-green-800 rounded-full size-20 absolute inset-x-0 -top-10 left-36">
+                <img src="img/Group.png" alt="trai tim" class=" mx-auto my-auto size-10">
+            </div>
+                <p class=" mx-auto text-xl font-semibold">Đội ngũ bác sĩ giàu y đức</p>
+                <p class="text-wrap text-base flex mx-auto justify-center text-center font-normal">Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y khoa tiên tiến</p>                
+        </div>
+        
+        <div class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-20 pb-10 px-8 rounded-3xl ">
+            <!-- inset-x-28 -->
+            <div class="flex bg-gradient-to-r from-green-400 to-green-800 rounded-full size-20 absolute  -top-10 left-36">
+                <img src="img/Frame (1).png" alt="y te" class=" mx-auto my-auto size-10">
+            </div>
+            
+            
+                <p class=" mx-auto text-xl font-semibold">Đội ngũ bác sĩ giàu y đức</p>
+                <p class="text-wrap text-base flex mx-auto justify-center text-center font-normal">Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y khoa tiên tiến</p>                
+            
+        </div>
+
+        <div class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-20 pb-10 px-8 rounded-3xl ">
+            <!-- inset-x-28 -->
+            <div class="flex bg-gradient-to-r from-green-400 to-green-800 rounded-full size-20 absolute  -top-10 left-40">
+                <img src="img/Frame (2).png" alt="giuong benh" class=" mx-auto my-auto size-10">
+            </div>          
+                <p class=" mx-auto text-xl font-semibold">Đội ngũ bác sĩ giàu y đức</p>
+                <p class="text-wrap text-base flex mx-auto justify-center text-center font-normal">Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y khoa tiên tiến</p>                
+        </div>          
+    </div>
+
+        <img src="img/Group 9731.png" alt="vector nối" class="flex mx-auto w-8/12 ">
+
+    <!-- div ở giữa -->
+    <div class="flex  mx-auto bg-gradient-to-r from-green-400 to-green-800 text-white mt-10 rounded-3xl relative w-3/4 -top-10">
+        <div class=" mx-auto">
+            <div class="flex  mx-auto justify-center pt-10 pb-2">
+                <img src="img/Rectangle 6444.png" alt="white line" class="h-0.5 my-auto w-12 mr-4">
+                <p class="font-Lato font-bold text-base leading-5">Ưu điểm   </p>
+                <img src="img/Rectangle 6444.png" alt="white line" class="h-0.5 my-auto w-12 ml-4">   
+            </div>
+           
+            <p class="flex font-Lato text-wrap font-bold text-3xl mx-auto w-10/12 leading-relaxed text-center pb-6">Lợi ích của việc sử dụng dịch vụ Khám sức khỏe hậu Covid-19 tại Bệnh viện Phương Đông</p>
+        </div>        
+    </div>
+
+        <img src="img/Group 9732.png" alt="vector nối ngược" class="flex mx-auto w-8/12 -mt-10">
+    
+        <!-- 3 div phía dưới -->
+        <div class="flex -mt-20 pb-24">
+
+            <div class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-10 pb-20 px-8 rounded-3xl ">
+                <!-- inset-x-28 -->
+                <div class="flex bg-gradient-to-r from-green-400 to-green-800 rounded-full size-20 absolute -bottom-10 left-36">
+                    
+                    <img src="img/Frame (1).png" alt="y te" class=" mx-auto my-auto size-10">
+                </div>
+                    <p class=" mx-auto text-xl font-semibold">Đội ngũ bác sĩ giàu y đức</p>
+                    <p class="text-wrap text-base flex mx-auto justify-center text-center font-normal">Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y khoa tiên tiến</p>                
+            </div>
+            
+            <div class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-10 pb-20 px-8 rounded-3xl ">
+                <!-- inset-x-28 -->
+                <div class="flex bg-gradient-to-r from-green-400 to-green-800 rounded-full size-20 absolute -bottom-10 left-36">
+                    <img src="img/Frame (2).png" alt="giuong benh" class=" mx-auto my-auto size-10">
+                </div>
+                
+                
+                    <p class="mx-auto text-xl font-semibold">Đội ngũ bác sĩ giàu y đức</p>
+                    <p class="text-wrap text-base flex mx-auto justify-center text-center font-normal">Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y khoa tiên tiến</p>                
+                
+            </div>
+    
+            <div class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-10 pb-20 px-8 rounded-3xl ">
+                <!-- inset-x-28 -->
+                <div class="flex bg-gradient-to-r from-green-400 to-green-800 rounded-full size-20 absolute -bottom-10 left-40">
+                    
+                    <img src="img/Group.png" alt="trai tim" class=" mx-auto my-auto size-10">
+                </div>          
+                    <p class=" mx-auto text-xl font-semibold">Đội ngũ bác sĩ giàu y đức</p>
+                    <p class="text-wrap text-base flex mx-auto justify-center text-center font-normal">Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y khoa tiên tiến</p>                
+            </div>          
+        </div>
+<!-- <div class="justify-evenly" -->
+    <div class="flex flex-col ml-96">
+        <div class=" pt-10 flex ml-40 bg-gradient-to-r from-green-400 to-green-800 text-transparent bg-clip-text ">
+            <p class="font-Lato font-bold text-base leading-5">ĐỘI NGŨ   </p>
+            <img src="img/Rectangle 6443.png" alt="green line" class="min-h-0 my-auto w-12 ml-4">
+    </div>
+    
+    <div class="mt-2 ml-40 ">
+            <p class="text-left font-Lato font-bold text-xl leading-11 text-wrap">Đội ngũ bác sĩ của chúng tôi là những người giàu kinh nghiệm, giàu nhiệt huyết </p>
+            
+    </div>
+        
+    <div class=" text-wrap ml-40 mt-6 w-1/3">
+            <p>Đội ngũ bác sĩ Tim mạch, Hô hấp, Nội khoa, Nhi Khoa, Thần kinh, Vật lý trị liệu giàu kinh nghiệm. Với hơn 40 năm kinh nghiệm trong lĩnh vực Nội khoa, thực hiện thăm khám và trực tiếp điều trị cho hàng nghìn bệnh nhân.</p>
+    </div>
+    </div>
+</div> 
+<script>
+      function Menu(e){
+    let list = document.querySelector('ul');
+    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
