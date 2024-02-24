@@ -37,6 +37,79 @@ var swiper = new Swiper(".slide1", {
     },
   });
 
+  const img1 = document.getElementById("img1");
+  const img2 = document.getElementById("img2");
+  const img3 = document.getElementById("img3");
+  const img4 = document.getElementById("img4");
+  const img5 = document.getElementById("img5");
+  const img6 = document.getElementById("img6");
+  const mainImage = document.getElementById("main-image");
+  mainImage.src=img2.src;
+  img2.classList.add("border-4", "border-green-500", "rounded-full")
+
+  /* thay đổi mainImage khi bấm vào ảnh nhỏ bên ngoài */
+  img1.addEventListener("click", () => {
+    mainImage.src = img1.src;
+  });
+  
+  img2.addEventListener("click", () => {
+    mainImage.src = img2.src;
+  });
+  
+  img3.addEventListener("click", () => {
+    mainImage.src = img3.src;
+  });
+
+  img4.addEventListener("click", () => {
+    mainImage.src = img4.src;
+  });
+  
+  img5.addEventListener("click", () => {
+    mainImage.src = img5.src;
+  });
+
+  img6.addEventListener("click", () => {
+    mainImage.src = img6.src;
+  });
+
+
+/* Hiển thị viền khi click */
+// Biến lưu trữ trạng thái viền của từng ảnh
+const isBordered = [];
+
+// Khởi tạo mảng isBordered với 6 giá trị false (mặc định không có viền)
+for (let i = 0; i < 6; i++) {
+  isBordered.push(false);
+}
+
+function removeBorderClasses() {
+  for (let i = 1; i <= 6; i++) {
+    const img = document.getElementById(`img${i}`);
+    img.classList.remove("border-4", "border-green-500", "rounded-full");
+  }
+}
+
+// Thêm sự kiện click cho 6 ảnh
+  for (let i = 1; i <= 6; i++) {
+  const img = document.getElementById(`img${i}`);
+
+  img.addEventListener("click", (e) => {
+    e.preventDefault()
+    removeBorderClasses();
+
+    const currentImageIndex = i - 1; // Lấy index của ảnh trong mảng isBordered
+
+    isBordered[currentImageIndex] = !isBordered[currentImageIndex];
+
+    if (isBordered[currentImageIndex]) {
+      img.classList.add("border-4", "border-green-500", "rounded-full");
+    } 
+  });
+}
+
+
+
+
 
 
 
