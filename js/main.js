@@ -37,6 +37,12 @@ var swiper = new Swiper(".slide1", {
     },
   });
 
+  var swiper = new Swiper(".slide3", {
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+
   const img1 = document.getElementById("img1");
   const img2 = document.getElementById("img2");
   const img3 = document.getElementById("img3");
@@ -106,6 +112,22 @@ function removeBorderClasses() {
     } 
   });
 }
+
+const btnXemThemList = document.querySelectorAll(".btn-xem-them");
+const chiTietGoiList = document.querySelectorAll(".chi-tiet-goi");
+
+btnXemThemList.forEach((btnXemThem, index) => {
+  btnXemThem.addEventListener("click", () => {
+    btnXemThem.classList.toggle("active");
+    chiTietGoiList[index].classList.toggle("hidden");
+
+    if (btnXemThem.classList.contains("active")) {
+      btnXemThem.querySelector("img").src = "img/minus-circle.png";
+    } else {
+      btnXemThem.querySelector("img").src = "img/plus-circle.png";
+    }
+  });
+});
 
 
 
