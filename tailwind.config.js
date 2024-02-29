@@ -2,7 +2,11 @@
 module.exports = {
   content: [],content: ["index.html"],
   theme: {
-    extend: {},
+    extend: {
+      zIndex: {
+        '100': '100',
+      }
+    },
   },
   plugins: [],
 }
