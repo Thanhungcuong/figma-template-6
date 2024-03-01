@@ -32,7 +32,7 @@ var swiper = new Swiper(".slide1", {
       type: "fraction",
     },
     navigation: {
-      nextEl: ".swiper-button-next",
+      nextEl: ".next-1",
       prevEl: ".swiper-button-prev",
     },
   });
@@ -50,6 +50,7 @@ var swiper = new Swiper(".slide1", {
   const img5 = document.getElementById("img5");
   const img6 = document.getElementById("img6");
   const mainImage = document.getElementById("main-image");
+  const mainContent = document.getElementById("main-content");
   mainImage.src=img2.src;
   img2.classList.add("border-4", "border-green-500", "rounded-full")
 
@@ -79,14 +80,64 @@ var swiper = new Swiper(".slide1", {
   });
 
 
-/* Hiển thị viền khi click */
-// Biến lưu trữ trạng thái viền của từng ảnh
-const isBordered = [];
+// Cài đặt dữ liệu khách hàng
+const customers = [
+  {
+    name: "Nguyễn Thị A",
+    image: "img/Ellipse 1151.png",
+    rating: '<img src="img/Group 5835.png" alt="5 sao" />',
+    impression1: "Tôi thích bệnh viện Phương Đông",
+    impression2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+  },
+  {
+    name: "Nguyễn Minh Ánh",
+    image: "./img/Ellipse 1146.png",
+    rating: '<img src="img/Group 5835.png" alt="5 sao" />',
+    impression1: "Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng bình yên và an tâm khi thăm khám tại đây!",
+    impression2: "Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng bình yên và an tâm khi thăm khám tại đây!",
+  },
+  {
+    name: "Nguyễn Văn Toni",
+    image: "img/Ellipse 1149.png",
+    rating: '<img src="img/Group 5835.png" alt="5 sao" />',
+    impression1: "Tôi yêu bệnh viên Phương Đông!",
+    impression2: "Mỗi tuần tôi đều tới bệnh viện Phương Đông",
+  },
+  {
+    name: "Nguyễn Văn Alexander",
+    image: "img/Ellipse 1146 (1).png",
+    rating: '<img src="img/Group 5835.png" alt="5 sao" />',
+    impression1: "Tôi coi bệnh viên Phương Đông là ngôi nhà thứ 2!",
+    impression2: "Mỗi ngày tôi đều tới bệnh viện Phương Đông",
+  },
 
-// Khởi tạo mảng isBordered với 6 giá trị false (mặc định không có viền)
-for (let i = 0; i < 6; i++) {
-  isBordered.push(false);
-}
+  {
+    name: "Nguyễn Thị Anna",
+    image: "img/Ellipse 1148.png",
+    rating: '<img src="img/Group 5835.png" alt="5 sao" />',
+    impression1: "Bệnh viên Phương Đông thật tuyệt vời!",
+    impression2: "Tôi ở bệnh viện Phương Đông vài năm rồi",
+  },
+
+  {
+    name: "Nguyễn Thị Taylor",
+    image: "img/Ellipse 1147.png",
+    rating: '<img src="img/Group 5835.png" alt="5 sao" />',
+    impression1: "Bệnh viên Phương Đông là nơi mọi bệnh tật tiêu tan!",
+    impression2: "Tôi ở bệnh viện Phương Đông mỗi khi bị bệnh",
+  },
+];
+function updateMainContent(customerIndex) {
+      const customer = customers[customerIndex];
+      document.getElementById("customer-name").innerHTML = customer.name;
+      document.getElementById("customer-rating").innerHTML = customer.rating;
+      document.getElementById("customer-impression-1").innerHTML = customer.impression1;
+      document.getElementById("customer-impression-2").innerHTML = customer.impression2;
+    }
+  // ... (thêm dữ liệu khách hàng khác)
+// console.log(customers[1],document.querySelector('#customer-rating img').src, document.getElementById("customer-impression-1").innerHTML, document.getElementById("customer-impression-2"),document.getElementById("customer-name"));
+
+updateMainContent(1)
 
 function removeBorderClasses() {
   for (let i = 1; i <= 6; i++) {
@@ -105,11 +156,20 @@ function removeBorderClasses() {
 
     const currentImageIndex = i - 1; // Lấy index của ảnh trong mảng isBordered
 
+    // Biến lưu trữ trạng thái viền của từng ảnh
+    let isBordered = [];
+
+    // Khởi tạo mảng isBordered với 6 giá trị false (mặc định không có viền)
+    for (let i = 0; i < 6; i++) {
+      isBordered.push(false);
+    }
+
     isBordered[currentImageIndex] = !isBordered[currentImageIndex];
 
     if (isBordered[currentImageIndex]) {
       img.classList.add("border-4", "border-green-500", "rounded-full");
-    } 
+    }
+    updateMainContent(currentImageIndex); 
   });
 }
 
@@ -154,6 +214,40 @@ const interval = setInterval(updateCountdown, 1000);
 
 updateCountdown();
 
+$(document).ready(function(){
+  $(".owl_content").owlCarousel({
+    
+    addClassActive: true, //important
+      items : 5,        
+		  nav: true,
+			loop: true,
+      autoPlay:2500,
+     slideSpeed : 2000,
+    goToFirst:true,
+      touchDrag: true,
+      mouseDrag: true,
+    afterAction: function add_mid_class(el){
+      $('.owl-item')                     
+        .removeClass('middle')
+        .removeClass('middle_besideleft')
+        .removeClass('middle_besideright')
+        .removeClass('next_to_mid')
+        .removeClass('prev_to_mid');
+      var middle_item = Math.floor($('.active').length / 2);
+      middle_item --;
+      $('.active').eq(middle_item - 1).addClass('middle_besideleft');
+      $('.active').eq(middle_item).addClass('middle');
+      $('.active').eq(middle_item + 1).addClass('middle_besideright');
+      $('.active').eq(middle_item + 1).nextAll().addClass('next_to_mid');
+      $('.active').eq(middle_item - 1).prevAll().addClass('prev_to_mid');
+    }
+  });
+
+  var owl = $(".owl_content").data('owlCarousel');
+  $('.owl_wrapper .next').click(function(){owl.next();});
+  $('.owl_wrapper .prev').click(function(){owl.prev();});
+  });
+ 
 
 
 

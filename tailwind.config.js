@@ -6,6 +6,7 @@ module.exports = {
       zIndex: {
         '100': '100',
       }
+      
     },
   },
   plugins: [],
