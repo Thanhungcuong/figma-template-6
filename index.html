@@ -154,23 +154,113 @@
           <div class="swiper-slide">
             <img src="img/Rectangle 6496 (1).png" alt="bacsi5" />
           </div>
-          <div class="swiper-slide">
-            <img src="img/Rectangle 6495 (1).png" alt="bacsi3" />
-          </div>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
       <!-- 2 nút next, prev -->
       <div class="flex justify-center gap-10">
-        <div
-          class="swiper-button-prev rounded-full size-16 border-4 text-gray-600 border-gray-600 hover:bg-gradient-to-r from-teal-400 to-sky-500 static"
-        ></div>
+        <div class="prev-11 static">
+          <svg
+            width="60"
+            height="60"
+            viewBox="0 0 60 60"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="hover:stroke-black"
+          >
+            <path
+              d="M30 55C16.1929 55 5 43.8071 5 30C5 16.1929 16.1929 5 30 5C43.8071 5 55 16.1929 55 30C55 43.8071 43.8071 55 30 55Z"
+              stroke="#888888"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M30 40L20 30L30 20"
+              stroke="#888888"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M40 30H20"
+              stroke="#888888"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
 
-        <div
-          class="swiper-button-next rounded-full size-16 border-4 text-gray-600 border-gray-600 hover-gradient-to-r from-teal-800 to-sky-800 static"
-        ></div>
+        <div class="next-11 static">
+          <svg
+            width="60"
+            height="60"
+            viewBox="0 0 60 60"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="hover:stroke-black"
+          >
+            <path
+              d="M30 55C43.8071 55 55 43.8071 55 30C55 16.1929 43.8071 5 30 5C16.1929 5 5 16.1929 5 30C5 43.8071 16.1929 55 30 55Z"
+              stroke="url(#paint0_linear_1_21560)"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M30 40L40 30L30 20"
+              stroke="url(#paint1_linear_1_21560)"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M20 30H40"
+              stroke="url(#paint2_linear_1_21560)"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <defs>
+              <linearGradient
+                id="paint0_linear_1_21560"
+                x1="5"
+                y1="30.1012"
+                x2="55"
+                y2="30.1012"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#50C577" />
+                <stop offset="1" stop-color="#2DBEFC" />
+              </linearGradient>
+              <linearGradient
+                id="paint1_linear_1_21560"
+                x1="30"
+                y1="30.0405"
+                x2="40"
+                y2="30.0405"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#50C577" />
+                <stop offset="1" stop-color="#2DBEFC" />
+              </linearGradient>
+              <linearGradient
+                id="paint2_linear_1_21560"
+                x1="20"
+                y1="30.502"
+                x2="40"
+                y2="30.502"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#50C577" />
+                <stop offset="1" stop-color="#2DBEFC" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
       </div>
       <!-- end div swiper 1 -->
-
       <!-- ảnh 2 bác sỹ absolute -->
       <div class="px-20 max-sm:px-5 mx-auto">
         <div class="ml-20 max-xl:mx-auto">
@@ -631,7 +721,7 @@
               class="w-fit"
             />
           </span>
-          <div class="swiper mySwiper">
+          <div class="swiper mySwiper relative">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div
@@ -810,23 +900,70 @@
             </div>
 
             <div
-              class="flex justify-end flex-row-reverse gap-10 w-1/2 ml-auto text-white"
+              class="flex justify-between gap-10 w-1/2 text-white absolute bottom-0 right-0 z-10"
             >
-              <div class="max-2xl:hidden">
-                <div
-                  class="swiper-button-prev rounded-full size-16 border-4 border-white hover:bg-gradient-to-r from-teal-400 to-sky-500 left-1/2 top-[87%] text-white"
-                ></div>
-
-                <div
-                  class="next-1 rounded-full size-16 border-4 text-white border-white hover:bg-gradient-to-r from-teal-400 to-sky-500 right-[40%] top-[87%]"
-                >
-                  <span
-                    ><img src="img/nextwhite.png" alt="nút next trắng"
-                  /></span>
+              <div class="max-2xl:hidden flex space-x-2">
+                <div class="prev-1 rounded-full text-black">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="stroke-white hover:stroke-black"
+                  >
+                    <path
+                      d="M19.9998 36.6668C10.7951 36.6668 3.33317 29.2049 3.33317 20.0002C3.33317 10.7954 10.7951 3.3335 19.9998 3.3335C29.2046 3.3335 36.6665 10.7954 36.6665 20.0002C36.6665 29.2049 29.2046 36.6668 19.9998 36.6668Z"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M20 26.6668L13.3333 20.0002L20 13.3335"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M26.6665 20.0002H13.3332"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="next-1 rounded-full text-black">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="stroke-white hover:stroke-black"
+                  >
+                    <path
+                      d="M20.0002 36.6666C29.2049 36.6666 36.6668 29.2047 36.6668 19.9999C36.6668 10.7952 29.2049 3.33325 20.0002 3.33325C10.7954 3.33325 3.3335 10.7952 3.3335 19.9999C3.3335 29.2047 10.7954 36.6666 20.0002 36.6666Z"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M20 26.6666L26.6667 19.9999L20 13.3333"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.3335 20H26.6668"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </div>
               </div>
               <div
-                class="swiper-pagination ml-auto text-end w-3/4 max-sm:bottom-0 max-sm:right-1/2"
+                class="swiper-pagination text-end right-[5rem] bottom-0 w-fit left-auto"
               ></div>
             </div>
           </div>

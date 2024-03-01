@@ -1,24 +1,36 @@
-var swiper = new Swiper(".slide1", {
-    slidesPerView: 5,
-    spaceBetween: 30,
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
 
+
+  var swiper = new Swiper(".slide1", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".next-11",
+      prevEl: ".prev-11",
+    },
     breakpoints: {
-      // Cấu hình cho màn hình có độ rộng 768 pixel trở lên
+      // Cấu hình cho màn hình có độ rộng 1280 pixel trở lên
       1280: {
-        slidesPerView: 5, // Số lượng slide hiển thị khi màn hình có độ rộng từ 768 pixel trở lên
+        slidesPerView: 3, // Số lượng slide hiển thị khi màn hình có độ rộng từ 768 pixel trở lên
         spaceBetween: 30, // Khoảng cách giữa các slide
       },
       // Cấu hình cho màn hình có độ rộng 576 pixel trở lên
       576: {
-        slidesPerView: 3, // Số lượng slide hiển thị khi màn hình có độ rộng từ 576 pixel trở lên
+        slidesPerView: 2, // Số lượng slide hiển thị khi màn hình có độ rộng từ 576 pixel trở lên
         spaceBetween: 20, // Khoảng cách giữa các slide
       },
-      // Cấu hình cho màn hình có độ rộng ít hơn 576 pixel
+      // Cấu hình cho màn hình có độ rộng ít hơn pixel
       0: {
         slidesPerView: 1, // Chỉ hiển thị 1 slide khi màn hình có độ rộng ít hơn 576 pixel
         spaceBetween: 5, // Khoảng cách giữa các slide
@@ -33,7 +45,7 @@ var swiper = new Swiper(".slide1", {
     },
     navigation: {
       nextEl: ".next-1",
-      prevEl: ".swiper-button-prev",
+      prevEl: ".prev-1",
     },
   });
 
@@ -214,40 +226,6 @@ const interval = setInterval(updateCountdown, 1000);
 
 updateCountdown();
 
-$(document).ready(function(){
-  $(".owl_content").owlCarousel({
-    
-    addClassActive: true, //important
-      items : 5,        
-		  nav: true,
-			loop: true,
-      autoPlay:2500,
-     slideSpeed : 2000,
-    goToFirst:true,
-      touchDrag: true,
-      mouseDrag: true,
-    afterAction: function add_mid_class(el){
-      $('.owl-item')                     
-        .removeClass('middle')
-        .removeClass('middle_besideleft')
-        .removeClass('middle_besideright')
-        .removeClass('next_to_mid')
-        .removeClass('prev_to_mid');
-      var middle_item = Math.floor($('.active').length / 2);
-      middle_item --;
-      $('.active').eq(middle_item - 1).addClass('middle_besideleft');
-      $('.active').eq(middle_item).addClass('middle');
-      $('.active').eq(middle_item + 1).addClass('middle_besideright');
-      $('.active').eq(middle_item + 1).nextAll().addClass('next_to_mid');
-      $('.active').eq(middle_item - 1).prevAll().addClass('prev_to_mid');
-    }
-  });
-
-  var owl = $(".owl_content").data('owlCarousel');
-  $('.owl_wrapper .next').click(function(){owl.next();});
-  $('.owl_wrapper .prev').click(function(){owl.prev();});
-  });
- 
 
 
 
