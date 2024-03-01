@@ -6,7 +6,8 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
     "normalize.css": "^8.0.1",
-    "swiper": "^11.0.5"
+    "swiper": "^11.0.5",
+    "vite": "^5.1.4"
   },
   "devDependencies": {
     "install": "^0.13.0",
