@@ -14,7 +14,8 @@
     "tailwindcss": "^3.4.1"
   },
   "scripts": {
-    "build-css": "npx tailwindcss -i ./css/style.css -o ./src/output.css --watch"
+    "build-css": "npx tailwindcss -i ./css/style.css -o ./src/output.css --watch",
+    "dev":"vite"
   },
   "author": "",
   "license": "ISC"
