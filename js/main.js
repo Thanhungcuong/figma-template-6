@@ -97,28 +97,28 @@
 const customers = [
   {
     name: "Nguyễn Thị A",
-    image: "img/Ellipse 1151.png",
+    image: "public/Ellipse 1151.png",
     rating: '<img src="public/Group 5835.png" alt="5 sao" />',
     impression1: "Tôi thích bệnh viện Phương Đông",
     impression2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
   },
   {
     name: "Nguyễn Minh Ánh",
-    image: "./img/Ellipse 1146.png",
+    image: "public/Ellipse 1146.png",
     rating: '<img src="public/Group 5835.png" alt="5 sao" />',
     impression1: "Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng bình yên và an tâm khi thăm khám tại đây!",
     impression2: "Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng bình yên và an tâm khi thăm khám tại đây!",
   },
   {
     name: "Nguyễn Văn Toni",
-    image: "img/Ellipse 1149.png",
+    image: "public/Ellipse 1149.png",
     rating: '<img src="public/Group 5835.png" alt="5 sao" />',
     impression1: "Tôi yêu bệnh viên Phương Đông!",
     impression2: "Mỗi tuần tôi đều tới bệnh viện Phương Đông",
   },
   {
     name: "Nguyễn Văn Alexander",
-    image: "img/Ellipse 1146 (1).png",
+    image: "public/Ellipse 1146 (1).png",
     rating: '<img src="public/Group 5835.png" alt="5 sao" />',
     impression1: "Tôi coi bệnh viên Phương Đông là ngôi nhà thứ 2!",
     impression2: "Mỗi ngày tôi đều tới bệnh viện Phương Đông",
@@ -126,7 +126,7 @@ const customers = [
 
   {
     name: "Nguyễn Thị Anna",
-    image: "img/Ellipse 1148.png",
+    image: "public/Ellipse 1148.png",
     rating: '<img src="public/Group 5835.png" alt="5 sao" />',
     impression1: "Bệnh viên Phương Đông thật tuyệt vời!",
     impression2: "Tôi ở bệnh viện Phương Đông vài năm rồi",
@@ -134,7 +134,7 @@ const customers = [
 
   {
     name: "Nguyễn Thị Taylor",
-    image: "img/Ellipse 1147.png",
+    image: "public/Ellipse 1147.png",
     rating: '<img src="public/Group 5835.png" alt="5 sao" />',
     impression1: "Bệnh viên Phương Đông là nơi mọi bệnh tật tiêu tan!",
     impression2: "Tôi ở bệnh viện Phương Đông mỗi khi bị bệnh",
