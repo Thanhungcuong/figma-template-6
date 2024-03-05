@@ -1736,21 +1736,25 @@
                 Quý khách vui lòng để lại số điện thoại, chúng tôi sẽ liên hệ
                 lại ngay!
               </p>
-              <div
+              <form
+                action=""
                 class="flex max-sm:flex-col max-sm:justify-center max-sm:items-center bg-gray-300 rounded-full overflow-hidden h-16 mt-3 max-lg:w-[70%] max-sm:w-full max-sm:h-[3rem]"
+                onsubmit="alert('Hệ thống đã nhận được thông tin của bạn .')"
               >
                 <input
-                  type="text"
+                  type="tel"
                   outline="none"
+                  required
                   class="bg-gray-300 rounded-lg focus:shadow-none border-none outline-none max-sm:placeholder:text-center"
                   placeholder="  Nhập số điện thoại..."
+                  pattern="[0-9]{10,12}"
+                  title="Số điện thoại từ 10 đến 12 chữ số"
                 />
                 <div
                   class="flex justify-center md:ml-auto mr-4 my-auto bg-gradient-to-br from-green-400 to-green-800 rounded-full w-[35%] h-[60%] pl-3 max-xl:px-16 max-sm:h-[24%] max-sm:w-[60%] max-sm:mx-auto max-sm:absolute bottom-0 hover:bg-gradient-to-br hover:from-orange-300 hover:to-purple-500 ease-linear"
                 >
                   <button
                     class="flex text-white items-center text-nowrap shrink-0 font-Lato text-base max-xl:text-xs font-bold leading-19 tracking-0 hover:text-green-400 transition-all duration-500 gap-3 pr-3 max-xl:my-auto"
-                    onclick="inputPhoneNumber()"
                   >
                     <span
                       ><svg
@@ -1774,7 +1778,7 @@
                     GỬI THÔNG TIN
                   </button>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
