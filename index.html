@@ -19,6 +19,34 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Phương Đông landing</title>
+    <style>
+      input[type="text"]:focus {
+            border: none !important;
+            outline: none !important;
+            outline-offset: 0;
+            box-shadow: none;
+          }
+
+          input[type="tel"]:focus {
+            border: none !important;
+            outline: none !important;
+            outline-offset: 0;
+            box-shadow: none;
+          }
+
+          input[type="email"]:focus {
+            border: none !important;
+            outline: none !important;
+            outline-offset: 0;
+            box-shadow: none;
+          }
+
+          textarea:focus {
+            border: none !important;
+            outline: none !important;
+            outline-offset: 0;
+            box-shadow: none !important;
+    </style>
   </head>
   <body
     class="bg-cover max-w-screen-2xl mx-auto"
@@ -230,32 +258,29 @@
     <div class="swiper-pagination"></div>
     <!-- 2 nút next, prev -->
     <div class="flex justify-center gap-10">
-      <div class="prev-11 static">
+      <div class="prev-11 static stroke-[#888888]">
         <svg
           width="60"
           height="60"
           viewBox="0 0 60 60"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="hover:stroke-black"
+          class="hover:stroke-green-500 transition-all duration-500 ease-linear"
         >
           <path
             d="M30 55C16.1929 55 5 43.8071 5 30C5 16.1929 16.1929 5 30 5C43.8071 5 55 16.1929 55 30C55 43.8071 43.8071 55 30 55Z"
-            stroke="#888888"
             stroke-width="2.5"
             stroke-linecap="round"
             stroke-linejoin="round"
           />
           <path
             d="M30 40L20 30L30 20"
-            stroke="#888888"
             stroke-width="2.5"
             stroke-linecap="round"
             stroke-linejoin="round"
           />
           <path
             d="M40 30H20"
-            stroke="#888888"
             stroke-width="2.5"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -263,71 +288,33 @@
         </svg>
       </div>
 
-      <div class="next-11 static">
+      <div class="next-11 static stroke-[#888888]">
         <svg
           width="60"
           height="60"
           viewBox="0 0 60 60"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="hover:stroke-black"
+          class="hover:stroke-blue-500 transition-all duration-500 ease-linear"
         >
           <path
             d="M30 55C43.8071 55 55 43.8071 55 30C55 16.1929 43.8071 5 30 5C16.1929 5 5 16.1929 5 30C5 43.8071 16.1929 55 30 55Z"
-            stroke="url(#paint0_linear_1_21560)"
             stroke-width="2.5"
             stroke-linecap="round"
             stroke-linejoin="round"
           />
           <path
             d="M30 40L40 30L30 20"
-            stroke="url(#paint1_linear_1_21560)"
             stroke-width="2.5"
             stroke-linecap="round"
             stroke-linejoin="round"
           />
           <path
             d="M20 30H40"
-            stroke="url(#paint2_linear_1_21560)"
             stroke-width="2.5"
             stroke-linecap="round"
             stroke-linejoin="round"
           />
-          <defs>
-            <linearGradient
-              id="paint0_linear_1_21560"
-              x1="5"
-              y1="30.1012"
-              x2="55"
-              y2="30.1012"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#50C577" />
-              <stop offset="1" stop-color="#2DBEFC" />
-            </linearGradient>
-            <linearGradient
-              id="paint1_linear_1_21560"
-              x1="30"
-              y1="30.0405"
-              x2="40"
-              y2="30.0405"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#50C577" />
-              <stop offset="1" stop-color="#2DBEFC" />
-            </linearGradient>
-            <linearGradient
-              id="paint2_linear_1_21560"
-              x1="20"
-              y1="30.502"
-              x2="40"
-              y2="30.502"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stop-color="#50C577" />
-              <stop offset="1" stop-color="#2DBEFC" />
-            </linearGradient>
-          </defs>
         </svg>
       </div>
     </div>
@@ -458,27 +445,27 @@
           >
             <input
               type="text"
-              class="bg-white/35 placeholder-white max-sm:text-xs rounded-lg focus:shadow-none"
+              class="bg-white/35 placeholder-white max-sm:text-xs rounded-lg border-transparent"
               placeholder="Họ và tên(*)"
               required
             />
             <input
               type="tel"
               required
-              class="bg-white/35 placeholder-white max-sm:text-xs rounded-lg focus:shadow-none"
+              class="bg-white/35 placeholder-white max-sm:text-xs rounded-lg border-transparent"
               placeholder="Số điện thoại(*)"
               pattern="[0-9]{10,12}"
               title="Số điện thoại từ 10 đến 12 chữ số"
             />
             <input
               type="email"
-              class="bg-white/35 placeholder-white max-sm:text-xs rounded-lg focus:shadow-none"
+              class="bg-white/35 placeholder-white max-sm:text-xs rounded-lg border-transparent"
               placeholder="E-mail của bạn..."
               pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
               title="Vui lòng nhập một địa chỉ email hợp lệ dạng : user@example.com"
             />
             <textarea
-              class="noidung bg-white/35 placeholder-white max-sm:text-xs rounded-lg focus:shadow-none h-[41.6px]"
+              class="noidung bg-white/35 placeholder-white max-sm:text-xs rounded-lg border-transparent h-[41.6px]"
               placeholder="Nội dung..."
             ></textarea>
 
