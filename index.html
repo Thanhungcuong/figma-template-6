@@ -18,519 +18,629 @@
     />
     <link rel="stylesheet" href="css/style.css" />
 
-    <title>Frontend</title>
+    <title>Phương Đông landing</title>
   </head>
-  <body class="bg-cover" style="background-image: url(public/Group\ 9718.png)">
-    <div class="max-w-screen-2xl mx-auto">
-      <nav
-        class="p-5 xl:flex xl:items-center xl:justify-between mx-auto bg-white"
-      >
-        <!-- thanh navbar menu -->
-        <div class="max-2xl:w-fit max-2xl:mx-auto flex mx-auto items-center">
-          <!-- div menu -->
-          <div class="flex justify-evenly items-center">
-            <span class="text-3xl cursor-pointer mr-10 xl:hidden block">
-              <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-            </span>
-
-            <div class="shrink-0 mr-10 cursor-pointer">
-              <!-- w-44 h-10 ml-16 mr-10 -->
-              <img src="public/image 3.png" alt="icon" class=" " />
-            </div>
-          </div>
-
-          <div class="">
-            <ul
-              class="max-xl:bg-white justify-center max-xl:text-black max-xl:z-[10] max-xl:h-fit gap-5 xl:flex items-center z-[-1] xl:z-auto xl:static absolute transition-all ease-in duration-500 w-full left-0 xl:py-0 py-4 xl:pl-0 xl:opacity-100 opacity-0 max-xl:text-center"
-            >
-              <li
-                class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
-              >
-                <a href="#">Giới thiệu</a>
-              </li>
-              <li
-                class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
-              >
-                <a href="#">Đối tượng khách hàng</a>
-              </li>
-              <li
-                class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
-              >
-                <a href="#">Quy trình</a>
-              </li>
-              <li
-                class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
-              >
-                <a href="#">Bảng giá</a>
-              </li>
-              <li
-                class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
-              >
-                <a href="#">Cảm nhận của khách hàng</a>
-              </li>
-              <li
-                class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base :"
-              >
-                <a href="#">Đội ngũ bác sĩ</a>
-              </li>
-              <li
-                class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
-              >
-                <a href="#">Hình ảnh & Video</a>
-              </li>
-
-              <a
-                href="#"
-                class="flex justify-center items-center bg-gradient-to-r from-green-400 to-green-800 text-white rounded-full font-Lato text-base font-bold leading-19 tracking-0 hover:text-green-950 shadow-lg shadow-green-500/40 w-40 h-10 text-nowrap shrink-0 max-xl:mx-auto max-xl:mt-4"
-              >
-                <span
-                  class="bg-white size-7 item-center rounded-full flex mr-2"
-                >
-                  <img src="public/Phone, Call.png " alt="dien thoai" />
-                  <!-- bg-white w-7 h-7 rounded-full  -->
-                </span>
-
-                Gọi 1900 1806</a
-              >
-
-              <!--đây là header, gồm icon và menu -->
-            </ul>
+  <body
+    class="bg-cover max-w-screen-2xl mx-auto"
+    style="background-image: url(public/Group\ 9718.png)"
+  >
+    <nav
+      class="p-5 xl:flex xl:items-center xl:justify-between mx-auto bg-white"
+    >
+      <!-- thanh navbar menu -->
+      <div class="max-2xl:w-fit max-2xl:mx-auto flex mx-auto items-center">
+        <!-- div menu -->
+        <div class="flex justify-evenly items-center">
+          <div class="shrink-0 mr-10 cursor-pointer">
+            <!-- w-44 h-10 ml-16 mr-10 -->
+            <img src="public/image 3.png" alt="icon" class=" " />
           </div>
         </div>
-      </nav>
 
-      <div class="flex justify-center mt-14 w-full">
-        <p
-          class="font-Lato font-bold text-5xl max-lg:text-4xl max-md:text-base"
-        >
-          Khám sức khỏe hậu Covid-19
-        </p>
-      </div>
-
-      <div class="flex justify-center">
-        <p
-          class="font-Lato font-bold text-5xl max-lg:text-4xl max-md:text-base"
-        >
-          Để chúng ta đều khỏe mạnh mỗi ngày
-        </p>
-      </div>
-
-      <div
-        class="flex mx-auto justify-center text-center text-wrap w-full mt-4 px-32 max-md:px-5"
-      >
-        <p class="font-Lato font-normal text-base max-md:text-xs">
-          Bệnh Viện Đa Khoa Phương Đông là địa chỉ uy tín về khám chữa bệnh, với
-          đội ngũ chuyên gia - bác sĩ hàng đầu, trang thiết bị hiện đại, cùng
-          các phác đồ điều trị hiệu quả, khoa học mang đến dịch vụ khám, điều
-          trị, chăm sóc sức khỏe cao cấp, toàn diện với chi phí hợp lý.
-        </p>
-      </div>
-
-      <div
-        class="flex mx-auto justify-center items-center bg-gradient-to-r from-green-400 to-green-800 text-white rounded-full w-52 h-12 font-Lato text-16 font-bold leading-19 tracking-0 hover:text-green-950 mt-8 shadow-lg shadow-green-500/40 max-md:w-1/3"
-      >
-        <a href="#" class="font-Lato text-base font-bold max-md:text-xs">
-          Đăng ký tư vấn</a
-        >
-      </div>
-
-      <div
-        class="swiper slide1 flex justify-center items-center w-11/12 h-72 mt-16 pb-14"
-      >
-        <!-- slide Swiper -->
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="public/Rectangle 6493 (1).png" alt="bacsi1" />
-          </div>
-          <div class="swiper-slide">
-            <img src="public/Rectangle 6494 (1).png" alt="bacsi2" />
-          </div>
-          <div class="swiper-slide">
-            <img src="public/Rectangle 6495 (1).png" alt="bacsi3" />
-          </div>
-          <div class="swiper-slide">
-            <img src="public/Rectangle 6497.png" alt="bacsi4" />
-          </div>
-          <div class="swiper-slide">
-            <img src="public/Rectangle 6496 (1).png" alt="bacsi5" />
-          </div>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-      <!-- 2 nút next, prev -->
-      <div class="flex justify-center gap-10">
-        <div class="prev-11 static">
-          <svg
-            width="60"
-            height="60"
-            viewBox="0 0 60 60"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="hover:stroke-black"
+        <div class="">
+          <ul
+            class="max-xl:hidden justify-center gap-5 flex items-center static transition-all ease-in duration-500 w-full left-0 xl:py-0 py-4 xl:pl-0"
           >
-            <path
-              d="M30 55C16.1929 55 5 43.8071 5 30C5 16.1929 16.1929 5 30 5C43.8071 5 55 16.1929 55 30C55 43.8071 43.8071 55 30 55Z"
-              stroke="#888888"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M30 40L20 30L30 20"
-              stroke="#888888"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M40 30H20"
-              stroke="#888888"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </div>
-
-        <div class="next-11 static">
-          <svg
-            width="60"
-            height="60"
-            viewBox="0 0 60 60"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="hover:stroke-black"
-          >
-            <path
-              d="M30 55C43.8071 55 55 43.8071 55 30C55 16.1929 43.8071 5 30 5C16.1929 5 5 16.1929 5 30C5 43.8071 16.1929 55 30 55Z"
-              stroke="url(#paint0_linear_1_21560)"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M30 40L40 30L30 20"
-              stroke="url(#paint1_linear_1_21560)"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M20 30H40"
-              stroke="url(#paint2_linear_1_21560)"
-              stroke-width="2.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_1_21560"
-                x1="5"
-                y1="30.1012"
-                x2="55"
-                y2="30.1012"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#50C577" />
-                <stop offset="1" stop-color="#2DBEFC" />
-              </linearGradient>
-              <linearGradient
-                id="paint1_linear_1_21560"
-                x1="30"
-                y1="30.0405"
-                x2="40"
-                y2="30.0405"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#50C577" />
-                <stop offset="1" stop-color="#2DBEFC" />
-              </linearGradient>
-              <linearGradient
-                id="paint2_linear_1_21560"
-                x1="20"
-                y1="30.502"
-                x2="40"
-                y2="30.502"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stop-color="#50C577" />
-                <stop offset="1" stop-color="#2DBEFC" />
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-      </div>
-      <!-- end div swiper 1 -->
-      <!-- ảnh 2 bác sỹ absolute -->
-      <div class="px-20 max-sm:px-5 mx-auto">
-        <div class="ml-20 max-xl:mx-auto">
-          <div
-            class="pt-32 flex bg-gradient-to-r from-green-400 to-green-800 text-transparent bg-clip-text"
-          >
-            <p class="font-Lato font-bold text-base leading-5 max-sm:text-xl">
-              GIỚI THIỆU
-            </p>
-            <img
-              src="public/Rectangle 6443.png"
-              alt="green line"
-              class="min-h-0 my-auto w-12 ml-4"
-            />
-          </div>
-
-          <div class="mt-2">
-            <p
-              class="font-Lato font-bold text-3xl leading-11 text-nowrap max-xl:text-2xl max-sm:text-base"
+            <li
+              class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
             >
-              Dịch vụ Khám sức khỏe hậu Covid-19
-            </p>
-            <p
-              class="font-Lato font-bold text-3xl leading-11 text-nowrap max-xl:text-2xl max-sm:text-base max-sm:text-wrap"
+              <a href="#">Giới thiệu</a>
+            </li>
+            <li
+              class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
             >
-              Kiểm tra sức khỏe, tầm soát và điều trị di chứng
-            </p>
-          </div>
+              <a href="#">Đối tượng khách hàng</a>
+            </li>
+            <li
+              class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
+            >
+              <a href="#">Quy trình</a>
+            </li>
+            <li
+              class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
+            >
+              <a href="#">Bảng giá</a>
+            </li>
+            <li
+              class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
+            >
+              <a href="#">Cảm nhận của khách hàng</a>
+            </li>
+            <li
+              class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base :"
+            >
+              <a href="#">Đội ngũ bác sĩ</a>
+            </li>
+            <li
+              class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
+            >
+              <a href="#">Hình ảnh & Video</a>
+            </li>
 
-          <div class="mt-6 w-2/5 max-xl:w-fit">
-            <p class="font-Lato font-normal text-base text-wrap">
-              Khám sức khỏe hậu COVID-19 là việc làm cần thiết, giúp chẩn đoán,
-              đánh giá, điều trị và đưa ra biện pháp ngăn chặn từ sớm để giảm
-              thiểu nguy cơ của hội chứng hậu COVID-19 gây hại đến sức khỏe. Với
-              việc kiểm tra sức khỏe hậu COVID-19, người bệnh sẽ được đánh giá
-              chức năng và chẩn đoán bệnh lý liên quan đến tim mạch, phổi, gan,
-              thận; kiểm tra tình trạng viêm và đông máu… từ đó bác sĩ sẽ đưa ra
-              phác đồ điều trị các di chứng COVID-19 hiện tại và phòng ngừa các
-              nguy cơ sức khỏe có thể xảy ra trong tương lai
-            </p>
-          </div>
-
-          <div class="mt-6 max-xl:w-[160px] max-sm:mx-auto">
             <a
-              href="#"
-              class="flex justify-center items-center xl:mr-16 bg-gradient-to-r from-green-400 to-green-800 text-white rounded-full xl:w-48 h-10 font-Lato text-16 font-bold leading-19 tracking-0 text-justify hover:text-green-950 shadow-lg shadow-green-500/40"
+              href="tel:+19001806"
+              class="group flex justify-center items-center bg-gradient-to-br from-green-400 to-green-900 text-white rounded-full font-Lato text-base font-bold leading-19 tracking-0 hover:bg-gradient-to-br hover:from-orange-300 hover:to-purple-500 hover:text-green-400 shadow-lg shadow-green-500/40 w-40 h-10 text-nowrap shrink-0 max-xl:mx-auto max-xl:mt-4 transition-all duration-500 ease-linear"
             >
-              <img
-                src="public/Phone, Call_w.png "
-                alt="dien thoai"
-                class="rounded-full hover:bg-purle-400 pr-3"
-              />
-              Gọi cho chúng tôi</a
+              <span class="bg-white size-7 rounded-full flex mr-2">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mx-auto my-auto"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15.8038 13.842L14.8263 12.8645C14.3379 12.3761 13.5463 12.3761 13.0588 12.8645L12.2904 13.6328C12.1188 13.8045 11.8588 13.862 11.6371 13.7645C10.5238 13.277 9.42378 12.5378 8.44295 11.557C7.46628 10.5803 6.72961 9.4853 6.24128 8.37613C6.13961 8.14697 6.19878 7.8778 6.37628 7.7003L7.06461 7.01197C7.62378 6.4528 7.62378 5.66197 7.13545 5.17363L6.15795 4.19613C5.50711 3.5453 4.45211 3.5453 3.80128 4.19613L3.25795 4.73863C2.64045 5.35613 2.38295 6.24697 2.54961 7.1303C2.96128 9.3078 4.22628 11.692 6.26711 13.7328C8.30795 15.7736 10.6921 17.0386 12.8696 17.4503C13.7529 17.617 14.6438 17.3595 15.2613 16.742L15.8038 16.1995C16.4546 15.5486 16.4546 14.4936 15.8038 13.842V13.842Z"
+                    stroke="#0A9949"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.833 5.82599C11.6922 5.81433 12.5555 6.13266 13.2113 6.78849"
+                    stroke="#0A9949"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.568 4.43188C14.2605 3.12438 12.5463 2.47021 10.833 2.47021"
+                    stroke="#0A9949"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.1734 9.16691C14.1851 8.30774 13.8668 7.44441 13.2109 6.78857"
+                    stroke="#0A9949"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.5684 4.43164C16.8759 5.73914 17.53 7.45331 17.53 9.16664"
+                    stroke="#0A9949"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+
+              Gọi 1900 1806</a
             >
-          </div>
+
+            <!--đây là header, gồm icon và menu -->
+          </ul>
+          <button class="xl:hidden text-3xl hover:text-linear-green btn-menu">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
 
+        <!-- Menu moblie -->
         <div
-          class="flex mx-auto bg-gradient-to-r from-green-400 to-green-800 text-white mt-10 rounded-3xl relative max-xl:pt-10"
+          class="menu-moblie fixed inset-y-0 left-0 -translate-x-[120%] w-full sm:w-fit duration-700 ease-linear z-50"
         >
-          <div class="flex flex-col xl:pt-12 xl:pb-12 xl:w-1/2">
-            <p
-              class="mb-3 text-3xl mx-auto font-Lato font-bold text-nowrap text-justify max-xl:text-lg max-sm:text-sm"
-            >
-              ĐĂNG KÝ TƯ VẤN MIỄN PHÍ
-            </p>
-            <p
-              class="text-base mx-auto font-Lato font-normal max-xl:text-center max-xl:text-sm max-sm:px-5 max-xl:ml-[22px]"
-            >
-              Quý khách vui lòng để lại thông tin, chúng tôi sẽ liên hệ lại
-              ngay!
-            </p>
+          <ul>
+            <li>
+              <a href="/" title="logo-mobile">
+                <img src="public/image 3.png" width="175" height="39" alt="" />
+              </a>
+              <i
+                class="far fa-caret-square-left icon text-3xl text-white hover:text-main cursor-pointer btn-close"
+              ></i>
+            </li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Đối tượng khách hàng</a></li>
+            <li><a href="#">Quy trình</a></li>
+            <li><a href="#">Bảng giá</a></li>
+            <li><a href="#">Cảm nhận của khách hàng</a></li>
+            <li><a href="#">Đội ngũ bác sĩ</a></li>
+            <li><a href="#">Hình ảnh & Video</a></li>
+            <li>
+              <a href="tel:+1900 1806"> Liên hệ | 1900 1806 </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="fixed inset-0 translate-x-full duration-500 ease-linear bg-black/30 z-40 block xl:hidden bg-over-menu"
+        ></div>
+      </div>
+    </nav>
 
-            <span
-              class="grid gap-4 grid-cols-2 xl:w-4/5 mt-3 mx-auto max-xl:hidden"
-            >
-              <input
-                type="text"
-                class="bg-white/35 placeholder-white rounded-lg focus:shadow-none"
-                placeholder="   Họ và tên(*)"
-              />
-              <input
-                type="text"
-                class="bg-white/35 placeholder-white rounded-lg focus:shadow-none"
-                placeholder="  Số điện thoại(*)"
-              />
-              <input
-                type="text"
-                class="bg-white/35 placeholder-white rounded-lg focus:shadow-none"
-                placeholder="  E-mail của bạn..."
-              />
-              <input
-                type="text"
-                class="bg-white/35 placeholder-white rounded-lg focus:shadow-none"
-                placeholder="  Nội dung..."
-              />
-            </span>
+    <div class="flex justify-center mt-14 w-full">
+      <p class="font-Lato font-bold text-5xl max-lg:text-4xl max-md:text-base">
+        Khám sức khỏe hậu Covid-19
+      </p>
+    </div>
 
-            <span
-              class="grid gap-4 grid-cols-2 xl:w-4/5 mt-3 mx-auto xl:hidden max-xl:w-[330px] max-sm:w-11/12"
-            >
-              <input
-                type="text"
-                class="bg-white/35 placeholder-white max-sm:text-xs rounded-lg focus:shadow-none"
-                placeholder="Họ và tên(*)"
-              />
-              <input
-                type="text"
-                class="bg-white/35 placeholder-white max-sm:text-xs rounded-lg focus:shadow-none"
-                placeholder="Số điện thoại(*)"
-              />
-              <input
-                type="text"
-                class="bg-white/35 placeholder-white max-sm:text-xs rounded-lg focus:shadow-none"
-                placeholder="E-mail của bạn..."
-              />
-              <input
-                type="text"
-                class="bg-white/35 placeholder-white max-sm:text-xs rounded-lg focus:shadow-none"
-                placeholder="Nội dung..."
-              />
-            </span>
+    <div class="flex justify-center">
+      <p class="font-Lato font-bold text-5xl max-lg:text-4xl max-md:text-base">
+        Để chúng ta đều khỏe mạnh mỗi ngày
+      </p>
+    </div>
 
-            <div
-              class="flex xl:mx-auto xl:w-26 mt-6 bg-white max-xl:w-[185px] max-xl:ml-[85px] max-xl:mb-[16px] max-sm:w-[152px] rounded-full pl-3 max-sm:justify-center max-sm:pr-4 max-sm:mx-auto"
+    <div
+      class="flex mx-auto justify-center text-center text-wrap w-full mt-4 px-32 max-md:px-5"
+    >
+      <p class="font-Lato font-normal text-base max-md:text-xs">
+        Bệnh Viện Đa Khoa Phương Đông là địa chỉ uy tín về khám chữa bệnh, với
+        đội ngũ chuyên gia - bác sĩ hàng đầu, trang thiết bị hiện đại, cùng các
+        phác đồ điều trị hiệu quả, khoa học mang đến dịch vụ khám, điều trị,
+        chăm sóc sức khỏe cao cấp, toàn diện với chi phí hợp lý.
+      </p>
+    </div>
+
+    <div
+      class="flex mx-auto justify-center items-center bg-gradient-to-br from-green-400 to-green-800 text-white rounded-full w-52 h-12 font-Lato text-16 font-bold leading-19 tracking-0 hover:from-orange-300 hover:to-purple-700 hover:text-green-400 transition-all duration-500 ease-linear mt-8 max-sm:mt-4 shadow-lg shadow-green-500/40 max-md:w-1/3"
+    >
+      <button
+        class="font-Lato text-base font-bold max-md:text-xs"
+        onclick="inputPhoneNumber()"
+      >
+        Đăng ký tư vấn
+      </button>
+    </div>
+
+    <div
+      class="swiper slide1 flex justify-center items-center w-11/12 h-72 mt-16 max-sm:mt-8 pb-14 max-xl:pb-5"
+    >
+      <!-- slide Swiper -->
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="public/Rectangle 6493 (1).png" alt="bacsi1" />
+        </div>
+        <div class="swiper-slide">
+          <img src="public/Rectangle 6494 (1).png" alt="bacsi2" />
+        </div>
+        <div class="swiper-slide">
+          <img src="public/Rectangle 6495 (1).png" alt="bacsi3" />
+        </div>
+        <div class="swiper-slide">
+          <img src="public/Rectangle 6497.png" alt="bacsi4" />
+        </div>
+        <div class="swiper-slide">
+          <img src="public/Rectangle 6496 (1).png" alt="bacsi5" />
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <!-- 2 nút next, prev -->
+    <div class="flex justify-center gap-10">
+      <div class="prev-11 static">
+        <svg
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="hover:stroke-black"
+        >
+          <path
+            d="M30 55C16.1929 55 5 43.8071 5 30C5 16.1929 16.1929 5 30 5C43.8071 5 55 16.1929 55 30C55 43.8071 43.8071 55 30 55Z"
+            stroke="#888888"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M30 40L20 30L30 20"
+            stroke="#888888"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M40 30H20"
+            stroke="#888888"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+
+      <div class="next-11 static">
+        <svg
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="hover:stroke-black"
+        >
+          <path
+            d="M30 55C43.8071 55 55 43.8071 55 30C55 16.1929 43.8071 5 30 5C16.1929 5 5 16.1929 5 30C5 43.8071 16.1929 55 30 55Z"
+            stroke="url(#paint0_linear_1_21560)"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M30 40L40 30L30 20"
+            stroke="url(#paint1_linear_1_21560)"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M20 30H40"
+            stroke="url(#paint2_linear_1_21560)"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1_21560"
+              x1="5"
+              y1="30.1012"
+              x2="55"
+              y2="30.1012"
+              gradientUnits="userSpaceOnUse"
             >
-              <a
-                href="#"
-                class="flex justify-center mx-auto items-center xl:mr-5 bg-gradient-to-r from-green-400 to-green-800 text-transparent bg-clip-text rounded-full text-nowrap shrink-0 h-10 font-Lato text-base font-bold leading-19 tracking-0 hover:text-green-950 gap-3 max-xl:text-sm max-sm:text-xs"
+              <stop stop-color="#50C577" />
+              <stop offset="1" stop-color="#2DBEFC" />
+            </linearGradient>
+            <linearGradient
+              id="paint1_linear_1_21560"
+              x1="30"
+              y1="30.0405"
+              x2="40"
+              y2="30.0405"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#50C577" />
+              <stop offset="1" stop-color="#2DBEFC" />
+            </linearGradient>
+            <linearGradient
+              id="paint2_linear_1_21560"
+              x1="20"
+              y1="30.502"
+              x2="40"
+              y2="30.502"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#50C577" />
+              <stop offset="1" stop-color="#2DBEFC" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <!-- end div swiper 1 -->
+    <!-- ảnh 2 bác sỹ absolute -->
+    <div class="px-20 max-sm:px-5 mx-auto">
+      <div class="ml-20 max-xl:mx-auto">
+        <div
+          class="pt-20 max-xl:pt-5 flex bg-gradient-to-br from-green-400 to-green-800 text-transparent bg-clip-text"
+        >
+          <p class="font-Lato font-bold text-base leading-5 max-sm:text-xl">
+            GIỚI THIỆU
+          </p>
+          <img
+            src="public/Rectangle 6443.png"
+            alt="green line"
+            class="min-h-0 my-auto w-12 ml-4"
+          />
+        </div>
+
+        <div class="mt-2">
+          <p
+            class="font-Lato font-bold text-3xl leading-11 text-nowrap max-xl:text-2xl max-sm:text-base"
+          >
+            Dịch vụ Khám sức khỏe hậu Covid-19
+          </p>
+          <p
+            class="font-Lato font-bold text-3xl leading-11 text-nowrap max-xl:text-2xl max-sm:text-base max-sm:text-wrap"
+          >
+            Kiểm tra sức khỏe, tầm soát và điều trị di chứng
+          </p>
+        </div>
+
+        <div class="mt-6 w-2/5 max-xl:w-fit">
+          <p class="font-Lato font-normal text-base text-wrap">
+            Khám sức khỏe hậu COVID-19 là việc làm cần thiết, giúp chẩn đoán,
+            đánh giá, điều trị và đưa ra biện pháp ngăn chặn từ sớm để giảm
+            thiểu nguy cơ của hội chứng hậu COVID-19 gây hại đến sức khỏe. Với
+            việc kiểm tra sức khỏe hậu COVID-19, người bệnh sẽ được đánh giá
+            chức năng và chẩn đoán bệnh lý liên quan đến tim mạch, phổi, gan,
+            thận; kiểm tra tình trạng viêm và đông máu… từ đó bác sĩ sẽ đưa ra
+            phác đồ điều trị các di chứng COVID-19 hiện tại và phòng ngừa các
+            nguy cơ sức khỏe có thể xảy ra trong tương lai
+          </p>
+        </div>
+
+        <div class="mt-6 max-xl:w-[160px] max-sm:mx-auto">
+          <a
+            href="tel:+19001806"
+            class="flex justify-center items-center xl:mr-16 bg-gradient-to-br from-green-400 to-green-800 text-white rounded-full xl:w-48 h-10 font-Lato text-16 font-bold leading-19 tracking-0 text-justify hover:bg-gradient-to-br hover:from-orange-300 hover:to-purple-500 hover:text-green-400 transition-all duration-500 ease-linear shadow-lg shadow-green-500/40"
+          >
+            <span class="rounded-full pr-3">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <img
-                  src="public/Frame.png"
-                  alt="gui thong tin"
-                  class="flex mx-auto justify-end items-center hover:bg-purle-400"
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M18.965 16.61L17.792 15.437C17.206 14.851 16.256 14.851 15.671 15.437L14.749 16.359C14.543 16.565 14.231 16.634 13.965 16.517C12.629 15.932 11.309 15.045 10.132 13.868C8.96002 12.696 8.07602 11.382 7.49002 10.051C7.36802 9.77597 7.43902 9.45297 7.65202 9.23997L8.47802 8.41397C9.14902 7.74297 9.14902 6.79397 8.56302 6.20797L7.39002 5.03497C6.60902 4.25397 5.34302 4.25397 4.56202 5.03497L3.91002 5.68597C3.16902 6.42697 2.86002 7.49597 3.06002 8.55597C3.55402 11.169 5.07202 14.03 7.52102 16.479C9.97003 18.928 12.831 20.446 15.444 20.94C16.504 21.14 17.573 20.831 18.314 20.09L18.965 19.439C19.746 18.658 19.746 17.392 18.965 16.61Z"
+                  fill="white"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
                 />
+                <path
+                  d="M13 6.99109C14.031 6.97709 15.067 7.35909 15.854 8.14609"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.682 5.31787C17.113 3.74887 15.056 2.96387 13 2.96387"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17.009 11C17.023 9.969 16.641 8.933 15.854 8.146"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.6821 5.31787C20.2511 6.88687 21.0361 8.94387 21.0361 10.9999"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+
+            Gọi cho chúng tôi</a
+          >
+        </div>
+      </div>
+
+      <div
+        class="flex mx-auto bg-gradient-to-br from-green-400 to-green-800 text-white mt-10 rounded-3xl relative max-xl:pt-10"
+      >
+        <div
+          class="flex flex-col xl:pt-12 xl:pb-12 lg:w-[65%] xl:w-1/2 max-sm:mx-auto md:ml-8"
+        >
+          <p
+            class="mb-3 text-3xl mx-auto font-Lato font-bold text-nowrap text-justify max-xl:text-lg max-sm:text-sm"
+          >
+            ĐĂNG KÝ TƯ VẤN MIỄN PHÍ
+          </p>
+          <p
+            class="text-base text-center mx-auto font-Lato font-normal max-xl:text-center max-xl:text-sm max-sm:px-5"
+          >
+            Quý khách vui lòng để lại thông tin, chúng tôi sẽ liên hệ lại ngay!
+          </p>
+
+          <!-- form pc,latop -->
+          <form
+            action=""
+            class="grid gap-4 grid-cols-2 xl:w-4/5 mt-3 mx-auto max-xl:hidden"
+            onsubmit="alert('Hệ thống đã nhận được thông tin của bạn .')"
+          >
+            <input
+              type="text"
+              class="bg-white/35 placeholder-white max-sm:text-xs rounded-lg focus:shadow-none"
+              placeholder="Họ và tên(*)"
+              required
+            />
+            <input
+              type="tel"
+              required
+              class="bg-white/35 placeholder-white max-sm:text-xs rounded-lg focus:shadow-none"
+              placeholder="Số điện thoại(*)"
+              pattern="[0-9]{10,12}"
+              title="Số điện thoại từ 10 đến 12 chữ số"
+            />
+            <input
+              type="email"
+              class="bg-white/35 placeholder-white max-sm:text-xs rounded-lg focus:shadow-none"
+              placeholder="E-mail của bạn..."
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              title="Vui lòng nhập một địa chỉ email hợp lệ dạng : user@example.com"
+            />
+            <textarea
+              class="noidung bg-white/35 placeholder-white max-sm:text-xs rounded-lg focus:shadow-none h-[41.6px]"
+              placeholder="Nội dung..."
+            ></textarea>
+
+            <!-- button submit -->
+            <div
+              class="group col-span-2 flex xl:mx-auto justify-center xl:w-26 mt-6 shadow-md shadow-white/35 bg-white rounded-full pl-3 hover:bg-gradient-to-br hover:from-orange-300 hover:to-purple-500"
+            >
+              <button
+                class="flex justify-center mx-auto items-center xl:mr-5 bg-gradient-to-br from-green-400 to-green-800 text-transparent bg-clip-text group-hover:text-white rounded-full text-nowrap shrink-0 h-10 font-Lato text-base font-bold leading-19 tracking-0 gap-3 transition-all duration-500 ease-linear"
+              >
+                <span class=""></span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="group-hover:stroke-white transition-all duration-500 ease-linear"
+                >
+                  <g clip-path="url(#clip0_1_21603)">
+                    <path
+                      d="M8.75 17.6123V22.2503C8.75 22.5743 8.958 22.8613 9.266 22.9633C9.343 22.9883 9.422 23.0003 9.5 23.0003C9.734 23.0003 9.96 22.8903 10.104 22.6943L12.817 19.0023L8.75 17.6123Z"
+                      fill="url(#paint0_linear_1_21603)"
+                    />
+                    <path
+                      d="M23.685 0.139089C23.455 -0.0239114 23.153 -0.0459114 22.903 0.0850886L0.403045 11.8351C0.137044 11.9741 -0.0199555 12.2581 0.00204448 12.5571C0.0250445 12.8571 0.224045 13.1131 0.507045 13.2101L6.76205 15.3481L20.083 3.95809L9.77505 16.3771L20.258 19.9601C20.336 19.9861 20.418 20.0001 20.5 20.0001C20.636 20.0001 20.771 19.9631 20.89 19.8911C21.08 19.7751 21.209 19.5801 21.242 19.3611L23.992 0.861089C24.033 0.581089 23.915 0.303089 23.685 0.139089Z"
+                      fill="url(#paint1_linear_1_21603)"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_1_21603"
+                      x1="8.75"
+                      y1="17.6123"
+                      x2="13.9317"
+                      y2="21.5236"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3EED8B" />
+                      <stop offset="1" stop-color="#0A9949" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_1_21603"
+                      x1="0"
+                      y1="0"
+                      x2="19.6722"
+                      y2="23.6066"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3EED8B" />
+                      <stop offset="1" stop-color="#0A9949" />
+                    </linearGradient>
+                    <clipPath id="clip0_1_21603">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
 
                 GỬI THÔNG TIN
-              </a>
+              </button>
             </div>
-          </div>
+          </form>
 
-          <span
-            class="absolute bottom-0 -right-3 max-xl:w-4/12 max-xl:right-5 max-sm:hidden"
+          <!-- form tablet,mobie -->
+          <form
+            action=""
+            onsubmit="alert('Hệ thống đã nhận được thông tin của bạn .')"
+            class="grid gap-4 grid-cols-2 xl:w-4/5 mt-3 mx-auto xl:hidden max-xl:w-[330px] max-sm:w-11/12"
           >
-            <img src="public/d 2.png" alt="2 bac sy" />
-          </span>
-        </div>
-      </div>
+            <input
+              type="text"
+              class="bg-white/35 placeholder-white max-sm:text-xs rounded-lg focus:shadow-none"
+              placeholder="Họ và tên(*)"
+              required
+            />
+            <input
+              type="tel"
+              required
+              class="bg-white/35 placeholder-white max-sm:text-xs rounded-lg focus:shadow-none"
+              placeholder="Số điện thoại(*)"
+              pattern="[0-9]{10,12}"
+              title="Số điện thoại từ 10 đến 12 chữ số"
+            />
+            <input
+              type="email"
+              class="bg-white/35 placeholder-white max-sm:text-xs rounded-lg focus:shadow-none"
+              placeholder="E-mail của bạn..."
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              title="Vui lòng nhập một địa chỉ email hợp lệ dạng : user@example.com"
+            />
+            <textarea
+              class="noidung bg-white/35 placeholder-white max-sm:text-xs rounded-lg focus:shadow-none h-[2.5rem]"
+              rows="1"
+              placeholder="Nội dung..."
+            ></textarea>
 
-      <!-- 3 div phía trên">  -->
-      <div class="md:flex">
-        <div
-          class="flex mx-auto bg-gradient-to-r from-green-400 to-green-800 text-white mt-10 rounded-3xl w-8/12 md:hidden"
-        >
-          <div class="mx-auto">
-            <div class="flex mx-auto justify-center pt-10 pb-2">
-              <img
-                src="public/Rectangle 6444.png"
-                alt="white line"
-                class="h-0.5 my-auto w-12 mr-4"
-              />
-              <p class="font-Lato font-bold text-base leading-5">Ưu điểm</p>
-              <img
-                src="public/Rectangle 6444.png"
-                alt="white line"
-                class="h-0.5 my-auto w-12 ml-4"
-              />
+            <!-- button submit -->
+            <div
+              class="group col-span-2 flex mx-auto xl:w-26 mt-6 shadow-md shadow-white/35 bg-white max-xl:w-[185px] max-xl:mb-[16px] max-sm:w-[152px] rounded-full pl-3 max-sm:justify-center max-sm:pr-4 hover:bg-gradient-to-br hover:from-orange-300 hover:to-purple-500"
+            >
+              <button
+                class="flex justify-center mx-auto items-center xl:mr-5 bg-gradient-to-br from-green-400 to-green-800 text-transparent bg-clip-text group-hover:text-white rounded-full text-nowrap shrink-0 h-10 font-Lato text-base font-bold leading-19 tracking-0 gap-3 max-xl:text-sm max-sm:text-xs transition-all duration-500 ease-linear"
+              >
+                <svg
+                  width="24"
+                  height="23"
+                  viewBox="0 0 24 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.75 17.6123V22.2503C8.75 22.5743 8.958 22.8613 9.266 22.9633C9.343 22.9883 9.422 23.0003 9.5 23.0003C9.734 23.0003 9.96 22.8903 10.104 22.6943L12.817 19.0023L8.75 17.6123Z"
+                    fill="url(#paint0_linear_1_21604)"
+                  />
+                  <path
+                    d="M23.685 0.139089C23.455 -0.0239114 23.153 -0.0459114 22.903 0.0850886L0.403045 11.8351C0.137044 11.9741 -0.0199555 12.2581 0.00204448 12.5571C0.0250445 12.8571 0.224045 13.1131 0.507045 13.2101L6.76205 15.3481L20.083 3.95809L9.77505 16.3771L20.258 19.9601C20.336 19.9861 20.418 20.0001 20.5 20.0001C20.636 20.0001 20.771 19.9631 20.89 19.8911C21.08 19.7751 21.209 19.5801 21.242 19.3611L23.992 0.861089C24.033 0.581089 23.915 0.303089 23.685 0.139089Z"
+                    fill="url(#paint1_linear_1_21604)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_1_21604"
+                      x1="8.75"
+                      y1="17.6123"
+                      x2="13.9317"
+                      y2="21.5236"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3EED8B" />
+                      <stop offset="1" stop-color="#0A9949" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_1_21604"
+                      x1="0"
+                      y1="0"
+                      x2="19.6722"
+                      y2="23.6066"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3EED8B" />
+                      <stop offset="1" stop-color="#0A9949" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                GỬI THÔNG TIN
+              </button>
             </div>
-
-            <p
-              class="flex font-Lato text-wrap font-bold text-3xl mx-auto w-10/12 leading-relaxed text-center pb-6"
-            >
-              Lợi ích của việc sử dụng dịch vụ Khám sức khỏe hậu Covid-19 tại
-              Bệnh viện Phương Đông
-            </p>
-          </div>
+          </form>
         </div>
 
-        <div
-          class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5"
+        <span
+          class="absolute bottom-0 -right-3 max-xl:w-4/12 max-xl:right-5 max-sm:hidden"
         >
-          <!-- inset-x-28 -->
-          <div
-            class="flex bg-gradient-to-r from-green-400 to-green-800 rounded-full size-20 absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-0 shadow-lg shadow-green-500/35"
-          >
-            <img
-              src="public/Group.png"
-              alt="trai tim"
-              class="mx-auto my-auto size-10"
-            />
-          </div>
-          <div class="w-4/5 mx-auto">
-            <p class="mx-auto text-xl font-semibold mb-2 mt-4 text-center">
-              Đội ngũ bác sĩ giàu y đức
-            </p>
-            <p
-              class="text-wrap text-base flex mx-auto justify-center text-center font-normal"
-            >
-              Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh
-              hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y
-              khoa tiên tiến
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5"
-        >
-          <!-- inset-x-28 -->
-          <div
-            class="flex bg-gradient-to-r from-green-400 to-green-800 rounded-full size-20 absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-0 shadow-lg shadow-green-500/35"
-          >
-            <img
-              src="public/Frame (1).png"
-              alt="y te"
-              class="mx-auto my-auto size-10"
-            />
-          </div>
-          <div class="w-4/5 mx-auto">
-            <p class="mx-auto text-xl font-semibold mb-2 mt-4 text-center">
-              Đội ngũ bác sĩ giàu y đức
-            </p>
-            <p
-              class="text-wrap text-base flex mx-auto justify-center text-center font-normal"
-            >
-              Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh
-              hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y
-              khoa tiên tiến
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5"
-        >
-          <!-- inset-x-28 -->
-          <div
-            class="flex bg-gradient-to-r from-green-400 to-green-800 rounded-full size-20 absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-0 shadow-lg shadow-green-500/35"
-          >
-            <img
-              src="public/Frame (2).png"
-              alt="giuong benh"
-              class="mx-auto my-auto size-10"
-            />
-          </div>
-          <div class="w-4/5 mx-auto">
-            <p class="mx-auto text-xl font-semibold mb-2 mt-4 text-center">
-              Đội ngũ bác sĩ giàu y đức
-            </p>
-            <p
-              class="text-wrap text-base flex mx-auto justify-center text-center font-normal"
-            >
-              Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh
-              hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y
-              khoa tiên tiến
-            </p>
-          </div>
-        </div>
+          <img src="public/d 2.png" alt="2 bac sy" />
+        </span>
       </div>
+    </div>
 
-      <div class="max-sm:hidden">
-        <img
-          src="public/Group 9731.png"
-          alt="vector nối"
-          class="flex mx-auto w-8/12"
-        />
-      </div>
-      <!-- div ở giữa -->
+    <!-- 3 div phía trên">  -->
+    <div class="md:flex">
       <div
-        class="flex mx-auto bg-gradient-to-r from-green-400 to-green-800 text-white mt-10 rounded-3xl relative w-3/4 -top-10 max-sm:hidden"
+        class="flex mx-auto bg-gradient-to-br from-green-400 to-green-800 text-white mt-10 rounded-3xl w-8/12 md:hidden"
       >
         <div class="mx-auto">
           <div class="flex mx-auto justify-center pt-10 pb-2">
@@ -548,525 +658,260 @@
           </div>
 
           <p
-            class="flex font-Lato text-wrap font-bold text-3xl mx-auto w-10/12 leading-relaxed text-center pb-6"
+            class="flex font-Lato text-wrap font-bold text-3xl max-sm:text-2xl mx-auto w-10/12 leading-relaxed text-center pb-6"
           >
             Lợi ích của việc sử dụng dịch vụ Khám sức khỏe hậu Covid-19 tại Bệnh
             viện Phương Đông
           </p>
         </div>
       </div>
-      <div class="max-sm:hidden">
-        <img
-          src="public/Group 9732.png"
-          alt="vector nối ngược"
-          class="flex mx-auto w-8/12 -mt-10"
-        />
-      </div>
 
-      <!-- 3 div phía dưới -->
-      <div class="md:flex -mt-20 pb-24">
-        <div
-          class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-8 pb-16 rounded-3xl max-sm:w-4/5 max-sm:mt-32"
-        >
-          <!-- inset-x-28 -->
-          <div
-            class="flex bg-gradient-to-r from-green-400 to-green-800 rounded-full size-20 absolute left-1/2 transform -translate-x-1/2 translate-y-1/2 bottom-0"
-          >
-            <img
-              src="public/Frame (1).png"
-              alt="y te"
-              class="mx-auto my-auto size-10"
-            />
-          </div>
-          <div class="w-4/5 mx-auto">
-            <p class="mx-auto text-xl font-semibold mb-2 mt-4 text-center">
-              Đội ngũ bác sĩ giàu y đức
-            </p>
-            <p
-              class="text-wrap text-base flex mx-auto justify-center text-center font-normal"
-            >
-              Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh
-              hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y
-              khoa tiên tiến
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-8 pb-16 rounded-3xl max-sm:w-4/5"
-        >
-          <!-- inset-x-28 -->
-          <div
-            class="flex bg-gradient-to-r from-green-400 to-green-800 rounded-full size-20 absolute left-1/2 transform -translate-x-1/2 translate-y-1/2 bottom-0"
-          >
-            <img
-              src="public/Frame (2).png"
-              alt="giuong benh"
-              class="mx-auto my-auto size-10"
-            />
-          </div>
-          <div class="w-4/5 mx-auto">
-            <p class="mx-auto text-xl font-semibold mb-2 mt-4 text-center">
-              Đội ngũ bác sĩ giàu y đức
-            </p>
-            <p
-              class="text-wrap text-base flex mx-auto justify-center text-center font-normal"
-            >
-              Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh
-              hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y
-              khoa tiên tiến
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-8 pb-16 rounded-3xl max-sm:w-4/5"
-        >
-          <!-- inset-x-28 -->
-          <div
-            class="flex bg-gradient-to-r from-green-400 to-green-800 rounded-full size-20 absolute left-1/2 transform -translate-x-1/2 translate-y-1/2 bottom-0"
-          >
-            <img
-              src="public/Group.png"
-              alt="trai tim"
-              class="mx-auto my-auto size-10"
-            />
-          </div>
-          <div class="w-4/5 mx-auto">
-            <p class="mx-auto text-xl font-semibold mb-2 mt-4 text-center">
-              Đội ngũ bác sĩ giàu y đức
-            </p>
-            <p
-              class="text-wrap text-base flex mx-auto justify-center text-center font-normal"
-            >
-              Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh
-              hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y
-              khoa tiên tiến
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- div bac si gio like cuoi -->
       <div
-        class="container relative mt-[5rem] mb-[10rem] max-xl:mb-[5rem] mx-auto max-w-full"
+        class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5"
       >
-        <!-- ngôi sao -->
+        <!-- inset-x-28 -->
         <div
-          class="bg-white size-20 rounded-2xl shadow-md absolute flex -rotate-[15deg] right-[80%] max-2xl:hidden"
+          class="flex bg-gradient-to-br from-green-400 to-green-800 rounded-full size-20 absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-0 shadow-lg shadow-green-500/35"
         >
           <img
-            src="public/Star 1 (1).png"
-            alt="ngôi sao"
-            class="mx-auto my-auto"
+            src="public/Group.png"
+            alt="trai tim"
+            class="mx-auto my-auto size-10"
+          />
+        </div>
+        <div class="w-4/5 mx-auto">
+          <p class="mx-auto text-xl font-semibold mb-2 mt-4 text-center">
+            Đội ngũ bác sĩ giàu y đức
+          </p>
+          <p
+            class="text-wrap text-base flex mx-auto justify-center text-center font-normal"
+          >
+            Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh
+            hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y khoa
+            tiên tiến
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5"
+      >
+        <!-- inset-x-28 -->
+        <div
+          class="flex bg-gradient-to-br from-green-400 to-green-800 rounded-full size-20 absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-0 shadow-lg shadow-green-500/35"
+        >
+          <img
+            src="public/Frame (1).png"
+            alt="y te"
+            class="mx-auto my-auto size-10"
+          />
+        </div>
+        <div class="w-4/5 mx-auto">
+          <p class="mx-auto text-xl font-semibold mb-2 mt-4 text-center">
+            Đội ngũ bác sĩ giàu y đức
+          </p>
+          <p
+            class="text-wrap text-base flex mx-auto justify-center text-center font-normal"
+          >
+            Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh
+            hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y khoa
+            tiên tiến
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5"
+      >
+        <!-- inset-x-28 -->
+        <div
+          class="flex bg-gradient-to-br from-green-400 to-green-800 rounded-full size-20 absolute left-1/2 -translate-x-1/2 -translate-y-1/2 top-0 shadow-lg shadow-green-500/35"
+        >
+          <img
+            src="public/Frame (2).png"
+            alt="giuong benh"
+            class="mx-auto my-auto size-10"
+          />
+        </div>
+        <div class="w-4/5 mx-auto">
+          <p class="mx-auto text-xl font-semibold mb-2 mt-4 text-center">
+            Đội ngũ bác sĩ giàu y đức
+          </p>
+          <p
+            class="text-wrap text-base flex mx-auto justify-center text-center font-normal"
+          >
+            Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh
+            hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y khoa
+            tiên tiến
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-sm:hidden">
+      <img
+        src="public/Group 9731.png"
+        alt="vector nối"
+        class="flex mx-auto w-8/12"
+      />
+    </div>
+    <!-- div ở giữa -->
+    <div
+      class="flex mx-auto bg-gradient-to-br from-green-400 to-green-800 text-white mt-10 rounded-3xl relative w-3/4 -top-10 max-sm:hidden"
+    >
+      <div class="mx-auto">
+        <div class="flex mx-auto justify-center pt-10 pb-2">
+          <img
+            src="public/Rectangle 6444.png"
+            alt="white line"
+            class="h-0.5 my-auto w-12 mr-4"
+          />
+          <p class="font-Lato font-bold text-base leading-5">Ưu điểm</p>
+          <img
+            src="public/Rectangle 6444.png"
+            alt="white line"
+            class="h-0.5 my-auto w-12 ml-4"
           />
         </div>
 
-        <!-- ảnh like -->
-        <div
-          class="bg-white size-20 rounded-2xl shadow-md absolute flex -rotate-[15deg] left-[40%] top-[17%] max-2xl:hidden"
+        <p
+          class="flex font-Lato text-wrap font-bold text-3xl mx-auto w-10/12 leading-relaxed text-center pb-6"
         >
-          <img src="public/Icon.png" alt="like" class="mx-auto my-auto" />
-        </div>
+          Lợi ích của việc sử dụng dịch vụ Khám sức khỏe hậu Covid-19 tại Bệnh
+          viện Phương Đông
+        </p>
+      </div>
+    </div>
+    <div class="max-sm:hidden">
+      <img
+        src="public/Group 9732.png"
+        alt="vector nối ngược"
+        class="flex mx-auto w-8/12 -mt-10"
+      />
+    </div>
 
-        <!-- ảnh rate -->
+    <!-- 3 div phía dưới -->
+    <div class="md:flex -mt-20 pb-24">
+      <div
+        class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-8 pb-16 rounded-3xl max-sm:w-4/5 max-sm:mt-32"
+      >
+        <!-- inset-x-28 -->
         <div
-          class="bg-white w-fit rounded-xl absolute bottom-0 z-10 right-3/4 translate-y-1/2 max-2xl:hidden"
+          class="flex bg-gradient-to-br from-green-400 to-green-800 rounded-full size-20 absolute left-1/2 transform -translate-x-1/2 translate-y-1/2 bottom-0"
         >
-          <img src="public/Group 5845.png" alt="rate" class="p-5" />
+          <img
+            src="public/Frame (1).png"
+            alt="y te"
+            class="mx-auto my-auto size-10"
+          />
         </div>
-
-        <!-- Đội ngũ -->
-        <div class="flex flex-col 2xl:h-72 max-sm:pb-8">
-          <div class="2xl:w-1/2 2xl:ml-auto">
-            <div class="max-2xl:justify-center flex flex-col h-40">
-              <span
-                class="pt-10 flex bg-gradient-to-r from-green-400 to-green-800 text-transparent bg-clip-text max-2xl:mx-auto max-sm:mx-5"
-              >
-                <p class="font-Lato font-bold text-base leading-5 tracking-3">
-                  ĐỘI NGŨ
-                </p>
-                <img
-                  src="public/Rectangle 6443.png"
-                  alt="green line"
-                  class="min-h-0 my-auto w-12 ml-4"
-                />
-              </span>
-              <div>
-                <p
-                  class="font-Lato font-bold text-4xl max-sm:text-xl leading-11 text-wrap w-5/6 max-2xl:w-2/3 max-2xl:mx-auto max-2xl:text-center max-sm:mx-5 max-sm:text-left max-sm:w-fit"
-                >
-                  Đội ngũ bác sĩ của chúng tôi là những người giàu kinh nghiệm,
-                  giàu nhiệt huyết
-                </p>
-                <p
-                  class="text-wrap mt-6 text-base max-sm:text-sm font-normal w-4/5 max-2xl:mx-auto max-2xl:text-center max-sm:mx-5 max-sm:text-left"
-                >
-                  Đội ngũ bác sĩ Tim mạch, Hô hấp, Nội khoa, Nhi Khoa, Thần
-                  kinh, Vật lý trị liệu giàu kinh nghiệm. Với hơn 40 năm kinh
-                  nghiệm trong lĩnh vực Nội khoa, thực hiện thăm khám và trực
-                  tiếp điều trị cho hàng nghìn bệnh nhân.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- bác sỹ giơ like + swiper -->
-        <div
-          class="flex flex-row bg-gradient-to-r from-green-400 to-green-800 w-full pb-[5rem] mt-[4rem] h-[27rem]"
-        >
-          <span class="absolute bottom-0 right-[55%] max-2xl:hidden">
-            <img
-              src="public/smiling-asian-female-doctor-shows-thumbs-up-wears-rubber-gloves-clinic-uniform-stands-white-background 3.png"
-              alt="bac sy gio like"
-              class="w-fit"
-            />
-          </span>
-          <div class="swiper mySwiper relative">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div
-                  class="2xl:w-1/2 ml-auto text-white my-auto text-left max-2xl:text-center max-sm:text-left max-sm:mx-10"
-                >
-                  <p
-                    class="font-Lato font-semibold text-3xl tracking-3 max-sm:text-xl"
-                  >
-                    Bác sĩ Nguyễn Trung Chính
-                  </p>
-
-                  <p
-                    class="font-Lato font-bold text-base text-wrap italic mt-[0.5rem] mb-[1rem]"
-                  >
-                    PGS.TS. Bác sĩ Ung bướu
-                  </p>
-
-                  <p
-                    class="font-Lato font-normal text-base max-sm:text-sm text-wrap 2xl:w-11/12 max-2xl:w-[64%] max-2xl:mx-auto max-sm:mx-0 max-sm:w-[88%]"
-                  >
-                    PGS.TS. Bác sĩ Nguyễn Trung Chính - Nguyên Chủ nhiệm khoa và
-                    phụ trách trung tâm tế bào gốc Bệnh viện TW Quân đội 108 là
-                    chuyên gia có gần 40 năm kinh nghiệm trong lĩnh Ung bướu và
-                    Tế bào gốc. PGS.TS Nguyễn Trung Chính đã giúp hàng nghìn
-                    bệnh nhân trên cả nước chẩn đoán và điều trị các vấn đề về
-                    ung bướu; thực hiện thành công nhiều kĩ thuật khó trong lĩnh
-                    vực tế bào gốc.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  class="2xl:w-1/2 ml-auto text-white my-auto text-left max-2xl:text-center max-sm:text-left max-sm:mx-10"
-                >
-                  <p
-                    class="font-Lato font-semibold text-3xl tracking-3 max-sm:text-xl"
-                  >
-                    Bác sĩ Nguyễn Trung Chính
-                  </p>
-
-                  <p
-                    class="font-Lato font-bold text-base text-wrap italic mt-[0.5rem] mb-[1rem]"
-                  >
-                    PGS.TS. Bác sĩ Ung bướu
-                  </p>
-
-                  <p
-                    class="font-Lato font-normal text-base max-sm:text-sm text-wrap 2xl:w-11/12 max-2xl:w-[64%] max-2xl:mx-auto max-sm:mx-0 max-sm:w-[88%]"
-                  >
-                    PGS.TS. Bác sĩ Nguyễn Trung Chính - Nguyên Chủ nhiệm khoa và
-                    phụ trách trung tâm tế bào gốc Bệnh viện TW Quân đội 108 là
-                    chuyên gia có gần 40 năm kinh nghiệm trong lĩnh Ung bướu và
-                    Tế bào gốc. PGS.TS Nguyễn Trung Chính đã giúp hàng nghìn
-                    bệnh nhân trên cả nước chẩn đoán và điều trị các vấn đề về
-                    ung bướu; thực hiện thành công nhiều kĩ thuật khó trong lĩnh
-                    vực tế bào gốc.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  class="2xl:w-1/2 ml-auto text-white my-auto text-left max-2xl:text-center max-sm:text-left max-sm:mx-10"
-                >
-                  <p
-                    class="font-Lato font-semibold text-3xl tracking-3 max-sm:text-xl"
-                  >
-                    Bác sĩ Nguyễn Trung Chính
-                  </p>
-
-                  <p
-                    class="font-Lato font-bold text-base text-wrap italic mt-[0.5rem] mb-[1rem]"
-                  >
-                    PGS.TS. Bác sĩ Ung bướu
-                  </p>
-
-                  <p
-                    class="font-Lato font-normal text-base max-sm:text-sm text-wrap 2xl:w-11/12 max-2xl:w-[64%] max-2xl:mx-auto max-sm:mx-0 max-sm:w-[88%]"
-                  >
-                    PGS.TS. Bác sĩ Nguyễn Trung Chính - Nguyên Chủ nhiệm khoa và
-                    phụ trách trung tâm tế bào gốc Bệnh viện TW Quân đội 108 là
-                    chuyên gia có gần 40 năm kinh nghiệm trong lĩnh Ung bướu và
-                    Tế bào gốc. PGS.TS Nguyễn Trung Chính đã giúp hàng nghìn
-                    bệnh nhân trên cả nước chẩn đoán và điều trị các vấn đề về
-                    ung bướu; thực hiện thành công nhiều kĩ thuật khó trong lĩnh
-                    vực tế bào gốc.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  class="2xl:w-1/2 ml-auto text-white my-auto text-left max-2xl:text-center max-sm:text-left max-sm:mx-10"
-                >
-                  <p
-                    class="font-Lato font-semibold text-3xl tracking-3 max-sm:text-xl"
-                  >
-                    Bác sĩ Nguyễn Trung Chính
-                  </p>
-
-                  <p
-                    class="font-Lato font-bold text-base text-wrap italic mt-[0.5rem] mb-[1rem]"
-                  >
-                    PGS.TS. Bác sĩ Ung bướu
-                  </p>
-
-                  <p
-                    class="font-Lato font-normal text-base max-sm:text-sm text-wrap 2xl:w-11/12 max-2xl:w-[64%] max-2xl:mx-auto max-sm:mx-0 max-sm:w-[88%]"
-                  >
-                    PGS.TS. Bác sĩ Nguyễn Trung Chính - Nguyên Chủ nhiệm khoa và
-                    phụ trách trung tâm tế bào gốc Bệnh viện TW Quân đội 108 là
-                    chuyên gia có gần 40 năm kinh nghiệm trong lĩnh Ung bướu và
-                    Tế bào gốc. PGS.TS Nguyễn Trung Chính đã giúp hàng nghìn
-                    bệnh nhân trên cả nước chẩn đoán và điều trị các vấn đề về
-                    ung bướu; thực hiện thành công nhiều kĩ thuật khó trong lĩnh
-                    vực tế bào gốc.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  class="2xl:w-1/2 ml-auto text-white my-auto text-left max-2xl:text-center max-sm:text-left max-sm:mx-10"
-                >
-                  <p
-                    class="font-Lato font-semibold text-3xl tracking-3 max-sm:text-xl"
-                  >
-                    Bác sĩ Nguyễn Trung Chính
-                  </p>
-
-                  <p
-                    class="font-Lato font-bold text-base text-wrap italic mt-[0.5rem] mb-[1rem]"
-                  >
-                    PGS.TS. Bác sĩ Ung bướu
-                  </p>
-
-                  <p
-                    class="font-Lato font-normal text-base max-sm:text-sm text-wrap 2xl:w-11/12 max-2xl:w-[64%] max-2xl:mx-auto max-sm:mx-0 max-sm:w-[88%]"
-                  >
-                    PGS.TS. Bác sĩ Nguyễn Trung Chính - Nguyên Chủ nhiệm khoa và
-                    phụ trách trung tâm tế bào gốc Bệnh viện TW Quân đội 108 là
-                    chuyên gia có gần 40 năm kinh nghiệm trong lĩnh Ung bướu và
-                    Tế bào gốc. PGS.TS Nguyễn Trung Chính đã giúp hàng nghìn
-                    bệnh nhân trên cả nước chẩn đoán và điều trị các vấn đề về
-                    ung bướu; thực hiện thành công nhiều kĩ thuật khó trong lĩnh
-                    vực tế bào gốc.
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div
-                  class="2xl:w-1/2 ml-auto text-white my-auto text-left max-2xl:text-center max-sm:text-left max-sm:mx-10"
-                >
-                  <p
-                    class="font-Lato font-semibold text-3xl tracking-3 max-sm:text-xl"
-                  >
-                    Bác sĩ Nguyễn Trung Chính
-                  </p>
-
-                  <p
-                    class="font-Lato font-bold text-base text-wrap italic mt-[0.5rem] mb-[1rem]"
-                  >
-                    PGS.TS. Bác sĩ Ung bướu
-                  </p>
-
-                  <p
-                    class="font-Lato font-normal text-base max-sm:text-sm text-wrap 2xl:w-11/12 max-2xl:w-[64%] max-2xl:mx-auto max-sm:mx-0 max-sm:w-[88%]"
-                  >
-                    PGS.TS. Bác sĩ Nguyễn Trung Chính - Nguyên Chủ nhiệm khoa và
-                    phụ trách trung tâm tế bào gốc Bệnh viện TW Quân đội 108 là
-                    chuyên gia có gần 40 năm kinh nghiệm trong lĩnh Ung bướu và
-                    Tế bào gốc. PGS.TS Nguyễn Trung Chính đã giúp hàng nghìn
-                    bệnh nhân trên cả nước chẩn đoán và điều trị các vấn đề về
-                    ung bướu; thực hiện thành công nhiều kĩ thuật khó trong lĩnh
-                    vực tế bào gốc.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="flex justify-between gap-10 w-1/2 text-white absolute bottom-0 right-0 z-10"
-            >
-              <div class="max-2xl:hidden flex space-x-2">
-                <div class="prev-1 rounded-full text-black">
-                  <svg
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="stroke-white hover:stroke-black"
-                  >
-                    <path
-                      d="M19.9998 36.6668C10.7951 36.6668 3.33317 29.2049 3.33317 20.0002C3.33317 10.7954 10.7951 3.3335 19.9998 3.3335C29.2046 3.3335 36.6665 10.7954 36.6665 20.0002C36.6665 29.2049 29.2046 36.6668 19.9998 36.6668Z"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M20 26.6668L13.3333 20.0002L20 13.3335"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M26.6665 20.0002H13.3332"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div class="next-1 rounded-full text-black">
-                  <svg
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="stroke-white hover:stroke-black"
-                  >
-                    <path
-                      d="M20.0002 36.6666C29.2049 36.6666 36.6668 29.2047 36.6668 19.9999C36.6668 10.7952 29.2049 3.33325 20.0002 3.33325C10.7954 3.33325 3.3335 10.7952 3.3335 19.9999C3.3335 29.2047 10.7954 36.6666 20.0002 36.6666Z"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M20 26.6666L26.6667 19.9999L20 13.3333"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M13.3335 20H26.6668"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <div
-                class="swiper-pagination text-end right-[5rem] bottom-0 w-fit left-auto"
-              ></div>
-            </div>
-          </div>
+        <div class="w-4/5 mx-auto">
+          <p class="mx-auto text-xl font-semibold mb-2 mt-4 text-center">
+            Đội ngũ bác sĩ giàu y đức
+          </p>
+          <p
+            class="text-wrap text-base flex mx-auto justify-center text-center font-normal"
+          >
+            Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh
+            hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y khoa
+            tiên tiến
+          </p>
         </div>
       </div>
 
-      <!-- div nhiều ảnh tròn  -->
       <div
-        class="relative h-[42rem] max-xl:h-[50rem] max-sm:h-[40rem]"
-        style="background-image: url(public/imgbg.png)"
+        class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-8 pb-16 rounded-3xl max-sm:w-4/5"
       >
-        <!-- đống ảnh tròn -->
-
-        <div>
-          <div
-            class="absolute top-[7%] left-[10%] bg-green-500/10 size-36 rounded-full flex items-center justify-center max-sm:hidden"
+        <!-- inset-x-28 -->
+        <div
+          class="flex bg-gradient-to-br from-green-400 to-green-800 rounded-full size-20 absolute left-1/2 transform -translate-x-1/2 translate-y-1/2 bottom-0"
+        >
+          <img
+            src="public/Frame (2).png"
+            alt="giuong benh"
+            class="mx-auto my-auto size-10"
+          />
+        </div>
+        <div class="w-4/5 mx-auto">
+          <p class="mx-auto text-xl font-semibold mb-2 mt-4 text-center">
+            Đội ngũ bác sĩ giàu y đức
+          </p>
+          <p
+            class="text-wrap text-base flex mx-auto justify-center text-center font-normal"
           >
-            <div
-              class="bg-green-900/10 size-28 rounded-full mx-auto flex items-center justify-center"
-            >
-              <span class="rounded-full">
-                <img src="public/Ellipse 1151.png" alt="ảnh tròn 1" id="img1" />
-              </span>
-            </div>
-          </div>
+            Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh
+            hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y khoa
+            tiên tiến
+          </p>
+        </div>
+      </div>
 
-          <div
-            class="absolute top-[28%] bg-green-500/10 size-36 rounded-full flex items-center justify-center max-sm:hidden"
+      <div
+        class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-8 pb-16 rounded-3xl max-sm:w-4/5"
+      >
+        <!-- inset-x-28 -->
+        <div
+          class="flex bg-gradient-to-br from-green-400 to-green-800 rounded-full size-20 absolute left-1/2 transform -translate-x-1/2 translate-y-1/2 bottom-0"
+        >
+          <img
+            src="public/Group.png"
+            alt="trai tim"
+            class="mx-auto my-auto size-10"
+          />
+        </div>
+        <div class="w-4/5 mx-auto">
+          <p class="mx-auto text-xl font-semibold mb-2 mt-4 text-center">
+            Đội ngũ bác sĩ giàu y đức
+          </p>
+          <p
+            class="text-wrap text-base flex mx-auto justify-center text-center font-normal"
           >
-            <div
-              class="bg-green-900/10 size-28 rounded-full mx-auto flex items-center justify-center"
-            >
-              <span class="rounded-full w-[84px]">
-                <img src="public/Ellipse 1146.png" alt="ảnh tròn 2" id="img2" />
-              </span>
-            </div>
-          </div>
+            Bệnh viện Phương Đông thường xuyên cập nhật các kỹ thuật khám bệnh
+            hiện đại cùng cơ sở vật chất tiện nghi cùng hệ thống máy móc y khoa
+            tiên tiến
+          </p>
+        </div>
+      </div>
+    </div>
 
-          <div
-            class="absolute bottom-[10%] left-[15%] max-xl:left-[6%] bg-green-500/10 size-36 rounded-full flex items-center justify-center max-sm:hidden"
-          >
-            <div
-              class="bg-green-900/10 size-28 rounded-full mx-auto flex items-center justify-center"
-            >
-              <span class="rounded-full w-[84px]">
-                <img src="public/Ellipse 1149.png" alt="ảnh tròn 3" id="img3" />
-              </span>
-            </div>
-          </div>
+    <!-- div bac si gio like cuoi -->
+    <div
+      class="container relative mt-[5rem] mb-[10rem] max-xl:mb-[5rem] mx-auto max-w-full"
+    >
+      <!-- ngôi sao -->
+      <div
+        class="bg-white size-20 rounded-2xl shadow-md absolute flex -rotate-[15deg] right-[80%] max-2xl:hidden"
+      >
+        <img
+          src="public/Star 1 (1).png"
+          alt="ngôi sao"
+          class="mx-auto my-auto"
+        />
+      </div>
 
-          <div
-            class="absolute right-[12%] top-[9%] bg-green-500/10 size-36 rounded-full flex items-center justify-center max-sm:hidden"
-          >
-            <div
-              class="bg-green-900/10 size-28 rounded-full mx-auto flex items-center justify-center"
-            >
-              <span class="rounded-full w-[84px]">
-                <img
-                  src="public/Ellipse 1146 (1).png"
-                  alt="ảnh tròn 4"
-                  id="img4"
-                />
-              </span>
-            </div>
-          </div>
+      <!-- ảnh like -->
+      <div
+        class="bg-white size-20 rounded-2xl shadow-md absolute flex -rotate-[15deg] left-[40%] top-[17%] max-2xl:hidden"
+      >
+        <img src="public/Icon.png" alt="like" class="mx-auto my-auto" />
+      </div>
 
-          <div
-            class="absolute bottom-0 right-[14%] max-xl:right-[8%] bg-green-500/10 size-36 rounded-full flex items-center justify-center max-sm:hidden"
-          >
-            <div
-              class="bg-green-900/10 size-28 rounded-full mx-auto flex items-center justify-center"
-            >
-              <span class="rounded-full w-[84px]">
-                <img src="public/Ellipse 1148.png" alt="ảnh tròn 5" id="img5" />
-              </span>
-            </div>
-          </div>
+      <!-- ảnh rate -->
+      <div
+        class="bg-white w-fit rounded-xl absolute bottom-0 z-10 right-3/4 translate-y-1/2 max-2xl:hidden"
+      >
+        <img src="public/Group 5845.png" alt="rate" class="p-5" />
+      </div>
 
-          <div
-            class="absolute right-0 top-1/2 bg-green-500/10 size-36 rounded-full flex items-center justify-center max-sm:hidden"
-          >
-            <div
-              class="bg-green-900/10 size-28 rounded-full mx-auto flex items-center justify-center"
-            >
-              <span class="rounded-full w-[84px]">
-                <img src="public/Ellipse 1147.png" alt="ảnh tròn 6" id="img6" />
-              </span>
-            </div>
-          </div>
-          <!-- Cảm nhận -->
-          <div class="justify-center flex flex-col text-center">
+      <!-- Đội ngũ -->
+      <div class="flex flex-col 2xl:h-72 max-sm:pb-8">
+        <div class="2xl:w-1/2 2xl:ml-auto">
+          <div class="max-2xl:justify-center flex flex-col h-40">
             <span
-              class="flex bg-gradient-to-r from-green-400 to-green-800 text-transparent bg-clip-text mx-auto justify-center"
+              class="pt-10 flex bg-gradient-to-br from-green-400 to-green-800 text-transparent bg-clip-text max-2xl:mx-auto max-sm:mx-5"
             >
-              <img
-                src="public/Rectangle 6443.png"
-                alt="green line"
-                class="min-h-0 my-auto w-12 mr-4"
-              />
               <p class="font-Lato font-bold text-base leading-5 tracking-3">
-                CẢM NHẬN
+                ĐỘI NGŨ
               </p>
               <img
                 src="public/Rectangle 6443.png"
@@ -1074,853 +919,1550 @@
                 class="min-h-0 my-auto w-12 ml-4"
               />
             </span>
-
             <div>
               <p
-                class="font-Lato font-bold text-4xl max-sm:text-xl max-sm:w-[82%] leading-11 text-wrap mx-auto w-[54%] mt-4 mb-12 max-xl:w-[38%]"
+                class="font-Lato font-bold text-4xl max-sm:text-xl leading-11 text-wrap w-5/6 max-2xl:w-2/3 max-2xl:mx-auto max-2xl:text-center max-sm:mx-5 max-sm:text-left max-sm:w-fit"
               >
-                Cảm nhận của khách hàng sau khi sử dụng dịch vụ tại Bệnh viện
-                Phương Đông
+                Đội ngũ bác sĩ của chúng tôi là những người giàu kinh nghiệm,
+                giàu nhiệt huyết
+              </p>
+              <p
+                class="text-wrap mt-6 text-base max-sm:text-sm font-normal w-4/5 max-2xl:mx-auto max-2xl:text-center max-sm:mx-5 max-sm:text-left"
+              >
+                Đội ngũ bác sĩ Tim mạch, Hô hấp, Nội khoa, Nhi Khoa, Thần kinh,
+                Vật lý trị liệu giàu kinh nghiệm. Với hơn 40 năm kinh nghiệm
+                trong lĩnh vực Nội khoa, thực hiện thăm khám và trực tiếp điều
+                trị cho hàng nghìn bệnh nhân.
               </p>
             </div>
           </div>
-
-          <!-- div Minh ánh -->
-          <div
-            class="w-[45%] rounded-3xl mx-auto my-auto overflow-hidden max-sm:hidden"
-          >
-            <div class="relative">
-              <img src="public/image 935.png" alt="ảnh được phủ xanh" />
-              <div
-                class="bg-gradient-to-r from-green-400/80 to-green-800/80 absolute inset-0 bg-opacity-75"
-              ></div>
-            </div>
-
-            <div
-              class="relative flex flex-col justify-center bg-white mx-auto text-center items-center h-[19rem]"
-              id="main-content"
-            >
-              <span
-                class="absolute top-0 -translate-y-1/2 border-4 border-solid rounded-full border-white max-xl:size-24"
-              >
-                <img src="" alt="Minh anh" id="main-image" />
-              </span>
-
-              <p class="font-bold text-xl pb-2 pt-12" id="customer-name"></p>
-              <span class="" id="customer-rating">
-                <img src="" alt="5 sao" />
-              </span>
-
-              <p
-                class="font-semibold text-lg py-3 w-[72%] max-xl:w-[80%] max-xl:text-base"
-                id="customer-impression-1"
-              ></p>
-              <p
-                class="font-normal text-sm max-xl:text-xs w-[86%]"
-                id="customer-impression-2"
-              ></p>
-            </div>
-          </div>
-
-          <div class="swiper slide3 sm:hidden">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="w-[85%] rounded-3xl overflow-hidden mx-auto">
-                  <div class="relative">
-                    <img src="public/image 935.png" alt="ảnh được phủ xanh" />
-                    <div
-                      class="bg-gradient-to-r from-green-400/80 to-green-800/80 absolute inset-0 bg-opacity-75"
-                    ></div>
-                  </div>
-
-                  <div
-                    class="relative flex flex-col justify-center bg-white mx-auto text-center items-center h-[19rem]"
-                  >
-                    <span
-                      class="absolute top-0 w-[24%] -translate-y-1/2 border-4 border-solid rounded-full border-white"
-                    >
-                      <img src="public/Ellipse 1146.png" alt="ảnh slide 1" />
-                    </span>
-
-                    <p class="font-bold text-xl pb-2">Nguyễn Minh Ánh</p>
-                    <span>
-                      <img src="public/rating5sao.png" alt="5 sao" />
-                    </span>
-
-                    <p
-                      class="font-semibold py-3 w-[72%] max-xl:w-[80%] text-sm"
-                    >
-                      Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng
-                      bình yên và an tâm khi thăm khám tại đây!
-                    </p>
-                    <p class="font-normal text-xs w-[86%]">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Velit nulla etiam sed consequat dictumst viverra molestie
-                      tortor feugiat. Purus consequat, sapien diam nec. Egestas
-                      lacinia scelerisque ultrices vivamus adipiscing diam massa
-                      phasellus diam. Sit mi at nibh amet, suscipit dui ornare
-                      cursus duis.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[85%] rounded-3xl overflow-hidden mx-auto">
-                  <div class="relative">
-                    <img src="public/image 935.png" alt="ảnh được phủ xanh" />
-                    <div
-                      class="bg-gradient-to-r from-green-400/80 to-green-800/80 absolute inset-0 bg-opacity-75"
-                    ></div>
-                  </div>
-
-                  <div
-                    class="relative flex flex-col justify-center bg-white mx-auto text-center items-center h-[19rem]"
-                  >
-                    <span
-                      class="absolute top-0 w-[24%] -translate-y-1/2 border-4 border-solid rounded-full border-white"
-                    >
-                      <img src="public/Ellipse 1151.png" alt="ảnh slide 2" />
-                    </span>
-                    <p class="font-bold text-xl pb-2">Nguyễn Văn A</p>
-                    <span class="">
-                      <img src="public/rating5sao.png" alt="5 sao" />
-                    </span>
-
-                    <p
-                      class="font-semibold py-3 w-[72%] max-xl:w-[80%] text-sm"
-                    >
-                      Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng
-                      bình yên và an tâm khi thăm khám tại đây!
-                    </p>
-                    <p class="font-normal text-xs w-[86%]">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Velit nulla etiam sed consequat dictumst viverra molestie
-                      tortor feugiat. Purus consequat, sapien diam nec. Egestas
-                      lacinia scelerisque ultrices vivamus adipiscing diam massa
-                      phasellus diam. Sit mi at nibh amet, suscipit dui ornare
-                      cursus duis.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[85%] rounded-3xl overflow-hidden mx-auto">
-                  <div class="relative">
-                    <img src="public/image 935.png" alt="ảnh được phủ xanh" />
-                    <div
-                      class="bg-gradient-to-r from-green-400/80 to-green-800/80 absolute inset-0 bg-opacity-75"
-                    ></div>
-                  </div>
-
-                  <div
-                    class="relative flex flex-col justify-center bg-white mx-auto text-center items-center h-[19rem]"
-                  >
-                    <span
-                      class="absolute top-0 w-[24%] -translate-y-1/2 border-4 border-solid rounded-full border-white"
-                    >
-                      <img src="public/Ellipse 1149.png" alt="ảnh slide 3" />
-                    </span>
-                    <p class="font-bold text-xl pb-2">Nguyễn Văn B</p>
-                    <span class="">
-                      <img src="public/rating5sao.png" alt="5 sao" />
-                    </span>
-
-                    <p
-                      class="font-semibold py-3 w-[72%] max-xl:w-[80%] text-sm"
-                    >
-                      Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng
-                      bình yên và an tâm khi thăm khám tại đây!
-                    </p>
-                    <p class="font-normal text-xs w-[86%]">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Velit nulla etiam sed consequat dictumst viverra molestie
-                      tortor feugiat. Purus consequat, sapien diam nec. Egestas
-                      lacinia scelerisque ultrices vivamus adipiscing diam massa
-                      phasellus diam. Sit mi at nibh amet, suscipit dui ornare
-                      cursus duis.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[85%] rounded-3xl overflow-hidden mx-auto">
-                  <div class="relative">
-                    <img src="public/image 935.png" alt="ảnh được phủ xanh" />
-                    <div
-                      class="bg-gradient-to-r from-green-400/80 to-green-800/80 absolute inset-0 bg-opacity-75"
-                    ></div>
-                  </div>
-
-                  <div
-                    class="relative flex flex-col justify-center bg-white mx-auto text-center items-center h-[19rem]"
-                  >
-                    <span
-                      class="absolute top-0 w-[24%] -translate-y-1/2 border-4 border-solid rounded-full border-white"
-                    >
-                      <img
-                        src="public/Ellipse 1146 (1).png"
-                        alt="ảnh slide 4"
-                      />
-                    </span>
-                    <p class="font-bold text-xl pb-2">Nguyễn Văn C</p>
-                    <span class="">
-                      <img src="public/rating5sao.png" alt="5 sao" />
-                    </span>
-
-                    <p
-                      class="font-semibold py-3 w-[72%] max-xl:w-[80%] text-sm"
-                    >
-                      Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng
-                      bình yên và an tâm khi thăm khám tại đây!
-                    </p>
-                    <p class="font-normal text-xs w-[86%]">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Velit nulla etiam sed consequat dictumst viverra molestie
-                      tortor feugiat. Purus consequat, sapien diam nec. Egestas
-                      lacinia scelerisque ultrices vivamus adipiscing diam massa
-                      phasellus diam. Sit mi at nibh amet, suscipit dui ornare
-                      cursus duis.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[85%] rounded-3xl overflow-hidden mx-auto">
-                  <div class="relative">
-                    <img src="public/image 935.png" alt="ảnh được phủ xanh" />
-                    <div
-                      class="bg-gradient-to-r from-green-400/80 to-green-800/80 absolute inset-0 bg-opacity-75"
-                    ></div>
-                  </div>
-
-                  <div
-                    class="relative flex flex-col justify-center bg-white mx-auto text-center items-center h-[19rem]"
-                  >
-                    <span
-                      class="absolute top-0 w-[24%] -translate-y-1/2 border-4 border-solid rounded-full border-white"
-                    >
-                      <img src="public/Ellipse 1148.png" alt="ảnh slide 5" />
-                    </span>
-                    <p class="font-bold text-xl pb-2">Nguyễn Văn D</p>
-                    <span class="">
-                      <img src="public/rating5sao.png" alt="5 sao" />
-                    </span>
-
-                    <p
-                      class="font-semibold py-3 w-[72%] max-xl:w-[80%] text-sm"
-                    >
-                      Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng
-                      bình yên và an tâm khi thăm khám tại đây!
-                    </p>
-                    <p class="font-normal text-xs w-[86%]">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Velit nulla etiam sed consequat dictumst viverra molestie
-                      tortor feugiat. Purus consequat, sapien diam nec. Egestas
-                      lacinia scelerisque ultrices vivamus adipiscing diam massa
-                      phasellus diam. Sit mi at nibh amet, suscipit dui ornare
-                      cursus duis.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-[85%] rounded-3xl overflow-hidden mx-auto">
-                  <div class="relative">
-                    <img src="public/image 935.png" alt="ảnh được phủ xanh" />
-                    <div
-                      class="bg-gradient-to-r from-green-400/80 to-green-800/80 absolute inset-0 bg-opacity-75"
-                    ></div>
-                  </div>
-
-                  <div
-                    class="relative flex flex-col justify-center bg-white mx-auto text-center items-center h-[19rem]"
-                  >
-                    <span
-                      class="absolute top-0 w-[24%] -translate-y-1/2 border-4 border-solid rounded-full border-white"
-                    >
-                      <img src="public/Ellipse 1147.png" alt="ảnh slide 6" />
-                    </span>
-                    <p class="font-bold text-xl pb-2">Nguyễn Văn E</p>
-                    <span class="">
-                      <img src="public/rating5sao.png" alt="5 sao" />
-                    </span>
-
-                    <p
-                      class="font-semibold py-3 w-[72%] max-xl:w-[80%] text-sm"
-                    >
-                      Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng
-                      bình yên và an tâm khi thăm khám tại đây!
-                    </p>
-                    <p class="font-normal text-xs w-[86%]">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Velit nulla etiam sed consequat dictumst viverra molestie
-                      tortor feugiat. Purus consequat, sapien diam nec. Egestas
-                      lacinia scelerisque ultrices vivamus adipiscing diam massa
-                      phasellus diam. Sit mi at nibh amet, suscipit dui ornare
-                      cursus duis.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
         </div>
-        <!-- end div nhiều ảnh nhỏ -->
       </div>
 
-      <!-- div 2 phần tử con -->
-      <div class="lg:flex mx-auto container">
-        <!-- div bảng giá -->
-        <div class="md:ml-20 max-sm:mx-5">
+      <!-- bác sỹ giơ like + swiper -->
+      <div
+        class="flex flex-row bg-gradient-to-br from-green-400 to-green-600 w-full pb-[5rem] mt-[4rem] h-[27rem] max-xl:pb-[2rem] max-xl:h-[20rem] max-sm:h-[24rem]"
+      >
+        <span class="absolute bottom-0 right-[55%] max-2xl:hidden">
+          <img
+            src="public/smiling-asian-female-doctor-shows-thumbs-up-wears-rubber-gloves-clinic-uniform-stands-white-background 3.png"
+            alt="bac sy gio like"
+            class="w-fit"
+          />
+        </span>
+        <div class="swiper mySwiper relative">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="2xl:w-1/2 ml-auto text-white my-auto text-left max-2xl:text-center max-sm:text-left max-sm:mx-10"
+              >
+                <p
+                  class="font-Lato font-semibold text-3xl tracking-3 max-sm:text-xl"
+                >
+                  Bác sĩ Nguyễn Trung Chính
+                </p>
+
+                <p
+                  class="font-Lato font-bold text-base text-wrap italic mt-[0.5rem] mb-[1rem]"
+                >
+                  PGS.TS. Bác sĩ Ung bướu
+                </p>
+
+                <p
+                  class="font-Lato font-normal text-base max-sm:text-sm text-wrap 2xl:w-11/12 max-2xl:w-[64%] max-2xl:mx-auto max-sm:mx-0 max-sm:w-[88%]"
+                >
+                  PGS.TS. Bác sĩ Nguyễn Trung Chính - Nguyên Chủ nhiệm khoa và
+                  phụ trách trung tâm tế bào gốc Bệnh viện TW Quân đội 108 là
+                  chuyên gia có gần 40 năm kinh nghiệm trong lĩnh Ung bướu và Tế
+                  bào gốc. PGS.TS Nguyễn Trung Chính đã giúp hàng nghìn bệnh
+                  nhân trên cả nước chẩn đoán và điều trị các vấn đề về ung
+                  bướu; thực hiện thành công nhiều kĩ thuật khó trong lĩnh vực
+                  tế bào gốc.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="2xl:w-1/2 ml-auto text-white my-auto text-left max-2xl:text-center max-sm:text-left max-sm:mx-10"
+              >
+                <p
+                  class="font-Lato font-semibold text-3xl tracking-3 max-sm:text-xl"
+                >
+                  Bác sĩ Nguyễn Trung Chính
+                </p>
+
+                <p
+                  class="font-Lato font-bold text-base text-wrap italic mt-[0.5rem] mb-[1rem]"
+                >
+                  PGS.TS. Bác sĩ Ung bướu
+                </p>
+
+                <p
+                  class="font-Lato font-normal text-base max-sm:text-sm text-wrap 2xl:w-11/12 max-2xl:w-[64%] max-2xl:mx-auto max-sm:mx-0 max-sm:w-[88%]"
+                >
+                  PGS.TS. Bác sĩ Nguyễn Trung Chính - Nguyên Chủ nhiệm khoa và
+                  phụ trách trung tâm tế bào gốc Bệnh viện TW Quân đội 108 là
+                  chuyên gia có gần 40 năm kinh nghiệm trong lĩnh Ung bướu và Tế
+                  bào gốc. PGS.TS Nguyễn Trung Chính đã giúp hàng nghìn bệnh
+                  nhân trên cả nước chẩn đoán và điều trị các vấn đề về ung
+                  bướu; thực hiện thành công nhiều kĩ thuật khó trong lĩnh vực
+                  tế bào gốc.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="2xl:w-1/2 ml-auto text-white my-auto text-left max-2xl:text-center max-sm:text-left max-sm:mx-10"
+              >
+                <p
+                  class="font-Lato font-semibold text-3xl tracking-3 max-sm:text-xl"
+                >
+                  Bác sĩ Nguyễn Trung Chính
+                </p>
+
+                <p
+                  class="font-Lato font-bold text-base text-wrap italic mt-[0.5rem] mb-[1rem]"
+                >
+                  PGS.TS. Bác sĩ Ung bướu
+                </p>
+
+                <p
+                  class="font-Lato font-normal text-base max-sm:text-sm text-wrap 2xl:w-11/12 max-2xl:w-[64%] max-2xl:mx-auto max-sm:mx-0 max-sm:w-[88%]"
+                >
+                  PGS.TS. Bác sĩ Nguyễn Trung Chính - Nguyên Chủ nhiệm khoa và
+                  phụ trách trung tâm tế bào gốc Bệnh viện TW Quân đội 108 là
+                  chuyên gia có gần 40 năm kinh nghiệm trong lĩnh Ung bướu và Tế
+                  bào gốc. PGS.TS Nguyễn Trung Chính đã giúp hàng nghìn bệnh
+                  nhân trên cả nước chẩn đoán và điều trị các vấn đề về ung
+                  bướu; thực hiện thành công nhiều kĩ thuật khó trong lĩnh vực
+                  tế bào gốc.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="2xl:w-1/2 ml-auto text-white my-auto text-left max-2xl:text-center max-sm:text-left max-sm:mx-10"
+              >
+                <p
+                  class="font-Lato font-semibold text-3xl tracking-3 max-sm:text-xl"
+                >
+                  Bác sĩ Nguyễn Trung Chính
+                </p>
+
+                <p
+                  class="font-Lato font-bold text-base text-wrap italic mt-[0.5rem] mb-[1rem]"
+                >
+                  PGS.TS. Bác sĩ Ung bướu
+                </p>
+
+                <p
+                  class="font-Lato font-normal text-base max-sm:text-sm text-wrap 2xl:w-11/12 max-2xl:w-[64%] max-2xl:mx-auto max-sm:mx-0 max-sm:w-[88%]"
+                >
+                  PGS.TS. Bác sĩ Nguyễn Trung Chính - Nguyên Chủ nhiệm khoa và
+                  phụ trách trung tâm tế bào gốc Bệnh viện TW Quân đội 108 là
+                  chuyên gia có gần 40 năm kinh nghiệm trong lĩnh Ung bướu và Tế
+                  bào gốc. PGS.TS Nguyễn Trung Chính đã giúp hàng nghìn bệnh
+                  nhân trên cả nước chẩn đoán và điều trị các vấn đề về ung
+                  bướu; thực hiện thành công nhiều kĩ thuật khó trong lĩnh vực
+                  tế bào gốc.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="2xl:w-1/2 ml-auto text-white my-auto text-left max-2xl:text-center max-sm:text-left max-sm:mx-10"
+              >
+                <p
+                  class="font-Lato font-semibold text-3xl tracking-3 max-sm:text-xl"
+                >
+                  Bác sĩ Nguyễn Trung Chính
+                </p>
+
+                <p
+                  class="font-Lato font-bold text-base text-wrap italic mt-[0.5rem] mb-[1rem]"
+                >
+                  PGS.TS. Bác sĩ Ung bướu
+                </p>
+
+                <p
+                  class="font-Lato font-normal text-base max-sm:text-sm text-wrap 2xl:w-11/12 max-2xl:w-[64%] max-2xl:mx-auto max-sm:mx-0 max-sm:w-[88%]"
+                >
+                  PGS.TS. Bác sĩ Nguyễn Trung Chính - Nguyên Chủ nhiệm khoa và
+                  phụ trách trung tâm tế bào gốc Bệnh viện TW Quân đội 108 là
+                  chuyên gia có gần 40 năm kinh nghiệm trong lĩnh Ung bướu và Tế
+                  bào gốc. PGS.TS Nguyễn Trung Chính đã giúp hàng nghìn bệnh
+                  nhân trên cả nước chẩn đoán và điều trị các vấn đề về ung
+                  bướu; thực hiện thành công nhiều kĩ thuật khó trong lĩnh vực
+                  tế bào gốc.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="2xl:w-1/2 ml-auto text-white my-auto text-left max-2xl:text-center max-sm:text-left max-sm:mx-10"
+              >
+                <p
+                  class="font-Lato font-semibold text-3xl tracking-3 max-sm:text-xl"
+                >
+                  Bác sĩ Nguyễn Trung Chính
+                </p>
+
+                <p
+                  class="font-Lato font-bold text-base text-wrap italic mt-[0.5rem] mb-[1rem]"
+                >
+                  PGS.TS. Bác sĩ Ung bướu
+                </p>
+
+                <p
+                  class="font-Lato font-normal text-base max-sm:text-sm text-wrap 2xl:w-11/12 max-2xl:w-[64%] max-2xl:mx-auto max-sm:mx-0 max-sm:w-[88%]"
+                >
+                  PGS.TS. Bác sĩ Nguyễn Trung Chính - Nguyên Chủ nhiệm khoa và
+                  phụ trách trung tâm tế bào gốc Bệnh viện TW Quân đội 108 là
+                  chuyên gia có gần 40 năm kinh nghiệm trong lĩnh Ung bướu và Tế
+                  bào gốc. PGS.TS Nguyễn Trung Chính đã giúp hàng nghìn bệnh
+                  nhân trên cả nước chẩn đoán và điều trị các vấn đề về ung
+                  bướu; thực hiện thành công nhiều kĩ thuật khó trong lĩnh vực
+                  tế bào gốc.
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div
-            class="2xl:pt-64 flex bg-gradient-to-r from-green-400 to-green-800 text-transparent bg-clip-text"
+            class="flex justify-between gap-10 w-1/2 text-white absolute bottom-0 right-0 z-10"
           >
-            <p class="font-Lato font-bold text-sm leading-5 max-sm:text-xl">
-              Bảng giá
+            <div class="max-2xl:hidden flex space-x-2">
+              <div class="prev-1 rounded-full text-black">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="stroke-white hover:stroke-black"
+                >
+                  <path
+                    d="M19.9998 36.6668C10.7951 36.6668 3.33317 29.2049 3.33317 20.0002C3.33317 10.7954 10.7951 3.3335 19.9998 3.3335C29.2046 3.3335 36.6665 10.7954 36.6665 20.0002C36.6665 29.2049 29.2046 36.6668 19.9998 36.6668Z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20 26.6668L13.3333 20.0002L20 13.3335"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M26.6665 20.0002H13.3332"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="next-1 rounded-full text-black">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="stroke-white hover:stroke-black"
+                >
+                  <path
+                    d="M20.0002 36.6666C29.2049 36.6666 36.6668 29.2047 36.6668 19.9999C36.6668 10.7952 29.2049 3.33325 20.0002 3.33325C10.7954 3.33325 3.3335 10.7952 3.3335 19.9999C3.3335 29.2047 10.7954 36.6666 20.0002 36.6666Z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20 26.6666L26.6667 19.9999L20 13.3333"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.3335 20H26.6668"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="swiper-pagination text-end right-[5rem] bottom-0 w-fit left-auto"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- div nhiều ảnh tròn  -->
+    <div
+      class="relative h-[42rem] max-xl:h-[50rem] max-sm:h-[34rem]"
+      style="background-image: url(public/imgbg.png)"
+    >
+      <!-- đống ảnh tròn -->
+
+      <div>
+        <div
+          class="absolute top-[7%] left-[10%] bg-green-500/10 size-36 rounded-full flex items-center justify-center max-sm:hidden"
+        >
+          <div
+            class="bg-green-900/10 size-28 rounded-full mx-auto flex items-center justify-center"
+          >
+            <span class="rounded-full">
+              <img src="public/Ellipse 1151.png" alt="ảnh tròn 1" id="img1" />
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="absolute top-[28%] bg-green-500/10 size-36 rounded-full flex items-center justify-center max-sm:hidden"
+        >
+          <div
+            class="bg-green-900/10 size-28 rounded-full mx-auto flex items-center justify-center"
+          >
+            <span class="rounded-full w-[84px]">
+              <img src="public/Ellipse 1146.png" alt="ảnh tròn 2" id="img2" />
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-[10%] left-[15%] max-xl:left-[6%] bg-green-500/10 size-36 rounded-full flex items-center justify-center max-sm:hidden"
+        >
+          <div
+            class="bg-green-900/10 size-28 rounded-full mx-auto flex items-center justify-center"
+          >
+            <span class="rounded-full w-[84px]">
+              <img src="public/Ellipse 1149.png" alt="ảnh tròn 3" id="img3" />
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="absolute right-[12%] top-[9%] bg-green-500/10 size-36 rounded-full flex items-center justify-center max-sm:hidden"
+        >
+          <div
+            class="bg-green-900/10 size-28 rounded-full mx-auto flex items-center justify-center"
+          >
+            <span class="rounded-full w-[84px]">
+              <img
+                src="public/Ellipse 1146 (1).png"
+                alt="ảnh tròn 4"
+                id="img4"
+              />
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="absolute bottom-0 right-[14%] max-xl:right-[8%] bg-green-500/10 size-36 rounded-full flex items-center justify-center max-sm:hidden"
+        >
+          <div
+            class="bg-green-900/10 size-28 rounded-full mx-auto flex items-center justify-center"
+          >
+            <span class="rounded-full w-[84px]">
+              <img src="public/Ellipse 1148.png" alt="ảnh tròn 5" id="img5" />
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="absolute right-0 top-1/2 bg-green-500/10 size-36 rounded-full flex items-center justify-center max-sm:hidden"
+        >
+          <div
+            class="bg-green-900/10 size-28 rounded-full mx-auto flex items-center justify-center"
+          >
+            <span class="rounded-full w-[84px]">
+              <img src="public/Ellipse 1147.png" alt="ảnh tròn 6" id="img6" />
+            </span>
+          </div>
+        </div>
+        <!-- Cảm nhận -->
+        <div class="justify-center flex flex-col text-center">
+          <span
+            class="flex bg-gradient-to-br from-green-400 to-green-800 text-transparent bg-clip-text mx-auto justify-center"
+          >
+            <img
+              src="public/Rectangle 6443.png"
+              alt="green line"
+              class="min-h-0 my-auto w-12 mr-4"
+            />
+            <p class="font-Lato font-bold text-base leading-5 tracking-3">
+              CẢM NHẬN
             </p>
             <img
               src="public/Rectangle 6443.png"
               alt="green line"
               class="min-h-0 my-auto w-12 ml-4"
             />
-          </div>
+          </span>
 
-          <div class="mt-2">
+          <div>
             <p
-              class="font-Lato font-bold text-3xl leading-11 text-wrap max-xl:text-2xl max-sm:text-base w-[61%] max-xl:w-[90%]"
+              class="font-Lato font-bold text-4xl max-sm:text-xl max-sm:w-[82%] leading-11 text-wrap mx-auto w-[54%] mt-4 mb-12 max-xl:w-[38%]"
             >
-              Bảng giá dịch vụ niêm yết tại Bệnh viện Phương Đông
+              Cảm nhận của khách hàng sau khi sử dụng dịch vụ tại Bệnh viện
+              Phương Đông
             </p>
           </div>
-
-          <!-- div list dấu + -->
-          <div class="mt-6">
-            <div class="goi-kham flex flex-col pb-3">
-              <div class="flex items-center gap-2">
-                <button class="btn-xem-them cursor-pointer">
-                  <img src="public/plus-circle.png" alt="dấu + xanh" />
-                </button>
-                <p
-                  class="ten-goi text-sm font-semibold hover:bg-gradient-to-r from-green-400 to-green-900 hover:text-transparent hover:bg-clip-text max-md:text-xs"
-                >
-                  Gói khám sức khỏe hậu COVID-19 CƠ BẢN
-                </p>
-              </div>
-              <div
-                class="chi-tiet-goi hidden text-wrap md:w-[70%] transition-all duration-500 ease-in-out"
-              >
-                <p>
-                  "Gói khám sức khỏe hậu COVID-19 cung cấp kiểm tra toàn diện và
-                  tư vấn chăm sóc sức khỏe, nhằm đánh giá ảnh hưởng của dịch
-                  bệnh và hỗ trợ phục hồi sức khỏe."
-                </p>
-              </div>
-            </div>
-
-            <div class="goi-kham flex flex-col pb-3">
-              <div class="flex items-center gap-2">
-                <button class="btn-xem-them cursor-pointer">
-                  <img src="public/plus-circle.png" alt="dấu + xanh" />
-                </button>
-                <p
-                  class="ten-goi text-sm font-semibold hover:bg-gradient-to-r from-green-400 to-green-900 hover:text-transparent hover:bg-clip-text max-md:text-xs"
-                >
-                  Gói khám sức khỏe hậu COVID-19 NÂNG CAO
-                </p>
-              </div>
-              <div
-                class="chi-tiet-goi hidden text-wrap md:w-[70%] transition-all duration-500 ease-in-out"
-              >
-                <p>
-                  "Gói khám sức khỏe hậu COVID-19 cung cấp kiểm tra toàn diện và
-                  tư vấn chăm sóc sức khỏe, nhằm đánh giá ảnh hưởng của dịch
-                  bệnh và hỗ trợ phục hồi sức khỏe."
-                </p>
-              </div>
-            </div>
-
-            <div class="goi-kham flex flex-col pb-3">
-              <div class="flex items-center gap-2">
-                <button class="btn-xem-them cursor-pointer">
-                  <img src="public/plus-circle.png" alt="dấu + xanh" />
-                </button>
-                <p
-                  class="ten-goi text-sm font-semibold hover:bg-gradient-to-r from-green-400 to-green-900 hover:text-transparent hover:bg-clip-text max-md:text-xs"
-                >
-                  Gói khám sức khỏe hậu COVID-19 TIÊU CHUẨN
-                </p>
-              </div>
-              <div
-                class="chi-tiet-goi hidden text-wrap md:w-[70%] transition-all duration-500 ease-in-out"
-              >
-                <p>
-                  "Gói khám sức khỏe hậu COVID-19 cung cấp kiểm tra toàn diện và
-                  tư vấn chăm sóc sức khỏe, nhằm đánh giá ảnh hưởng của dịch
-                  bệnh và hỗ trợ phục hồi sức khỏe."
-                </p>
-              </div>
-            </div>
-
-            <div class="goi-kham flex flex-col pb-3">
-              <div class="flex items-center gap-2">
-                <button class="btn-xem-them cursor-pointer">
-                  <img src="public/plus-circle.png" alt="dấu + xanh" />
-                </button>
-                <p
-                  class="ten-goi text-sm font-semibold hover:bg-gradient-to-r from-green-400 to-green-900 hover:text-transparent hover:bg-clip-text max-md:text-xs"
-                >
-                  Gói khám sức khỏe hậu COVID-19 CHUYÊN SÂU
-                </p>
-              </div>
-              <div
-                class="chi-tiet-goi hidden text-wrap md:w-[70%] transition-all duration-500 ease-in-out"
-              >
-                <p>
-                  "Gói khám sức khỏe hậu COVID-19 cung cấp kiểm tra toàn diện và
-                  tư vấn chăm sóc sức khỏe, nhằm đánh giá ảnh hưởng của dịch
-                  bệnh và hỗ trợ phục hồi sức khỏe."
-                </p>
-              </div>
-            </div>
-
-            <div class="goi-kham flex flex-col pb-3">
-              <div class="flex items-center gap-2">
-                <button class="btn-xem-them cursor-pointer">
-                  <img src="public/plus-circle.png" alt="dấu + xanh" />
-                </button>
-                <p
-                  class="ten-goi text-sm font-semibold hover:bg-gradient-to-r from-green-400 to-green-900 hover:text-transparent hover:bg-clip-text max-md:text-xs"
-                >
-                  Gói khám sức khỏe hậu COVID-19 TẠI NHÀ
-                </p>
-              </div>
-              <div
-                class="chi-tiet-goi hidden text-wrap md:w-[70%] transition-all duration-500 ease-in-out"
-              >
-                <p>
-                  "Gói khám sức khỏe hậu COVID-19 cung cấp kiểm tra toàn diện và
-                  tư vấn chăm sóc sức khỏe, nhằm đánh giá ảnh hưởng của dịch
-                  bệnh và hỗ trợ phục hồi sức khỏe."
-                </p>
-              </div>
-            </div>
-
-            <div class="goi-kham flex flex-col pb-3">
-              <div class="flex items-center gap-2">
-                <button class="btn-xem-them cursor-pointer shrink-0">
-                  <img src="public/plus-circle.png" alt="dấu + xanh" />
-                </button>
-                <p
-                  class="ten-goi text-sm font-semibold hover:bg-gradient-to-r from-green-400 to-green-900 hover:text-transparent hover:bg-clip-text max-md:text-xs"
-                >
-                  Gói khám sức khỏe hậu COVID-19 CHO TRẺ CƠ BẢN ( trẻ từ 0 - 10
-                  tuổi )
-                </p>
-              </div>
-              <div
-                class="chi-tiet-goi hidden text-wrap md:w-[70%] transition-all duration-500 ease-in-out"
-              >
-                <p>
-                  "Gói khám sức khỏe hậu COVID-19 cung cấp kiểm tra toàn diện và
-                  tư vấn chăm sóc sức khỏe, nhằm đánh giá ảnh hưởng của dịch
-                  bệnh và hỗ trợ phục hồi sức khỏe."
-                </p>
-              </div>
-            </div>
-
-            <div class="goi-kham flex flex-col pb-3">
-              <div class="flex items-center gap-2">
-                <button class="btn-xem-them cursor-pointer shrink-0">
-                  <img src="public/plus-circle.png" alt="dấu + xanh" />
-                </button>
-                <p
-                  class="ten-goi text-sm font-semibold hover:bg-gradient-to-r from-green-400 to-green-900 hover:text-transparent hover:bg-clip-text max-md:text-xs"
-                >
-                  Gói khám sức khỏe hậu Covid-19 CHO TRẺ CHUYÊN SÂU ( trẻ từ
-                  0-10 tuổi )
-                </p>
-              </div>
-              <div
-                class="chi-tiet-goi hidden text-wrap md:w-[70%] transition-all duration-500 ease-in-out"
-              >
-                <p>
-                  "Gói khám sức khỏe hậu COVID-19 cung cấp kiểm tra toàn diện và
-                  tư vấn chăm sóc sức khỏe, nhằm đánh giá ảnh hưởng của dịch
-                  bệnh và hỗ trợ phục hồi sức khỏe."
-                </p>
-              </div>
-              <!-- div nhập sdt -->
-              <div class="mt-8 max-sm:relative max-sm:pb-14 max-sm:mb-10">
-                <p class="font-bold text-lg">
-                  Quý khách vui lòng để lại số điện thoại, chúng tôi sẽ liên hệ
-                  lại ngay!
-                </p>
-                <div
-                  class="flex max-sm:flex-col max-sm:justify-center max-sm:items-center bg-gray-300 rounded-full overflow-hidden h-16 mt-3 max-lg:w-[70%] max-sm:w-full max-sm:h-[3rem]"
-                >
-                  <input
-                    type="text"
-                    class="bg-gray-300 rounded-lg focus:shadow-none border-none outline-none max-sm:placeholder:text-center"
-                    placeholder="  Nhập số điện thoại..."
-                  />
-                  <div
-                    class="flex justify-center md:ml-auto mr-4 my-auto bg-gradient-to-r from-green-400 to-green-800 rounded-full w-[35%] h-[60%] pl-3 max-xl:px-16 max-sm:h-[24%] max-sm:w-[60%] max-sm:mx-auto max-sm:absolute bottom-0"
-                  >
-                    <a
-                      href="#"
-                      class="flex text-white items-center text-nowrap shrink-0 font-Lato text-base max-xl:text-xs font-bold leading-19 tracking-0 hover:text-green-950 gap-3 pr-3 max-xl:my-auto"
-                    >
-                      <img
-                        src="public/maybaytrang.png"
-                        alt="gui thong tin"
-                        class="flex mx-auto justify-end items-center hover:bg-purle-400"
-                      />
-
-                      GỬI THÔNG TIN
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- end div bảng giá -->
         </div>
 
-        <div class="2xl:shrink-0 max-sm:size-5/6 max-sm:mx-auto">
-          <img src="public/image 936.png" alt="khám bệnh" />
-        </div>
-
-        <!-- end div 2 phần tử con -->
-      </div>
-
-      <!-- div em be cuoi -->
-      <div class="relative mt-16">
-        <span class="absolute bottom-[10%] -z-50">
-          <img src="public/bgcadiv.png" alt="bg duoi cung" />
-        </span>
-        <span class="absolute bottom-[5%] -z-40">
-          <img src="public/xanhnho.png" alt="nền xanh mờ nhỡ" />
-        </span>
-        <span class="absolute bottom-0 -z-30">
-          <img src="public/bgMask.png" alt="ảnh đeo khẩu trang" />
-        </span>
-        <span class="absolute bottom-0 -z-20">
-          <img src="public/xanhdam.png" alt="nền xanh đậm" />
-        </span>
-        <span
-          class="absolute top-[27%] -z-10 max-xl:top-[30%] max-lg:top-[22%] max-sm:hidden"
-        >
-          <img src="public/Vector 44 .png" alt="vector vàng" />
-        </span>
+        <!-- div Minh ánh -->
         <div
-          class="bg-white size-20 rounded-2xl shadow-md absolute flex top-0 left-[9%] -rotate-[15deg] justify-center items-center z-50 max-sm:hidden"
+          class="w-[45%] rounded-3xl mx-auto my-auto overflow-hidden max-sm:hidden"
         >
-          <img src="public/heart.png" alt="icon trai tim" />
-        </div>
-        <div
-          class="bg-white size-20 rounded-2xl shadow-md absolute flex top-[36%] left-[4%] rotate-[15deg] justify-center items-center z-50 max-sm:hidden"
-        >
-          <img src="public/Star 1 (1).png" alt="ngôi sao" />
-        </div>
-        <div
-          class="bg-white size-20 rounded-2xl shadow-md absolute flex justify-center items-center rotate-[15deg] left-[55%] top-[24%] z-50 max-sm:hidden"
-        >
-          <img src="public/Icon.png" alt="like" />
-        </div>
-        <div
-          class="absolute z-[100] bottom-0 left-[7%] translate-y-[59%] max-xl:w-2/5"
-        >
-          <img src="public/Group 9180.png" alt="số người thích" />
-        </div>
-        <div class="absolute z-0 bottom-0 right-0 max-sm:hidden">
-          <img src="public/tronxanh.png" alt="tròn xanh" />
-        </div>
-        <div class="absolute z-10 left-0 bottom-[10%] max-sm:hidden">
-          <img src="public/Vector.png" alt="nửa tròn trắng" />
-        </div>
-        <div class="absolute z-10 left-[5%] bottom-[45%] max-sm:hidden">
-          <img src="public/Vector (1).png" alt="tròn trắng" />
-        </div>
-        <div class="absolute z-10 left-[50%] bottom-[50%] max-sm:hidden">
-          <img src="public/Vector (2).png" alt="tròn trắng" />
-        </div>
-        <div class="absolute z-10 left-[95%] bottom-[60%] max-sm:hidden">
-          <img src="public/Vector (3).png" alt="tròn trắng" />
-        </div>
-        <div
-          class="absolute z-10 left-[90%] bottom-[20%] max-xl:bottom-[10%] max-sm:hidden"
-        >
-          <img src="public/Vector (4).png" alt="tròn trắng" />
-        </div>
-        <div class="absolute z-10 left-[37%] bottom-[5%] max-sm:hidden">
-          <img src="public/Frame (6).png" alt="chấm bi" />
-        </div>
-        <div
-          class="absolute z-20 left-[35%] max-xl:left-[15%] bottom-0 translate-y-[24%] max-lg:-left-[6%] max-lg:-bottom-[8%] max-sm:hidden"
-        >
-          <img src="public/Group 9618.png" alt="mũi tên" />
-        </div>
-        <div class="flex">
-          <div class="w-1/2 ml-[4rem] z-50 max-sm:hidden">
-            <img src="public/h 1.png" alt="em be cuoi" />
-          </div>
-          <!-- div ưu đãi -->
-          <div
-            class="container w-1/2 max-sm:w-full ml-auto flex justify-center items-end z-50 max-sm:mx-auto"
-          >
-            <div class="flex-col flex justify-center items-center">
-              <p
-                class="font-bold text-5xl max-xl:text-3xl text-white max-sm:text-green-500"
-              >
-                Ưu đãi tới
-              </p>
-              <p
-                class="font-extrabold text-9xl max-xl:text-8xl max-lg:text-6xl text-transparent te bg-gradient-to-r from-amber-200 to-amber-300 bg-clip-text"
-              >
-                50%
-              </p>
-
-              <p
-                class="font-bold text-4xl max-xl:text-xl text-white max-md:text-base max-sm:text-green-500"
-              >
-                Gói khám sức khỏe hậu Covid-19 cho trẻ
-              </p>
-
-              <div
-                class="countdown flex justify-center items-center gap-5 my-8 max-lg:my-4 max-sm:my-2"
-              >
-                <div
-                  class="time-block flex flex-col items-center space-y-2 xl:p-4 max-sm:w-[3rem] w-[5rem] bg-white/35 rounded-lg shadow-md border-2 border-solid border-white max-sm:border-green-500"
-                >
-                  <span class="days text-3xl font-extrabold text-amber-200"
-                    >01</span
-                  >
-                  <span
-                    class="label text-sm font-semibold text-white max-sm:text-green-500"
-                    >Day</span
-                  >
-                </div>
-                <div
-                  class="time-block flex flex-col items-center space-y-2 xl:p-4 max-sm:w-[3rem] w-[5rem] bg-white/35 rounded-lg shadow-md border-2 border-solid border-white max-sm:border-green-500"
-                >
-                  <span class="hours text-3xl font-extrabold text-amber-200"
-                    >07</span
-                  >
-                  <span
-                    class="label text-sm font-semibold text-white max-sm:text-green-500"
-                    >Hrs</span
-                  >
-                </div>
-                <div
-                  class="time-block flex flex-col items-center space-y-2 xl:p-4 max-sm:w-[3rem] w-[5rem] bg-white/35 rounded-lg shadow-md border-2 border-solid border-white max-sm:border-green-500"
-                >
-                  <span class="minutes text-3xl font-extrabold text-amber-200"
-                    >40</span
-                  >
-                  <span
-                    class="label text-sm font-semibold text-white max-sm:text-green-500"
-                    >Mins</span
-                  >
-                </div>
-                <div
-                  class="time-block flex flex-col items-center space-y-2 xl:p-4 max-sm:w-[3rem] w-[5rem] bg-white/35 rounded-lg shadow-md border-2 border-solid border-white max-sm:border-green-500"
-                >
-                  <span class="seconds text-3xl font-extrabold text-amber-200"
-                    >16</span
-                  >
-                  <span
-                    class="label text-sm font-semibold text-white max-sm:text-green-500"
-                    >Secs</span
-                  >
-                </div>
-              </div>
-              <!-- buton DKN -->
-              <div class="xl:h-[5rem] h-[3rem] max-sm:mb-52 max-sm:mt-10">
-                <div class="flex justify-center items-center">
-                  <div
-                    class="bg-white rounded-full overflow-hidden max-xl:w-[13rem]"
-                  >
-                    <a
-                      href="#"
-                      class="flex justify-center items-center text-white xl:w-48 h-10 hover:text-green-950 shadow-lg shadow-green-500/40"
-                    >
-                      <div class="pr-3 max-xl:ml-4">
-                        <img src="public/maybayxanh.png " alt="icon maybay" />
-                      </div>
-
-                      <p
-                        class="font-Lato text-16 font-bold leading-19 bg-gradient-to-r from-green-400 to-green-800 text-transparent bg-clip-text"
-                      >
-                        ĐĂNG KÝ NGAY
-                      </p>
-                    </a>
-                  </div>
-                </div>
-                <!-- end buton DKN-->
-              </div>
-            </div>
-            <!-- end div ưu đãi -->
-          </div>
-        </div>
-      </div>
-
-      <footer
-        class="border-t-8 border-solid border-yellow-400 bg-gradient-to-r from-[#0A9949] to-[#006A2F] w-full md:h-[700px] flex justify-center items-center relative -z-10"
-      >
-        <span class="absolute bottom-0 max-sm:h-full">
-          <img src="public/soitrang.png" alt="soitrang" />
-        </span>
-        <div class="flex max-sm:flex-col w-full px-20 max-lg:px-5 z-0 my-5">
-          <!-- thông tin -->
-          <div
-            class="flex-col text-white items-center shrink-0 max-xl:w-1/2 max-sm:w-full"
-          >
-            <div class="w-1/2">
-              <img src="public/Logo 1.png" alt="logo PD" />
-            </div>
-            <div>
-              <p class="font-bold text-xl my-6">
-                BỆNH VIỆN ĐA KHOA PHƯƠNG ĐÔNG
-              </p>
-              <div class="flex gap-1">
-                <p class="font-bold text-lg text-nowrap">Địa chỉ:</p>
-                <p class="font-normal text-lg text-wrap">
-                  Số 9, Phố Viên, P. Cổ Nhuế 2, Q. Bắc Từ Liêm, HN
-                </p>
-              </div>
-              <div class="flex gap-1 my-3">
-                <p class="font-bold text-lg">Email:</p>
-                <p class="font-normal text-lg max-sm:text-sm max-sm:my-auto">
-                  bvphuongdong@phuongdonghospital.vn
-                </p>
-              </div>
-              <div class="flex gap-1 text-nowrap">
-                <p class="font-bold text-lg">Hotline:</p>
-                <p class="font-normal text-lg">1900 1806</p>
-              </div>
-
-              <div class="flex gap-8 my-8">
-                <img src="public/FB.png" alt="icon fb" />
-                <img src="public/akar-icons_twitter-fill.png" alt="icon tw" />
-                <img src="public/akar-icons_youtube-fill.png" alt="icon yt" />
-                <img
-                  src="public/ant-design_instagram-filled.png"
-                  alt="icon ins"
-                />
-              </div>
-
-              <div class="flex max-xl:flex-col gap-10 w-80%">
-                <div class="flex-col text-nowrap">
-                  <p class="font-bold text-xl">Thời gian mở cửa</p>
-                  <div class="flex gap-5 mt-4 mb-2">
-                    <p class="font-bold text-lg">Thứ 2 - Chủ nhật :</p>
-                    <p class="font-normal text-lg">07:30 -19:00</p>
-                  </div>
-
-                  <div class="flex gap-14">
-                    <p class="font-bold text-lg">Cấp cứu 24/7:</p>
-                    <p class="font-normal text-lg">0833 015 115</p>
-                  </div>
-                </div>
-                <div class="flex-col text-nowrap">
-                  <p class="font-bold text-xl">Liên hệ</p>
-                  <div class="flex gap-5 mt-4 mb-2">
-                    <p class="font-bold text-lg">Hotline Tiêm chủng:</p>
-                    <p class="font-normal text-lg">0911 615 115</p>
-                  </div>
-
-                  <div class="flex gap-8">
-                    <p class="font-bold text-lg">Hotline Khoa sản :</p>
-                    <p class="font-normal text-lg">0911 615 115</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- end thông tin -->
-          </div>
-
-          <!-- form -->
-          <div
-            class="md:w-[70%] h-2/3 rounded-2xl overflow-hidden my-auto max-sm:mt-5"
-          >
-            <!-- đăng ký tư vấn -->
+          <div class="relative">
+            <img src="public/image 935.png" alt="ảnh được phủ xanh" />
             <div
-              class="h-[5rem] bg-gradient-to-r from-green-400 to-green-800 flex justify-center items-center"
+              class="bg-gradient-to-br from-green-400/80 to-green-800/80 absolute inset-0 bg-opacity-75"
+            ></div>
+          </div>
+
+          <div
+            class="relative flex flex-col justify-center bg-white mx-auto text-center items-center h-[19rem]"
+            id="main-content"
+          >
+            <span
+              class="absolute top-0 -translate-y-1/2 border-4 border-solid rounded-full border-white max-xl:size-24"
             >
-              <div class="flex-col text-center text-white">
-                <p class="font-bold text-xl max-xl:text-base">
-                  ĐĂNG KÝ TƯ VẤN MIỄN PHÍ
-                </p>
-                <p
-                  class="font-semibold text-sm md:text-wrap max-xl:w-5/6 mx-auto"
+              <img src="" alt="Minh anh" id="main-image" />
+            </span>
+
+            <p class="font-bold text-xl pb-2 pt-12" id="customer-name"></p>
+            <span class="" id="customer-rating">
+              <img src="" alt="5 sao" />
+            </span>
+
+            <p
+              class="font-semibold text-lg py-3 w-[72%] max-xl:w-[80%] max-xl:text-base"
+              id="customer-impression-1"
+            ></p>
+            <p
+              class="font-normal text-sm max-xl:text-xs w-[86%]"
+              id="customer-impression-2"
+            ></p>
+          </div>
+        </div>
+
+        <div class="swiper slide3 sm:hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="w-[85%] rounded-3xl overflow-hidden mx-auto">
+                <div class="relative">
+                  <img src="public/image 935.png" alt="ảnh được phủ xanh" />
+                  <div
+                    class="bg-gradient-to-br from-green-400/80 to-green-800/80 absolute inset-0 bg-opacity-75"
+                  ></div>
+                </div>
+
+                <div
+                  class="relative flex flex-col justify-center bg-white mx-auto text-center items-center h-[19rem]"
                 >
-                  Đặt hẹn ngay để nhận tư vấn và chúng tôi sẽ xếp lịch khám kịp
-                  thời!
-                </p>
+                  <span
+                    class="absolute top-0 w-[24%] -translate-y-1/2 border-4 border-solid rounded-full border-white"
+                  >
+                    <img src="public/Ellipse 1146.png" alt="ảnh slide 1" />
+                  </span>
+
+                  <p class="font-bold text-xl pb-2">Nguyễn Minh Ánh</p>
+                  <span>
+                    <img src="public/rating5sao.png" alt="5 sao" />
+                  </span>
+
+                  <p class="font-semibold py-3 w-[72%] max-xl:w-[80%] text-sm">
+                    Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng bình
+                    yên và an tâm khi thăm khám tại đây!
+                  </p>
+                  <p class="font-normal text-xs w-[86%]">
+                    Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng bình
+                    yên và an tâm khi thăm khám tại đây!
+                  </p>
+                </div>
               </div>
-              <!-- end dktv -->
+            </div>
+            <div class="swiper-slide">
+              <div class="w-[85%] rounded-3xl overflow-hidden mx-auto">
+                <div class="relative">
+                  <img src="public/image 935.png" alt="ảnh được phủ xanh" />
+                  <div
+                    class="bg-gradient-to-br from-green-400/80 to-green-800/80 absolute inset-0 bg-opacity-75"
+                  ></div>
+                </div>
+
+                <div
+                  class="relative flex flex-col justify-center bg-white mx-auto text-center items-center h-[19rem]"
+                >
+                  <span
+                    class="absolute top-0 w-[24%] -translate-y-1/2 border-4 border-solid rounded-full border-white"
+                  >
+                    <img src="public/Ellipse 1151.png" alt="ảnh slide 2" />
+                  </span>
+                  <p class="font-bold text-xl pb-2">Nguyễn Văn A</p>
+                  <span class="">
+                    <img src="public/rating5sao.png" alt="5 sao" />
+                  </span>
+
+                  <p class="font-semibold py-3 w-[72%] max-xl:w-[80%] text-sm">
+                    Tôi thích bệnh viện Phương Đông
+                  </p>
+                  <p class="font-normal text-xs w-[86%]">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Velit nulla etiam sed consequat dictumst viverra molestie
+                    tortor feugiat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="w-[85%] rounded-3xl overflow-hidden mx-auto">
+                <div class="relative">
+                  <img src="public/image 935.png" alt="ảnh được phủ xanh" />
+                  <div
+                    class="bg-gradient-to-br from-green-400/80 to-green-800/80 absolute inset-0 bg-opacity-75"
+                  ></div>
+                </div>
+
+                <div
+                  class="relative flex flex-col justify-center bg-white mx-auto text-center items-center h-[19rem]"
+                >
+                  <span
+                    class="absolute top-0 w-[24%] -translate-y-1/2 border-4 border-solid rounded-full border-white"
+                  >
+                    <img src="public/Ellipse 1149.png" alt="ảnh slide 3" />
+                  </span>
+                  <p class="font-bold text-xl pb-2">Nguyễn Văn Toni</p>
+                  <span class="">
+                    <img src="public/rating5sao.png" alt="5 sao" />
+                  </span>
+
+                  <p class="font-semibold py-3 w-[72%] max-xl:w-[80%] text-sm">
+                    Tôi yêu bệnh viên Phương Đông!
+                  </p>
+                  <p class="font-normal text-xs w-[86%]">
+                    Mỗi tuần tôi đều tới bệnh viện Phương Đông
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="w-[85%] rounded-3xl overflow-hidden mx-auto">
+                <div class="relative">
+                  <img src="public/image 935.png" alt="ảnh được phủ xanh" />
+                  <div
+                    class="bg-gradient-to-br from-green-400/80 to-green-800/80 absolute inset-0 bg-opacity-75"
+                  ></div>
+                </div>
+
+                <div
+                  class="relative flex flex-col justify-center bg-white mx-auto text-center items-center h-[19rem]"
+                >
+                  <span
+                    class="absolute top-0 w-[24%] -translate-y-1/2 border-4 border-solid rounded-full border-white"
+                  >
+                    <img src="public/Ellipse 1146 (1).png" alt="ảnh slide 4" />
+                  </span>
+                  <p class="font-bold text-xl pb-2">Nguyễn Văn Alexander</p>
+                  <span class="">
+                    <img src="public/rating5sao.png" alt="5 sao" />
+                  </span>
+
+                  <p class="font-semibold py-3 w-[72%] max-xl:w-[80%] text-sm">
+                    Tôi coi bệnh viên Phương Đông là ngôi nhà thứ 2!
+                  </p>
+                  <p class="font-normal text-xs w-[86%]">
+                    Mỗi ngày tôi đều tới bệnh viện Phương Đông
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="w-[85%] rounded-3xl overflow-hidden mx-auto">
+                <div class="relative">
+                  <img src="public/image 935.png" alt="ảnh được phủ xanh" />
+                  <div
+                    class="bg-gradient-to-br from-green-400/80 to-green-800/80 absolute inset-0 bg-opacity-75"
+                  ></div>
+                </div>
+
+                <div
+                  class="relative flex flex-col justify-center bg-white mx-auto text-center items-center h-[19rem]"
+                >
+                  <span
+                    class="absolute top-0 w-[24%] -translate-y-1/2 border-4 border-solid rounded-full border-white"
+                  >
+                    <img src="public/Ellipse 1148.png" alt="ảnh slide 5" />
+                  </span>
+                  <p class="font-bold text-xl pb-2">Nguyễn Thị Anna</p>
+                  <span class="">
+                    <img src="public/rating5sao.png" alt="5 sao" />
+                  </span>
+
+                  <p class="font-semibold py-3 w-[72%] max-xl:w-[80%] text-sm">
+                    Bệnh viên Phương Đông thật tuyệt vời!
+                  </p>
+                  <p class="font-normal text-xs w-[86%]">
+                    Tôi ở bệnh viện Phương Đông vài năm rồi
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="w-[85%] rounded-3xl overflow-hidden mx-auto">
+                <div class="relative">
+                  <img src="public/image 935.png" alt="ảnh được phủ xanh" />
+                  <div
+                    class="bg-gradient-to-br from-green-400/80 to-green-800/80 absolute inset-0 bg-opacity-75"
+                  ></div>
+                </div>
+
+                <div
+                  class="relative flex flex-col justify-center bg-white mx-auto text-center items-center h-[19rem]"
+                >
+                  <span
+                    class="absolute top-0 w-[24%] -translate-y-1/2 border-4 border-solid rounded-full border-white"
+                  >
+                    <img src="public/Ellipse 1147.png" alt="ảnh slide 6" />
+                  </span>
+                  <p class="font-bold text-xl pb-2">Nguyễn Thị Taylor</p>
+                  <span class="">
+                    <img src="public/rating5sao.png" alt="5 sao" />
+                  </span>
+
+                  <p class="font-semibold py-3 w-[72%] max-xl:w-[80%] text-sm">
+                    Bệnh viên Phương Đông là nơi mọi bệnh tật tiêu tan!
+                  </p>
+                  <p class="font-normal text-xs w-[86%]">
+                    Tôi ở bệnh viện Phương Đông mỗi khi bị bệnh
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- end div nhiều ảnh nhỏ -->
+    </div>
+
+    <!-- div 2 phần tử con -->
+    <div class="lg:flex mx-auto container">
+      <!-- div bảng giá -->
+      <div class="md:ml-20 max-sm:mx-5">
+        <div
+          class="2xl:pt-64 flex bg-gradient-to-br from-green-400 to-green-800 text-transparent bg-clip-text"
+        >
+          <p class="font-Lato font-bold text-sm leading-5 max-sm:text-xl">
+            Bảng giá
+          </p>
+          <img
+            src="public/Rectangle 6443.png"
+            alt="green line"
+            class="min-h-0 my-auto w-12 ml-4"
+          />
+        </div>
+
+        <div class="mt-2">
+          <p
+            class="font-Lato font-bold text-3xl leading-11 text-wrap max-xl:text-2xl max-sm:text-base w-[61%] max-xl:w-[90%]"
+          >
+            Bảng giá dịch vụ niêm yết tại Bệnh viện Phương Đông
+          </p>
+        </div>
+
+        <!-- div list dấu + -->
+        <div class="mt-6">
+          <div class="goi-kham flex flex-col pb-3">
+            <div class="flex items-center gap-2">
+              <button class="btn-xem-them cursor-pointer">
+                <img src="public/plus-circle.png" alt="dấu + xanh" />
+              </button>
+              <p
+                class="ten-goi text-sm font-semibold hover:bg-gradient-to-br from-green-400 to-green-900 hover:text-transparent hover:bg-clip-text max-md:text-xs"
+              >
+                Gói khám sức khỏe hậu COVID-19 CƠ BẢN
+              </p>
+            </div>
+            <div
+              class="chi-tiet-goi hidden text-wrap md:w-[70%] transition-all duration-500 ease-in-out"
+            >
+              <p>
+                "Gói khám sức khỏe hậu COVID-19 cung cấp kiểm tra toàn diện và
+                tư vấn chăm sóc sức khỏe, nhằm đánh giá ảnh hưởng của dịch bệnh
+                và hỗ trợ phục hồi sức khỏe."
+              </p>
+            </div>
+          </div>
+
+          <div class="goi-kham flex flex-col pb-3">
+            <div class="flex items-center gap-2">
+              <button class="btn-xem-them cursor-pointer">
+                <img src="public/plus-circle.png" alt="dấu + xanh" />
+              </button>
+              <p
+                class="ten-goi text-sm font-semibold hover:bg-gradient-to-br from-green-400 to-green-900 hover:text-transparent hover:bg-clip-text max-md:text-xs"
+              >
+                Gói khám sức khỏe hậu COVID-19 NÂNG CAO
+              </p>
+            </div>
+            <div
+              class="chi-tiet-goi hidden text-wrap md:w-[70%] transition-all duration-500 ease-in-out"
+            >
+              <p>
+                "Gói khám sức khỏe hậu COVID-19 cung cấp kiểm tra toàn diện và
+                tư vấn chăm sóc sức khỏe, nhằm đánh giá ảnh hưởng của dịch bệnh
+                và hỗ trợ phục hồi sức khỏe."
+              </p>
+            </div>
+          </div>
+
+          <div class="goi-kham flex flex-col pb-3">
+            <div class="flex items-center gap-2">
+              <button class="btn-xem-them cursor-pointer">
+                <img src="public/plus-circle.png" alt="dấu + xanh" />
+              </button>
+              <p
+                class="ten-goi text-sm font-semibold hover:bg-gradient-to-br from-green-400 to-green-900 hover:text-transparent hover:bg-clip-text max-md:text-xs"
+              >
+                Gói khám sức khỏe hậu COVID-19 TIÊU CHUẨN
+              </p>
+            </div>
+            <div
+              class="chi-tiet-goi hidden text-wrap md:w-[70%] transition-all duration-500 ease-in-out"
+            >
+              <p>
+                "Gói khám sức khỏe hậu COVID-19 cung cấp kiểm tra toàn diện và
+                tư vấn chăm sóc sức khỏe, nhằm đánh giá ảnh hưởng của dịch bệnh
+                và hỗ trợ phục hồi sức khỏe."
+              </p>
+            </div>
+          </div>
+
+          <div class="goi-kham flex flex-col pb-3">
+            <div class="flex items-center gap-2">
+              <button class="btn-xem-them cursor-pointer">
+                <img src="public/plus-circle.png" alt="dấu + xanh" />
+              </button>
+              <p
+                class="ten-goi text-sm font-semibold hover:bg-gradient-to-br from-green-400 to-green-900 hover:text-transparent hover:bg-clip-text max-md:text-xs"
+              >
+                Gói khám sức khỏe hậu COVID-19 CHUYÊN SÂU
+              </p>
+            </div>
+            <div
+              class="chi-tiet-goi hidden text-wrap md:w-[70%] transition-all duration-500 ease-in-out"
+            >
+              <p>
+                "Gói khám sức khỏe hậu COVID-19 cung cấp kiểm tra toàn diện và
+                tư vấn chăm sóc sức khỏe, nhằm đánh giá ảnh hưởng của dịch bệnh
+                và hỗ trợ phục hồi sức khỏe."
+              </p>
+            </div>
+          </div>
+
+          <div class="goi-kham flex flex-col pb-3">
+            <div class="flex items-center gap-2">
+              <button class="btn-xem-them cursor-pointer">
+                <img src="public/plus-circle.png" alt="dấu + xanh" />
+              </button>
+              <p
+                class="ten-goi text-sm font-semibold hover:bg-gradient-to-br from-green-400 to-green-900 hover:text-transparent hover:bg-clip-text max-md:text-xs"
+              >
+                Gói khám sức khỏe hậu COVID-19 TẠI NHÀ
+              </p>
+            </div>
+            <div
+              class="chi-tiet-goi hidden text-wrap md:w-[70%] transition-all duration-500 ease-in-out"
+            >
+              <p>
+                "Gói khám sức khỏe hậu COVID-19 cung cấp kiểm tra toàn diện và
+                tư vấn chăm sóc sức khỏe, nhằm đánh giá ảnh hưởng của dịch bệnh
+                và hỗ trợ phục hồi sức khỏe."
+              </p>
+            </div>
+          </div>
+
+          <div class="goi-kham flex flex-col pb-3">
+            <div class="flex items-center gap-2">
+              <button class="btn-xem-them cursor-pointer shrink-0">
+                <img src="public/plus-circle.png" alt="dấu + xanh" />
+              </button>
+              <p
+                class="ten-goi text-sm font-semibold hover:bg-gradient-to-br from-green-400 to-green-900 hover:text-transparent hover:bg-clip-text max-md:text-xs"
+              >
+                Gói khám sức khỏe hậu COVID-19 CHO TRẺ CƠ BẢN ( trẻ từ 0 - 10
+                tuổi )
+              </p>
+            </div>
+            <div
+              class="chi-tiet-goi hidden text-wrap md:w-[70%] transition-all duration-500 ease-in-out"
+            >
+              <p>
+                "Gói khám sức khỏe hậu COVID-19 cung cấp kiểm tra toàn diện và
+                tư vấn chăm sóc sức khỏe, nhằm đánh giá ảnh hưởng của dịch bệnh
+                và hỗ trợ phục hồi sức khỏe."
+              </p>
+            </div>
+          </div>
+
+          <div class="goi-kham flex flex-col pb-3">
+            <div class="flex items-center gap-2">
+              <button class="btn-xem-them cursor-pointer shrink-0">
+                <img src="public/plus-circle.png" alt="dấu + xanh" />
+              </button>
+              <p
+                class="ten-goi text-sm font-semibold hover:bg-gradient-to-br from-green-400 to-green-900 hover:text-transparent hover:bg-clip-text max-md:text-xs"
+              >
+                Gói khám sức khỏe hậu Covid-19 CHO TRẺ CHUYÊN SÂU ( trẻ từ 0-10
+                tuổi )
+              </p>
+            </div>
+            <div
+              class="chi-tiet-goi hidden text-wrap md:w-[70%] transition-all duration-500 ease-in-out"
+            >
+              <p>
+                "Gói khám sức khỏe hậu COVID-19 cung cấp kiểm tra toàn diện và
+                tư vấn chăm sóc sức khỏe, nhằm đánh giá ảnh hưởng của dịch bệnh
+                và hỗ trợ phục hồi sức khỏe."
+              </p>
+            </div>
+            <!-- div nhập sdt -->
+            <div class="mt-8 max-sm:relative max-sm:pb-14 max-sm:mb-10">
+              <p class="font-bold text-lg">
+                Quý khách vui lòng để lại số điện thoại, chúng tôi sẽ liên hệ
+                lại ngay!
+              </p>
+              <div
+                class="flex max-sm:flex-col max-sm:justify-center max-sm:items-center bg-gray-300 rounded-full overflow-hidden h-16 mt-3 max-lg:w-[70%] max-sm:w-full max-sm:h-[3rem]"
+              >
+                <input
+                  type="text"
+                  outline="none"
+                  class="bg-gray-300 rounded-lg focus:shadow-none border-none outline-none max-sm:placeholder:text-center"
+                  placeholder="  Nhập số điện thoại..."
+                />
+                <div
+                  class="flex justify-center md:ml-auto mr-4 my-auto bg-gradient-to-br from-green-400 to-green-800 rounded-full w-[35%] h-[60%] pl-3 max-xl:px-16 max-sm:h-[24%] max-sm:w-[60%] max-sm:mx-auto max-sm:absolute bottom-0 hover:bg-gradient-to-br hover:from-orange-300 hover:to-purple-500 ease-linear"
+                >
+                  <button
+                    class="flex text-white items-center text-nowrap shrink-0 font-Lato text-base max-xl:text-xs font-bold leading-19 tracking-0 hover:text-green-400 transition-all duration-500 gap-3 pr-3 max-xl:my-auto"
+                    onclick="inputPhoneNumber()"
+                  >
+                    <span
+                      ><svg
+                        width="24"
+                        height="23"
+                        viewBox="0 0 24 23"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8.75 17.612V22.25C8.75 22.574 8.958 22.861 9.266 22.963C9.343 22.988 9.422 23 9.5 23C9.734 23 9.96 22.89 10.104 22.694L12.817 19.002L8.75 17.612Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M23.685 0.138906C23.455 -0.0240945 23.153 -0.0460945 22.903 0.0849055L0.403045 11.8349C0.137044 11.9739 -0.0199555 12.2579 0.00204448 12.5569C0.0250445 12.8569 0.224045 13.1129 0.507045 13.2099L6.76205 15.3479L20.083 3.95791L9.77505 16.3769L20.258 19.9599C20.336 19.9859 20.418 19.9999 20.5 19.9999C20.636 19.9999 20.771 19.9629 20.89 19.8909C21.08 19.7749 21.209 19.5799 21.242 19.3609L23.992 0.860906C24.033 0.580906 23.915 0.302905 23.685 0.138906Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+
+                    GỬI THÔNG TIN
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- end div bảng giá -->
+      </div>
+
+      <div class="2xl:shrink-0 max-sm:size-5/6 max-sm:mx-auto">
+        <img src="public/image 936.png" alt="khám bệnh" />
+      </div>
+
+      <!-- end div 2 phần tử con -->
+    </div>
+
+    <!-- div em be cuoi -->
+    <div class="relative mt-16">
+      <span class="absolute bottom-[10%] -z-50">
+        <img src="public/bgcadiv.png" alt="bg duoi cung" />
+      </span>
+      <span class="absolute bottom-[5%] -z-40">
+        <img src="public/xanhnho.png" alt="nền xanh mờ nhỡ" />
+      </span>
+      <span class="absolute bottom-0 -z-30">
+        <img src="public/bgMask.png" alt="ảnh đeo khẩu trang" />
+      </span>
+      <span class="absolute bottom-0 -z-20">
+        <img src="public/xanhdam.png" alt="nền xanh đậm" />
+      </span>
+      <span
+        class="absolute top-[27%] -z-10 max-xl:top-[30%] max-lg:top-[22%] max-sm:hidden"
+      >
+        <img src="public/Vector 44 .png" alt="vector vàng" />
+      </span>
+      <div
+        class="bg-white size-20 rounded-2xl shadow-md absolute flex top-0 left-[9%] -rotate-[15deg] justify-center items-center z-50 max-sm:hidden"
+      >
+        <img src="public/heart.png" alt="icon trai tim" />
+      </div>
+      <div
+        class="bg-white size-20 rounded-2xl shadow-md absolute flex top-[36%] left-[4%] rotate-[15deg] justify-center items-center z-50 max-sm:hidden"
+      >
+        <img src="public/Star 1 (1).png" alt="ngôi sao" />
+      </div>
+      <div
+        class="bg-white size-20 rounded-2xl shadow-md absolute flex justify-center items-center rotate-[15deg] left-[55%] top-[24%] z-50 max-sm:hidden"
+      >
+        <img src="public/Icon.png" alt="like" />
+      </div>
+      <div
+        class="absolute z-[100] bottom-0 left-[7%] translate-y-[59%] max-xl:w-2/5"
+      >
+        <img src="public/Group 9180.png" alt="số người thích" />
+      </div>
+      <div class="absolute z-0 bottom-0 right-0 max-sm:hidden">
+        <img src="public/tronxanh.png" alt="tròn xanh" />
+      </div>
+      <div class="absolute z-10 left-0 bottom-[10%] max-sm:hidden">
+        <img src="public/Vector.png" alt="nửa tròn trắng" />
+      </div>
+      <div class="absolute z-10 left-[5%] bottom-[45%] max-sm:hidden">
+        <img src="public/Vector (1).png" alt="tròn trắng" />
+      </div>
+      <div class="absolute z-10 left-[50%] bottom-[50%] max-sm:hidden">
+        <img src="public/Vector (2).png" alt="tròn trắng" />
+      </div>
+      <div class="absolute z-10 left-[95%] bottom-[60%] max-sm:hidden">
+        <img src="public/Vector (3).png" alt="tròn trắng" />
+      </div>
+      <div
+        class="absolute z-10 left-[90%] bottom-[20%] max-xl:bottom-[10%] max-sm:hidden"
+      >
+        <img src="public/Vector (4).png" alt="tròn trắng" />
+      </div>
+      <div class="absolute z-10 left-[37%] bottom-[5%] max-sm:hidden">
+        <img src="public/Frame (6).png" alt="chấm bi" />
+      </div>
+      <div
+        class="absolute z-20 left-[35%] max-xl:left-[15%] bottom-0 translate-y-[24%] max-lg:-left-[6%] max-lg:-bottom-[8%] max-sm:hidden"
+      >
+        <img src="public/Group 9618.png" alt="mũi tên" />
+      </div>
+      <div class="flex">
+        <div class="w-1/2 ml-[4rem] z-50 max-sm:hidden">
+          <img src="public/h 1.png" alt="em be cuoi" />
+        </div>
+        <!-- div ưu đãi -->
+        <div
+          class="container w-1/2 max-sm:w-full ml-auto flex justify-center items-end z-50 max-sm:mx-auto"
+        >
+          <div class="flex-col flex justify-center items-center">
+            <p
+              class="font-bold text-5xl max-xl:text-3xl text-white max-sm:text-green-500"
+            >
+              Ưu đãi tới
+            </p>
+            <p
+              class="font-extrabold text-9xl max-xl:text-8xl max-lg:text-6xl text-transparent te bg-gradient-to-br from-amber-200 to-amber-300 bg-clip-text"
+            >
+              50%
+            </p>
+
+            <p
+              class="font-bold text-4xl max-xl:text-xl text-white max-md:text-base max-sm:text-green-500"
+            >
+              Gói khám sức khỏe hậu Covid-19 cho trẻ
+            </p>
+
+            <div
+              class="countdown flex justify-center items-center gap-5 my-8 max-lg:my-4 max-sm:my-2"
+            >
+              <div
+                class="time-block flex flex-col items-center space-y-2 xl:p-4 max-sm:w-[3rem] w-[5rem] bg-white/35 rounded-lg shadow-md border-2 border-solid border-white max-sm:border-green-500"
+              >
+                <span class="days text-3xl font-extrabold text-amber-200"
+                  >01</span
+                >
+                <span
+                  class="label text-sm font-semibold text-white max-sm:text-green-500"
+                  >Day</span
+                >
+              </div>
+              <div
+                class="time-block flex flex-col items-center space-y-2 xl:p-4 max-sm:w-[3rem] w-[5rem] bg-white/35 rounded-lg shadow-md border-2 border-solid border-white max-sm:border-green-500"
+              >
+                <span class="hours text-3xl font-extrabold text-amber-200"
+                  >07</span
+                >
+                <span
+                  class="label text-sm font-semibold text-white max-sm:text-green-500"
+                  >Hrs</span
+                >
+              </div>
+              <div
+                class="time-block flex flex-col items-center space-y-2 xl:p-4 max-sm:w-[3rem] w-[5rem] bg-white/35 rounded-lg shadow-md border-2 border-solid border-white max-sm:border-green-500"
+              >
+                <span class="minutes text-3xl font-extrabold text-amber-200"
+                  >40</span
+                >
+                <span
+                  class="label text-sm font-semibold text-white max-sm:text-green-500"
+                  >Mins</span
+                >
+              </div>
+              <div
+                class="time-block flex flex-col items-center space-y-2 xl:p-4 max-sm:w-[3rem] w-[5rem] bg-white/35 rounded-lg shadow-md border-2 border-solid border-white max-sm:border-green-500"
+              >
+                <span class="seconds text-3xl font-extrabold text-amber-200"
+                  >16</span
+                >
+                <span
+                  class="label text-sm font-semibold text-white max-sm:text-green-500"
+                  >Secs</span
+                >
+              </div>
+            </div>
+            <!-- buton DKN -->
+            <div class="group xl:h-[5rem] h-[3rem] max-sm:mb-52 max-sm:mt-10">
+              <div class="flex justify-center items-center">
+                <div
+                  class="bg-white rounded-full overflow-hidden max-xl:w-[13rem] hover:bg-gradient-to-br group-hover:from-orange-300 group-hover:to-purple-500"
+                >
+                  <button
+                    class="flex justify-center items-center xl:w-48 h-10 shadow-lg shadow-green-500/40"
+                    onclick="inputPhoneNumber()"
+                  >
+                    <div class="pr-3 max-xl:ml-4">
+                      <svg
+                        width="24"
+                        height="23"
+                        viewBox="0 0 24 23"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="group-hover:stroke-white"
+                      >
+                        <path
+                          d="M8.75 17.612V22.25C8.75 22.574 8.958 22.861 9.266 22.963C9.343 22.988 9.422 23 9.5 23C9.734 23 9.96 22.89 10.104 22.694L12.817 19.002L8.75 17.612Z"
+                          fill="url(#paint0_linear_1_21896)"
+                        />
+                        <path
+                          d="M23.685 0.138997C23.455 -0.0240029 23.153 -0.0460029 22.903 0.0849971L0.403045 11.835C0.137044 11.974 -0.0199555 12.258 0.00204448 12.557C0.0250445 12.857 0.224045 13.113 0.507045 13.21L6.76205 15.348L20.083 3.958L9.77505 16.377L20.258 19.96C20.336 19.986 20.418 20 20.5 20C20.636 20 20.771 19.963 20.89 19.891C21.08 19.775 21.209 19.58 21.242 19.361L23.992 0.860997C24.033 0.580997 23.915 0.302997 23.685 0.138997Z"
+                          fill="url(#paint1_linear_1_21896)"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_1_21896"
+                            x1="8.75"
+                            y1="17.612"
+                            x2="13.9317"
+                            y2="21.5233"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#3EED8B" />
+                            <stop offset="1" stop-color="#0A9949" />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint1_linear_1_21896"
+                            x1="0"
+                            y1="-9.15527e-05"
+                            x2="19.6722"
+                            y2="23.6065"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#3EED8B" />
+                            <stop offset="1" stop-color="#0A9949" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+
+                    <p
+                      class="font-Lato text-16 font-bold leading-19 bg-gradient-to-br from-green-400 to-green-800 text-transparent bg-clip-text group-hover:text-white transition-all duration-500 ease-linear"
+                    >
+                      ĐĂNG KÝ NGAY
+                    </p>
+                  </button>
+                </div>
+              </div>
+              <!-- end buton DKN-->
+            </div>
+          </div>
+          <!-- end div ưu đãi -->
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="border-t-8 border-solid border-yellow-400 bg-gradient-to-br from-[#0A9949] to-[#006A2F] w-full md:h-[700px] flex justify-center items-center relative -z-10"
+    >
+      <span class="absolute bottom-0 max-sm:h-full">
+        <img src="public/soitrang.png" alt="soitrang" />
+      </span>
+      <div class="flex max-sm:flex-col w-full px-20 max-lg:px-5 z-0 my-5">
+        <!-- thông tin -->
+        <div
+          class="flex-col text-white items-center shrink-0 max-xl:w-1/2 max-sm:w-full"
+        >
+          <div class="w-1/2">
+            <img src="public/Logo 1.png" alt="logo PD" />
+          </div>
+          <div>
+            <p class="font-bold text-xl my-6">BỆNH VIỆN ĐA KHOA PHƯƠNG ĐÔNG</p>
+            <div class="flex gap-1">
+              <p class="font-bold text-lg text-nowrap">Địa chỉ:</p>
+              <p class="font-normal text-lg text-wrap">
+                Số 9, Phố Viên, P. Cổ Nhuế 2, Q. Bắc Từ Liêm, HN
+              </p>
+            </div>
+            <div class="flex gap-1 my-3">
+              <p class="font-bold text-lg">Email:</p>
+              <a
+                href="mailto:bvphuongdong@phuongdonghospital.vn"
+                class="font-normal text-lg max-sm:text-sm max-sm:my-auto hover:text-black duration-500 transition-all ease-in-out"
+              >
+                bvphuongdong@phuongdonghospital.vn
+              </a>
+            </div>
+            <div class="flex gap-1 text-nowrap">
+              <p class="font-bold text-lg">Hotline:</p>
+              <a
+                href="tel:+1900 1806"
+                class="font-normal text-lg hover:text-black duration-500 transition-all ease-in-out"
+                >1900 1806</a
+              >
             </div>
 
-            <div class="bg-white">
-              <!-- input -->
-              <div>
-                <div class="flex flex-col gap-5 py-10">
-                  <input
-                    type="text"
-                    class="placeholder-gray-500 bg-gray-100 rounded-lg focus:shadow-none border-none mx-auto w-10/12"
-                    placeholder="   Họ và tên (*)"
-                  />
-                  <input
-                    type="text"
-                    class="placeholder-gray-500 bg-gray-100 rounded-lg focus:shadow-none border-none mx-auto w-10/12"
-                    placeholder="   Số điện thoại (*)"
-                  />
-                  <input
-                    type="text"
-                    class="placeholder-gray-500 bg-gray-100 rounded-lg focus:shadow-none border-none mx-auto w-10/12"
-                    placeholder="   E-mail của bạn..."
-                  />
-                  <input
-                    type="text"
-                    class="placeholder-gray-500 bg-gray-100 rounded-lg focus:shadow-none border-none mx-auto w-10/12 pb-10"
-                    placeholder="   Nội dung..."
-                  />
+            <div class="flex space-x-8 text-3xl my-8">
+              <a href="#"><i class="fab fa-facebook hover:text-black"></i></a>
+              <a href="#"><i class="fab fa-twitter hover:text-black"></i></a>
+              <a href="#"><i class="fab fa-youtube hover:text-black"></i></a>
+              <a href="#"><i class="fab fa-instagram hover:text-black"></i></a>
+            </div>
+
+            <div class="flex max-xl:flex-col gap-10 w-80%">
+              <div class="flex-col text-nowrap">
+                <p class="font-bold text-xl">Thời gian mở cửa</p>
+                <div class="flex gap-5 mt-4 mb-2">
+                  <p class="font-bold text-lg">Thứ 2 - Chủ nhật :</p>
+                  <p class="font-normal text-lg">07:30 -19:00</p>
                 </div>
-                <!-- end input -->
+
+                <div class="flex gap-14">
+                  <p class="font-bold text-lg">Cấp cứu 24/7:</p>
+                  <a
+                    href="tel:+0833 015 115"
+                    class="font-normal text-lg hover:text-black duration-500 transition-all ease-in-out"
+                    >0833 015 115</a
+                  >
+                </div>
               </div>
+              <div class="flex-col text-nowrap">
+                <p class="font-bold text-xl">Liên hệ</p>
+                <div class="flex gap-5 mt-4 mb-2">
+                  <p class="font-bold text-lg">Hotline Tiêm chủng:</p>
+                  <a
+                    href="tel:+0911 615 115"
+                    class="font-normal text-lg hover:text-black duration-500 transition-all ease-in-out"
+                    >0911 615 115</a
+                  >
+                </div>
+
+                <div class="flex gap-8">
+                  <p class="font-bold text-lg">Hotline Khoa sản :</p>
+                  <a
+                    href="tel:+0911 615 115"
+                    class="font-normal text-lg hover:text-black duration-500 transition-all ease-in-out"
+                    >0911 615 115</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end thông tin -->
+        </div>
+
+        <!-- form -->
+        <div
+          class="md:w-[70%] h-2/3 rounded-2xl overflow-hidden my-auto max-sm:mt-5"
+        >
+          <!-- đăng ký tư vấn -->
+          <div
+            class="h-[5rem] bg-gradient-to-br from-green-400 to-green-800 flex justify-center items-center"
+          >
+            <div class="flex-col text-center text-white">
+              <p class="font-bold text-xl max-xl:text-base">
+                ĐĂNG KÝ TƯ VẤN MIỄN PHÍ
+              </p>
+              <p
+                class="font-semibold text-sm md:text-wrap max-xl:w-5/6 mx-auto"
+              >
+                Đặt hẹn ngay để nhận tư vấn và chúng tôi sẽ xếp lịch khám kịp
+                thời!
+              </p>
+            </div>
+            <!-- end dktv -->
+          </div>
+
+          <div class="bg-white">
+            <!-- input -->
+
+            <form
+              action=""
+              class="flex flex-col gap-5 py-10"
+              onsubmit="alert('Hệ thống đã nhận được thông tin của bạn .')"
+            >
+              <input
+                type="text"
+                required
+                class="placeholder-gray-500 bg-gray-100 rounded-lg focus:shadow-none border-none mx-auto w-10/12"
+                placeholder="   Họ và tên (*)"
+              />
+              <input
+                type="tel"
+                required
+                class="placeholder-gray-500 bg-gray-100 rounded-lg focus:shadow-none border-none mx-auto w-10/12"
+                placeholder="   Số điện thoại (*)"
+                pattern="[0-9]{10,12}"
+                title="Số điện thoại từ 10 đến 12 chữ số"
+              />
+              <input
+                type="email"
+                class="placeholder-gray-500 bg-gray-100 rounded-lg focus:shadow-none border-none mx-auto w-10/12"
+                placeholder="   E-mail của bạn..."
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                title="Vui lòng nhập một địa chỉ email hợp lệ dạng : user@example.com"
+              />
+
+              <textarea
+                rows="3"
+                class="noidung placeholder-gray-500 bg-gray-100 rounded-lg focus:shadow-none border-none mx-auto w-10/12"
+                placeholder="   Nội dung..."
+              ></textarea>
 
               <!-- buton DKTV -->
               <div class="h-[5rem]">
                 <div class="flex justify-center items-center">
                   <div
-                    class="bg-gradient-to-r from-green-400 to-green-800 rounded-full overflow-hidden max-xl:w-[13rem]"
+                    class="group bg-gradient-to-br from-green-400 to-green-800 hover:bg-gradient-to-br hover:from-orange-300 hover:to-purple-500 rounded-full overflow-hidden max-xl:w-[13rem]"
                   >
-                    <a
-                      href="#"
-                      class="flex justify-center items-center text-white xl:w-48 h-10 hover:text-green-950 shadow-lg shadow-green-500/40"
+                    <button
+                      class="flex justify-center items-center text-white xl:w-48 h-10 shadow-lg shadow-green-500/40 hover:text-green-400"
                     >
                       <div class="pr-3 max-xl:ml-4">
-                        <img src="public/Frame (5).png " alt="icon form" />
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-hover:stroke-green-500"
+                        >
+                          <path
+                            d="M12.25 2H11.15C10.82 0.85 9.76 0 8.5 0C7.24 0 6.18 0.85 5.85 2H4.75C4.34 2 4 2.34 4 2.75V4.25C4 5.21 4.79 6 5.75 6H11.25C12.21 6 13 5.21 13 4.25V2.75C13 2.34 12.66 2 12.25 2Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M14.25 3H14V4.25C14 5.77 12.77 7 11.25 7H5.75C4.23 7 3 5.77 3 4.25V3H2.75C1.23 3 0 4.23 0 5.75V18.25C0 19.77 1.23 21 2.75 21H10.13L10.35 19.77C10.45 19.21 10.71 18.71 11.11 18.3L11.91 17.5H3.75C3.34 17.5 3 17.16 3 16.75C3 16.34 3.34 16 3.75 16H13.25C13.3 16 13.34 16 13.39 16.02H13.4L17 12.42V5.75C17 4.23 15.77 3 14.25 3ZM13.25 14.25H3.75C3.34 14.25 3 13.91 3 13.5C3 13.09 3.34 12.75 3.75 12.75H13.25C13.66 12.75 14 13.09 14 13.5C14 13.91 13.66 14.25 13.25 14.25ZM13.25 11H3.75C3.34 11 3 10.66 3 10.25C3 9.84 3.34 9.5 3.75 9.5H13.25C13.66 9.5 14 9.84 14 10.25C14 10.66 13.66 11 13.25 11Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M12.527 24C12.33 24 12.138 23.922 11.997 23.78C11.824 23.607 11.746 23.361 11.789 23.119L12.319 20.114C12.345 19.963 12.419 19.823 12.527 19.714L19.952 12.29C20.864 11.376 21.76 11.623 22.25 12.113L23.487 13.35C24.17 14.032 24.17 15.142 23.487 15.825L16.062 23.25C15.954 23.359 15.814 23.432 15.662 23.458L12.657 23.988C12.614 23.996 12.57 24 12.527 24ZM15.532 22.72H15.542H15.532Z"
+                            fill="white"
+                          />
+                        </svg>
                       </div>
 
-                      <p class="font-Lato text-16 font-bold leading-19">
+                      <p
+                        class="font-Lato text-16 font-bold leading-19 transition-all duration-500 ease-linear"
+                      >
                         ĐĂNG KÝ TƯ VẤN
                       </p>
-                    </a>
+                    </button>
                   </div>
                 </div>
                 <!-- end buton DKTV-->
               </div>
-            </div>
+            </form>
 
             <!-- end form -->
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/72f20fd50b.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
+  <script>
+    // Toggle Menu
+    let toggleMenu = document.querySelector(".menu-moblie");
+    let btnMenu = document.querySelector(".btn-menu");
+    let bgOverMenu = document.querySelector(".bg-over-menu");
+    let btnClose = document.querySelector(".btn-close");
+
+    const buttons = [btnMenu, bgOverMenu, btnClose];
+
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        toggleMenu.classList.toggle("-translate-x-[120%]");
+        bgOverMenu.classList.toggle("translate-x-full");
+      });
+    });
+
+    var swiper = new Swiper(".slide1", {
+      initialSlide: 2,
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+        nextEl: ".next-11",
+        prevEl: ".prev-11",
+      },
+      breakpoints: {
+        // Cấu hình cho màn hình có độ rộng 1280 pixel trở lên
+        1280: {
+          slidesPerView: 3, // Số lượng slide hiển thị khi màn hình có độ rộng từ 768 pixel trở lên
+          spaceBetween: 30, // Khoảng cách giữa các slide
+        },
+        // Cấu hình cho màn hình có độ rộng 576 pixel trở lên
+        576: {
+          slidesPerView: 2, // Số lượng slide hiển thị khi màn hình có độ rộng từ 576 pixel trở lên
+          spaceBetween: 20, // Khoảng cách giữa các slide
+        },
+        // Cấu hình cho màn hình có độ rộng ít hơn pixel
+        0: {
+          slidesPerView: 1, // Chỉ hiển thị 1 slide khi màn hình có độ rộng ít hơn 576 pixel
+          spaceBetween: 5, // Khoảng cách giữa các slide
+        },
+      },
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".next-1",
+        prevEl: ".prev-1",
+      },
+    });
+
+    var swiper = new Swiper(".slide3", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+
+    const img1 = document.getElementById("img1");
+    const img2 = document.getElementById("img2");
+    const img3 = document.getElementById("img3");
+    const img4 = document.getElementById("img4");
+    const img5 = document.getElementById("img5");
+    const img6 = document.getElementById("img6");
+    const mainImage = document.getElementById("main-image");
+    const mainContent = document.getElementById("main-content");
+    mainImage.src = img2.src;
+    img2.classList.add("border-4", "border-green-500", "rounded-full");
+
+    /* thay đổi mainImage khi bấm vào ảnh nhỏ bên ngoài */
+    img1.addEventListener("click", () => {
+      mainImage.src = img1.src;
+    });
+
+    img2.addEventListener("click", () => {
+      mainImage.src = img2.src;
+    });
+
+    img3.addEventListener("click", () => {
+      mainImage.src = img3.src;
+    });
+
+    img4.addEventListener("click", () => {
+      mainImage.src = img4.src;
+    });
+
+    img5.addEventListener("click", () => {
+      mainImage.src = img5.src;
+    });
+
+    img6.addEventListener("click", () => {
+      mainImage.src = img6.src;
+    });
+
+    // Cài đặt dữ liệu khách hàng
+    const customers = [
+      {
+        name: "Nguyễn Thị A",
+        image: "public/Ellipse 1151.png",
+        rating: '<img src="public/rating5sao.png" alt="5 sao" />',
+        impression1: "Tôi thích bệnh viện Phương Đông",
+        impression2:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",
+      },
+      {
+        name: "Nguyễn Minh Ánh",
+        image: "public/Ellipse 1146.png",
+        rating: '<img src="public/rating5sao.png" alt="5 sao" />',
+        impression1:
+          "Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng bình yên và an tâm khi thăm khám tại đây!",
+        impression2:
+          "Bệnh viện Phương Đông mang đến cho tôi cảm giác vô cùng bình yên và an tâm khi thăm khám tại đây!",
+      },
+      {
+        name: "Nguyễn Văn Toni",
+        image: "public/Ellipse 1149.png",
+        rating: '<img src="public/rating5sao.png" alt="5 sao" />',
+        impression1: "Tôi yêu bệnh viên Phương Đông!",
+        impression2: "Mỗi tuần tôi đều tới bệnh viện Phương Đông",
+      },
+      {
+        name: "Nguyễn Văn Alexander",
+        image: "public/Ellipse 1146 (1).png",
+        rating: '<img src="public/rating5sao.png" alt="5 sao" />',
+        impression1: "Tôi coi bệnh viên Phương Đông là ngôi nhà thứ 2!",
+        impression2: "Mỗi ngày tôi đều tới bệnh viện Phương Đông",
+      },
+
+      {
+        name: "Nguyễn Thị Anna",
+        image: "public/Ellipse 1148.png",
+        rating: '<img src="public/rating5sao.png" alt="5 sao" />',
+        impression1: "Bệnh viên Phương Đông thật tuyệt vời!",
+        impression2: "Tôi ở bệnh viện Phương Đông vài năm rồi",
+      },
+
+      {
+        name: "Nguyễn Thị Taylor",
+        image: "public/Ellipse 1147.png",
+        rating: '<img src="public/rating5sao.png" alt="5 sao" />',
+        impression1: "Bệnh viên Phương Đông là nơi mọi bệnh tật tiêu tan!",
+        impression2: "Tôi ở bệnh viện Phương Đông mỗi khi bị bệnh",
+      },
+    ];
+    function updateMainContent(customerIndex) {
+      const customer = customers[customerIndex];
+      document.getElementById("customer-name").innerHTML = customer.name;
+      document.getElementById("customer-rating").innerHTML = customer.rating;
+      document.getElementById("customer-impression-1").innerHTML =
+        customer.impression1;
+      document.getElementById("customer-impression-2").innerHTML =
+        customer.impression2;
+    }
+    // ... (thêm dữ liệu khách hàng khác)
+    // console.log(customers[1],document.querySelector('#customer-rating img').src, document.getElementById("customer-impression-1").innerHTML, document.getElementById("customer-impression-2"),document.getElementById("customer-name"));
+
+    updateMainContent(1);
+
+    function removeBorderClasses() {
+      for (let i = 1; i <= 6; i++) {
+        const img = document.getElementById(`img${i}`);
+        img.classList.remove("border-4", "border-green-500", "rounded-full");
+      }
+    }
+
+    // Thêm sự kiện click cho 6 ảnh
+    for (let i = 1; i <= 6; i++) {
+      const img = document.getElementById(`img${i}`);
+
+      img.addEventListener("click", (e) => {
+        e.preventDefault();
+        removeBorderClasses();
+
+        const currentImageIndex = i - 1; // Lấy index của ảnh trong mảng isBordered
+
+        // Biến lưu trữ trạng thái viền của từng ảnh
+        let isBordered = [];
+
+        // Khởi tạo mảng isBordered với 6 giá trị false (mặc định không có viền)
+        for (let i = 0; i < 6; i++) {
+          isBordered.push(false);
+        }
+
+        isBordered[currentImageIndex] = !isBordered[currentImageIndex];
+
+        if (isBordered[currentImageIndex]) {
+          img.classList.add("border-4", "border-green-500", "rounded-full");
+        }
+        updateMainContent(currentImageIndex);
+      });
+    }
+
+    const btnXemThemList = document.querySelectorAll(".btn-xem-them");
+    const chiTietGoiList = document.querySelectorAll(".chi-tiet-goi");
+
+    btnXemThemList.forEach((btnXemThem, index) => {
+      btnXemThem.addEventListener("click", () => {
+        btnXemThem.classList.toggle("active");
+        chiTietGoiList[index].classList.toggle("hidden");
+
+        if (btnXemThem.classList.contains("active")) {
+          btnXemThem.querySelector("img").src = "public/minus-circle.png";
+        } else {
+          btnXemThem.querySelector("img").src = "public/plus-circle.png";
+        }
+      });
+    });
+
+    const countdownDate = new Date(2024, 2, 28, 13, 11, 16); // Thay đổi ngày giờ đếm ngược
+
+    const updateCountdown = () => {
+      const now = new Date();
+      const difference = countdownDate - now;
+
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+      document.querySelector(".days").textContent = days;
+      document.querySelector(".hours").textContent = hours;
+      document.querySelector(".minutes").textContent = minutes;
+      document.querySelector(".seconds").textContent = seconds;
+
+      if (difference <= 0) {
+        clearInterval(interval);
+      }
+    };
+
+    const interval = setInterval(updateCountdown, 1000);
+
+    updateCountdown();
+
+    function inputPhoneNumber() {
+      let phoneNumber = prompt("Nhập số điện thoại của bạn (10 chữ số):");
+
+      let phonePattern = /^0\d{9}$/;
+
+      if (phoneNumber == null || phoneNumber == "") return;
+      phonePattern.test(phoneNumber)
+        ? alert("Tổng đài viên sẽ gọi cho bạn . Vui lòng đợi !!")
+        : alert("Số điện thoại không hợp lệ!");
+    }
+  </script>
 </html>
