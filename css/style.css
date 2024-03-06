@@ -42,32 +42,7 @@ body {
   margin-right: auto;
 }
 /*  
-input[type="text"]:focus {
-  border: none !important;
-  outline: none !important;
-  outline-offset: 0;
-  box-shadow: none;
-}
 
-input[type="tel"]:focus {
-  border: none !important;
-  outline: none !important;
-  outline-offset: 0;
-  box-shadow: none;
-}
-
-input[type="email"]:focus {
-  border: none !important;
-  outline: none !important;
-  outline-offset: 0;
-  box-shadow: none;
-}
-
-textarea:focus {
-  border: none !important;
-  outline: none !important;
-  outline-offset: 0;
-  box-shadow: none !important;
 }*/
 
 /* .menu-moblie */
@@ -91,8 +66,8 @@ textarea:focus {
   justify-content: space-between;
   background: linear-gradient(
     135deg,
-    #f6993f 0%,
-    #8b5cf6 100%
+    #93c47d 0%,
+    #6aa84f 100%
   ); /* Thay thế first:bg-linear-Yellow-Green */
 }
 
