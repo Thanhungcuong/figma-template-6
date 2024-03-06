@@ -82,16 +82,39 @@
         ); /* Thay thế first:bg-linear-Yellow-Green */
       }
 
-      /* .menu-moblie li a */
-      .menu-moblie li a {
-        width: 100%;
-        display: block;
-        max-width: 13rem; /* Thay thế first:max-w-[13rem] */
+      ul.menu-desktop li {
+        position: relative;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        text-align: center;
       }
 
-      /* .menu-moblie li a:hover */
-      .menu-moblie li a:hover {
-        color: #0a9949; /* Thay thế hover:text-linear-green */
+      ul.menu-desktop li:hover {
+        background-image: linear-gradient(135deg, #999999 0%, #000000 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      ul.menu-desktop li::before {
+        position: absolute;
+        bottom: -0.75rem;
+        left: 0px;
+        display: block;
+        height: 0.25rem;
+        width: 0;
+        background-image: linear-gradient(135deg, #999999 0%, #000000 100%);
+        transition-property: all;
+        transition-duration: 500ms;
+        content: var(--tw-content);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      ul.menu-desktop li:hover::before {
+        content: var(--tw-content);
+        width: 100%;
       }
     </style>
   </head>
@@ -114,40 +137,40 @@
 
         <div class="">
           <ul
-            class="max-xl:hidden justify-center gap-5 flex items-center static transition-all ease-in duration-500 w-full left-0 xl:py-0 py-4 xl:pl-0"
+            class="menu-desktop max-xl:hidden justify-center gap-5 flex items-center static transition-all ease-in duration-500 w-full left-0 xl:py-0 py-4 xl:pl-0"
           >
             <li
-              class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
+              class="nav-item max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
             >
               <a href="#">Giới thiệu</a>
             </li>
             <li
-              class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
+              class="nav-item max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
             >
               <a href="#">Đối tượng khách hàng</a>
             </li>
             <li
-              class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
+              class="nav-item max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
             >
               <a href="#">Quy trình</a>
             </li>
             <li
-              class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
+              class="nav-item max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
             >
               <a href="#">Bảng giá</a>
             </li>
             <li
-              class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
+              class="nav-item max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
             >
               <a href="#">Cảm nhận của khách hàng</a>
             </li>
             <li
-              class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base :"
+              class="nav-item max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base :"
             >
               <a href="#">Đội ngũ bác sĩ</a>
             </li>
             <li
-              class="hover:underline max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
+              class="nav-item max-xl:hover:text-white max-xl:hover:bg-green-500 text-nowrap font-Lato text-sm font-bold leading-19 tracking-0 max-xl:py-5 xl:my-5 max-xl:text-base"
             >
               <a href="#">Hình ảnh & Video</a>
             </li>
@@ -703,7 +726,7 @@
       </div>
 
       <div
-        class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5 max-xl:w-[30%]"
+        class="flex flex-col mx-auto relative bg-[#EAFAF1] mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5 max-xl:w-[30%]"
       >
         <!-- inset-x-28 -->
         <div
@@ -730,7 +753,7 @@
       </div>
 
       <div
-        class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5 max-xl:w-[30%]"
+        class="flex flex-col mx-auto relative bg-[#EAFAF1] mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5 max-xl:w-[30%]"
       >
         <!-- inset-x-28 -->
         <div
@@ -757,7 +780,7 @@
       </div>
 
       <div
-        class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5 max-xl:w-[30%]"
+        class="flex flex-col mx-auto relative bg-[#EAFAF1] mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5 max-xl:w-[30%]"
       >
         <!-- inset-x-28 -->
         <div
@@ -829,7 +852,7 @@
     <!-- 3 div phía dưới -->
     <div class="max-md:hidden flex -mt-20 pb-24">
       <div
-        class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-8 pb-16 rounded-3xl max-sm:w-4/5 max-xl:w-[30%] max-sm:mt-32"
+        class="flex flex-col mx-auto relative bg-[#EAFAF1] mt-20 w-1/4 pt-8 pb-16 rounded-3xl max-sm:w-4/5 max-xl:w-[30%] max-sm:mt-32"
       >
         <!-- inset-x-28 -->
         <div
@@ -856,7 +879,7 @@
       </div>
 
       <div
-        class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-8 pb-16 rounded-3xl max-sm:w-4/5 max-xl:w-[30%]"
+        class="flex flex-col mx-auto relative bg-[#EAFAF1] mt-20 w-1/4 pt-8 pb-16 rounded-3xl max-sm:w-4/5 max-xl:w-[30%]"
       >
         <!-- inset-x-28 -->
         <div
@@ -883,7 +906,7 @@
       </div>
 
       <div
-        class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-8 pb-16 rounded-3xl max-sm:w-4/5 max-xl:w-[30%]"
+        class="flex flex-col mx-auto relative bg-[#EAFAF1] mt-20 w-1/4 pt-8 pb-16 rounded-3xl max-sm:w-4/5 max-xl:w-[30%]"
       >
         <!-- inset-x-28 -->
         <div
@@ -913,7 +936,7 @@
     <!-- 3 div dưới mobile -->
     <div class="md:hidden">
       <div
-        class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5 max-xl:w-[30%]"
+        class="flex flex-col mx-auto relative bg-[#EAFAF1] mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5 max-xl:w-[30%]"
       >
         <!-- inset-x-28 -->
         <div
@@ -940,7 +963,7 @@
       </div>
 
       <div
-        class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5 max-xl:w-[30%]"
+        class="flex flex-col mx-auto relative bg-[#EAFAF1] mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5 max-xl:w-[30%]"
       >
         <!-- inset-x-28 -->
         <div
@@ -967,7 +990,7 @@
       </div>
 
       <div
-        class="flex flex-col mx-auto relative bg-green-300/30 mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5 max-xl:w-[30%]"
+        class="flex flex-col mx-auto relative bg-[#EAFAF1] mt-20 w-1/4 pt-16 pb-8 rounded-3xl max-sm:w-4/5 max-xl:w-[30%]"
       >
         <!-- inset-x-28 -->
         <div
@@ -2044,7 +2067,7 @@
             <div class="group xl:h-[5rem] h-[3rem] max-sm:mb-52 max-sm:mt-10">
               <div class="flex justify-center items-center">
                 <div
-                  class="bg-white rounded-full overflow-hidden max-xl:w-[13rem] hover:bg-gradient-to-br group-hover:from-green-200 group-hover:to-green-600"
+                  class="bg-white rounded-full overflow-hidden hover:bg-gradient-to-br group-hover:from-green-200 group-hover:to-green-600"
                 >
                   <button
                     class="flex justify-center items-center xl:w-48 h-10 shadow-lg shadow-green-500/40"
@@ -2095,7 +2118,7 @@
                     </div>
 
                     <p
-                      class="font-Lato text-16 font-bold leading-19 bg-gradient-to-br from-green-400 to-green-800 text-transparent bg-clip-text group-hover:text-white transition-all duration-500 ease-linear"
+                      class="font-Lato text-16 font-bold leading-19 bg-gradient-to-br from-green-400 to-green-800 text-transparent bg-clip-text group-hover:text-white transition-all duration-500 ease-linear max-xl:mr-3"
                     >
                       ĐĂNG KÝ NGAY
                     </p>
